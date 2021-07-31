@@ -1,0 +1,86 @@
+/* html {
+  box-sizing: border-box;
+} */
+
+@import url("https://fonts.googleapis.com/css?family=Space+Mono");
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: whitesmoke;
+}
+
+/* quick reset so all our padding is the right size */
+* {
+  box-sizing: border-box;
+}
+
+.title {
+  color: black;
+  text-align: center;
+  font-size: 2.2rem;
+}
+.calculator {
+  max-width: 320px;
+  background: #eee;
+  background: white;
+  width: 400px;
+  border-radius: 12px;
+  box-shadow: 0 5px 30px -5px rgba(0, 0, 0, 0.6);
+}
+
+/* Buttons */
+.calculator-buttons {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 10px;
+}
+
+button {
+  min-height: 50px;
+  font-size: 20px;
+  font-weight: 100;
+  border: none;
+  background: rgb(200, 200, 200);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.calc-numbers {
+  font-family: "Space Mono", serif;
+  background: black;
+  color: white;
+  font-size: 2em;
+  border: 0;
+  padding: 0.3em;
+  text-align: right;
+  width: 100%;
+  height: 100px;
+}
+.span-2 {
+  grid-column: span 2;
+}
+.span-3 {
+  grid-column: span 3;
+}
+.btn {
+  font-size: 1em;
+  height: 65px;
+}
+.clear {
+  background-color: rgb(151, 3, 3);
+  color: white;
+}
+.btn:hover {
+  background: rgb(185, 145, 145);
+}
+.btn:active {
+  background: rgb(78, 64, 64);
+}
+.orange {
+  background-color: orange;
+}
