@@ -1,0 +1,7 @@
+/// <reference types="react" />
+export declare const DEFAULT_STORAGE_KEY = "mui-color-scheme";
+export declare const DEFAULT_ATTRIBUTE = "data-mui-color-scheme";
+export default function getInitColorSchemeScript(options?: {
+    storageKey?: string;
+    attribute?: string;
+}): JSX.Element;
