@@ -24,7 +24,7 @@ const ContentDetails = ({ item }) => {
             // onClick={() => navigate(history, "edit", item)}
             onClick={() =>
               history.push({
-                pathname: `/edit`,
+                pathname: `/edit-expense`,
                 state: {
                   item,
                 },
