@@ -1,0 +1,240 @@
+@import "../variables";
+@import "../mixin";
+@import "../buttons/buttons";
+
+/*======================================
+	Contact CSS
+========================================*/
+.contact-us {
+  position: relative;
+  background-color: var(--white);
+  padding-bottom: 0;
+  padding-top: 100px;
+
+  .contact-head {
+    background: var(--white);
+    border-radius: 7px;
+    overflow: hidden;
+    @include box-shadow(var(--shadow-4));
+    position: relative;
+    z-index: 5;
+  }
+
+  .title {
+    margin-bottom: 30px;
+  }
+
+  .contact-inner-title {
+    margin-bottom: 45px;
+
+    h4 {
+      font-size: 28px;
+      font-weight: 700;
+      margin-bottom: 5px;
+      color: var(--white);
+      text-transform: capitalize;
+    }
+
+    p {
+      font-size: 16px;
+      font-weight: 400;
+      color: var(--white);
+      line-height: 23px;
+      margin-top: 10px;
+      display: block;
+    }
+  }
+
+  .single-head {
+    padding: 50px;
+    height: 100%;
+    background: var(--primary);
+    position: relative;
+    z-index: 5;
+    overflow: hidden;
+  }
+
+  .single-info {
+    text-align: left;
+    margin-bottom: 16px;
+    padding-left: 40px;
+    position: relative;
+
+    .title {
+      margin-bottom: 10px;
+      font-weight: 500;
+      color: var(--white);
+      font-size: 18px;
+
+      span {
+        display: block;
+        font-size: 14px;
+        margin-top: 8px;
+        font-weight: 500;
+      }
+    }
+
+    i {
+      color: var(--white);
+      font-size: 22px;
+      display: inline-block;
+      margin-right: 20px;
+      position: absolute;
+      left: 0;
+      top: 2px;
+    }
+
+    ul {
+      display: inline-block;
+
+      li {
+        color: var(--white);
+        font-weight: 500;
+        display: inline-block;
+        font-size: 15px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+
+        a {
+          font-weight: 500;
+          color: var(--white);
+          display: inline-block;
+          font-size: 15px;
+
+          & :hover {
+            color: var(--white);
+          }
+        }
+      }
+    }
+  }
+
+  .contact-social {
+    display: block;
+    margin-top: 65px;
+
+    h5 {
+      color: var(--white);
+      font-weight: 600;
+      font-size: 18px;
+    }
+
+    ul {
+      display: inline-block;
+      position: relative;
+      left: -9px;
+      margin-top: 15px;
+
+      li {
+        display: inline-block;
+        margin-right: 5px;
+
+        &:last-child {
+          margin-right: 0;
+        }
+
+        a {
+          color: var(--white);
+          font-size: 17px;
+          position: relative;
+          height: 30px;
+          width: 30px;
+          line-height: 30px;
+          text-align: center;
+          display: block;
+          -webkit-transition: all 0.4s ease;
+          -moz-transition: all 0.4s ease;
+          transition: all 0.4s ease;
+          overflow: hidden;
+
+          span {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            margin-left: -15px;
+            margin-top: -15px;
+            height: 30px;
+            width: 30px;
+            line-height: 30px;
+            display: block;
+            -webkit-transition: all 0.3s ease;
+            -moz-transition: all 0.3s ease;
+            transition: all 0.3s ease;
+          }
+
+          &:hover .icon-1 {
+            top: -15px;
+          }
+
+          .icon-2 {
+            top: 50px;
+          }
+
+          &:hover .icon-2 {
+            top: 15px;
+          }
+
+          &:hover {
+            color: var(--white);
+          }
+        }
+      }
+    }
+  }
+
+  .form-main {
+    padding: 35px 50px 50px 30px;
+
+    @media #{$md} {
+      padding: 25px 40px 40px 40px;
+    }
+
+    @media #{$xs} {
+      padding: 15px 30px 30px 30px;
+    }
+
+    .form-group {
+      margin-top: 15px;
+      display: block;
+
+      textarea,
+      input {
+        height: 55px;
+        line-height: 55px;
+        width: 100%;
+        border: 1px solid var(--gray-4);
+        padding: 0px 20px;
+        color: var(--black);
+        border-radius: 0px;
+        font-weight: 400;
+        border-radius: 5px;
+
+        &:focus {
+          border-color: var(--primary);
+        }
+      }
+
+      textarea {
+        height: 180px;
+      }
+    }
+
+    .primary-btn {
+      @extend %primary-btn;
+    }
+  }
+}
+
+.map-section {
+  background-color: var(--white);
+  margin-top: 50px;
+  padding-bottom: 100px;
+
+  .map-container {
+    @include box-shadow(var(--shadow-4));
+    padding: 20px;
+    border-radius: 7px;
+  }
+}

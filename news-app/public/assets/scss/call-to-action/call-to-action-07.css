@@ -1,0 +1,56 @@
+/* ===== Buttons Css ===== */
+.call-action .inner-content .light-rounded-buttons .primary-btn-outline {
+  border-color: var(--primary);
+  color: var(--primary);
+}
+.call-action .inner-content .light-rounded-buttons .active.primary-btn-outline, .call-action .inner-content .light-rounded-buttons .primary-btn-outline:hover, .call-action .inner-content .light-rounded-buttons .primary-btn-outline:focus {
+  background: var(--primary-dark);
+  color: var(--white);
+}
+.call-action .inner-content .light-rounded-buttons .deactive.primary-btn-outline {
+  color: var(--dark-3);
+  border-color: var(--gray-4);
+  pointer-events: none;
+}
+
+/*===== call action four =====*/
+.call-action {
+  z-index: 2;
+  padding: 100px 0;
+  background: linear-gradient(45deg, var(--primary), var(--primary-dark));
+  position: relative;
+}
+.call-action:before {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-image: url("../../images/call-to-action/overlay.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  z-index: -1;
+}
+.call-action .inner-content {
+  text-align: center;
+}
+.call-action .inner-content h2 {
+  font-weight: 700;
+  margin-bottom: 30px;
+  color: var(--white);
+}
+.call-action .inner-content p {
+  color: var(--white);
+}
+.call-action .inner-content .light-rounded-buttons {
+  margin-top: 45px;
+  display: block;
+}
+.call-action .inner-content .light-rounded-buttons .primary-btn-outline {
+  border-color: var(--white);
+  color: var(--white);
+}
+
+/*# sourceMappingURL=call-to-action-07.css.map */

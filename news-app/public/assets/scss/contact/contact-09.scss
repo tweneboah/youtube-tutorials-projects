@@ -1,0 +1,139 @@
+@import "../variables";
+@import "../mixin";
+@import "../buttons/buttons";
+
+/*======================================
+	Contact CSS
+========================================*/
+
+.contact-section {
+  position: relative;
+  z-index: 3;
+  padding-top: 130px;
+
+  .contact-item-wrapper {
+    .contact-item {
+      display: flex;
+      border: 1px solid var(--gray-4);
+      border-radius: 10px;
+      background: var(--white);
+      margin-bottom: 30px;
+      padding: 20px 30px;
+      @include transition(0.3s);
+
+      &:hover {
+        @include box-shadow(var(--shadow-4));
+      }
+
+      @media #{$laptop} {
+        padding: 20px;
+      }
+      @media #{$md} {
+        flex-direction: column;
+      }
+      @media #{$xs} {
+        flex-direction: column;
+      }
+
+      .contact-icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 22px;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background: var(--primary);
+        color: var(--white);
+        @include transition(0.3s);
+      }
+      .contact-content {
+        margin-left: 25px;
+
+        @media #{$laptop} {
+          margin-left: 20px;
+        }
+        @media #{$md} {
+          margin-left: 0px;
+          margin-top: 20px;
+        }
+        @media #{$xs} {
+          margin-left: 0px;
+          margin-top: 20px;
+        }
+
+        h4 {
+          font-size: 20px;
+          color: var(--primary);
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+}
+
+.contact-form-wrapper {
+  padding: 50px 40px;
+  background: var(--white);
+  border: 1px solid var(--gray-4);
+  margin-left: 0px;
+  border-radius: 10px;
+  @include transition(0.3s);
+
+  &:hover {
+    @include box-shadow(var(--shadow-4));
+  }
+
+  @media #{$laptop} {
+    margin-left: 30px;
+  }
+
+  .section-title {
+    margin-bottom: 30px;
+
+    span {
+      font-size: 20px;
+      color: var(--primary);
+      font-weight: 700;
+    }
+
+    h2 {
+      margin-bottom: 10px;
+    }
+    p {
+      color: var(--dark-3);
+    }
+  }
+
+  .contact-form {
+    input,
+    textarea {
+      padding: 15px 25px;
+      border-radius: 30px;
+      border: 1px solid var(--gray-4);
+      margin-bottom: 25px;
+      width: 100%;
+      @include transition(0.3s);
+
+      @media #{$xs} {
+        padding: 12px 25px;
+      }
+
+      &:focus {
+        border-color: var(--primary);
+      }
+    }
+
+    textarea {
+      border-radius: 18px;
+    }
+
+    .primary-btn {
+      @extend %primary-btn;
+    }
+  }
+}
+
+.map-style-9 {
+  margin-top: -130px;
+}

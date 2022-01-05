@@ -1,0 +1,92 @@
+/*===========================
+  Features Seven CSS 
+===========================*/
+.features-seven {
+  background-color: var(--light-2);
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.features-seven .section-title {
+  padding-bottom: 50px;
+}
+.features-seven .section-title .title {
+  font-size: 44px;
+  font-weight: 600;
+  color: var(--black);
+  line-height: 55px;
+}
+@media (max-width: 767px) {
+  .features-seven .section-title .title {
+    font-size: 30px;
+    line-height: 35px;
+  }
+}
+
+.features-style-seven {
+  position: relative;
+  background-color: var(--white);
+  padding: 16px 20px;
+  border: 1px solid var(--light-2);
+}
+.features-style-seven::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: var(--primary);
+  top: 0;
+  left: 0;
+  opacity: 0;
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+}
+.features-style-seven .features-title {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 600;
+  color: var(--black);
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+  position: relative;
+  z-index: 5;
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .features-style-seven .features-title {
+    font-size: 20px;
+  }
+}
+@media (max-width: 767px) {
+  .features-style-seven .features-title {
+    font-size: 20px;
+  }
+}
+.features-style-seven .text {
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--black);
+  margin-top: 16px;
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+  position: relative;
+  z-index: 5;
+}
+.features-style-seven:hover::before {
+  opacity: 1;
+}
+.features-style-seven:hover .features-title {
+  color: var(--white);
+}
+.features-style-seven:hover .text {
+  color: var(--white);
+}
+
+/*# sourceMappingURL=feature-07.css.map */

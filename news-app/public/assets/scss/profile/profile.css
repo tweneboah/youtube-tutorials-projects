@@ -1,0 +1,294 @@
+/* ===== Buttons Css ===== */
+.profile .profile-content .profile-card .profile-card-wrapper .primary-btn {
+  background: var(--primary);
+  color: var(--white);
+  box-shadow: var(--shadow-2);
+}
+.profile .profile-content .profile-card .profile-card-wrapper .active.primary-btn, .profile .profile-content .profile-card .profile-card-wrapper .primary-btn:hover, .profile .profile-content .profile-card .profile-card-wrapper .primary-btn:focus {
+  background: var(--primary-dark);
+  color: var(--white);
+  box-shadow: var(--shadow-4);
+}
+.profile .profile-content .profile-card .profile-card-wrapper .deactive.primary-btn {
+  background: var(--gray-4);
+  color: var(--dark-3);
+  pointer-events: none;
+}
+
+.profile .profile-content .profile-card .profile-card-wrapper .card-social ul li a {
+  border-color: var(--primary);
+  color: var(--primary);
+}
+.profile .profile-content .profile-card .profile-card-wrapper .card-social ul li a.active, .profile .profile-content .profile-card .profile-card-wrapper .card-social ul li a:hover, .profile .profile-content .profile-card .profile-card-wrapper .card-social ul li a:focus {
+  background: var(--primary-dark);
+  color: var(--white);
+}
+.profile .profile-content .profile-card .profile-card-wrapper .card-social ul li a.deactive {
+  color: var(--dark-3);
+  border-color: var(--gray-4);
+  pointer-events: none;
+}
+
+/*===== Profile One Style =====*/
+.profile {
+  text-align: center;
+  background-color: #fff;
+  position: relative;
+  overflow: hidden;
+  background-color: var(--white);
+  z-index: 2;
+  background-image: url(../../images/profile/bg-1.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: auto;
+  padding: 100px 0;
+}
+@media (max-width: 767px) {
+  .profile {
+    padding: 60px;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .profile {
+    padding: 70px;
+  }
+}
+.profile::before {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  background-color: var(--primary);
+  height: 100%;
+  width: 100%;
+  opacity: 0.8;
+  z-index: -1;
+}
+.profile .profile-content {
+  background-color: var(--white);
+  display: inline-block;
+  box-shadow: var(--shadow-5);
+  border-radius: 10px;
+  overflow: hidden;
+}
+.profile .profile-content .profile-card {
+  max-width: 560px;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .profile .profile-content .profile-card {
+    max-width: 540px;
+  }
+}
+@media (max-width: 767px) {
+  .profile .profile-content .profile-card {
+    max-width: 100%;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .profile .profile-content .profile-card {
+    max-width: 420px;
+  }
+}
+.profile .profile-content .profile-card .profile-card-wrapper {
+  background-color: var(--white);
+  z-index: 999;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.profile .profile-content .profile-card .profile-card-wrapper .card-header {
+  height: 170px;
+  width: 100%;
+}
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+  .profile .profile-content .profile-card .profile-card-wrapper .card-header {
+    height: 200px;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .profile .profile-content .profile-card .profile-card-wrapper .card-header {
+    height: 170px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .profile .profile-content .profile-card .profile-card-wrapper .card-header {
+    height: 160px;
+  }
+}
+@media (max-width: 767px) {
+  .profile .profile-content .profile-card .profile-card-wrapper .card-header {
+    height: 90px;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .profile .profile-content .profile-card .profile-card-wrapper .card-header {
+    height: 140px;
+  }
+}
+.profile .profile-content .profile-card .profile-card-wrapper .card-profile {
+  max-width: 150px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -75px;
+  position: relative;
+  z-index: 9;
+}
+@media only screen and (min-width: 1400px) {
+  .profile .profile-content .profile-card .profile-card-wrapper .card-profile {
+    max-width: 170px;
+    margin-top: -85px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .profile .profile-content .profile-card .profile-card-wrapper .card-profile {
+    max-width: 150px;
+    margin-top: -75px;
+  }
+}
+@media (max-width: 767px) {
+  .profile .profile-content .profile-card .profile-card-wrapper .card-profile {
+    max-width: 100px;
+    margin-top: -50px;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .profile .profile-content .profile-card .profile-card-wrapper .card-profile {
+    max-width: 140px;
+    margin-top: -70px;
+  }
+}
+.profile .profile-content .profile-card .profile-card-wrapper .card-profile img {
+  border-radius: 50%;
+  width: 100%;
+  padding: 8px;
+  background-color: var(--white);
+}
+.profile .profile-content .profile-card .profile-card-wrapper .card-content {
+  padding: 25px;
+}
+@media only screen and (min-width: 1400px) {
+  .profile .profile-content .profile-card .profile-card-wrapper .card-content {
+    padding: 30px;
+  }
+}
+@media (max-width: 767px) {
+  .profile .profile-content .profile-card .profile-card-wrapper .card-content {
+    padding: 10px;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .profile .profile-content .profile-card .profile-card-wrapper .card-content {
+    padding: 20px;
+  }
+}
+.profile .profile-content .profile-card .profile-card-wrapper .card-content .card-title {
+  font-size: 48px;
+  color: var(--black);
+  margin-bottom: 20px;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .profile .profile-content .profile-card .profile-card-wrapper .card-content .card-title {
+    font-size: 44px;
+  }
+}
+@media (max-width: 767px) {
+  .profile .profile-content .profile-card .profile-card-wrapper .card-content .card-title {
+    font-size: 26px;
+    margin-bottom: 10px;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .profile .profile-content .profile-card .profile-card-wrapper .card-content .card-title {
+    font-size: 36px;
+    margin-bottom: 10px;
+  }
+}
+.profile .profile-content .profile-card .profile-card-wrapper .card-content .text {
+  color: var(--dark-3);
+  padding-bottom: 20px;
+}
+@media (max-width: 767px) {
+  .profile .profile-content .profile-card .profile-card-wrapper .card-content .text {
+    font-size: 14px;
+    line-height: 24px;
+    padding-bottom: 10px;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .profile .profile-content .profile-card .profile-card-wrapper .card-content .text {
+    font-size: 15px;
+    line-height: 26px;
+    padding-bottom: 20px;
+  }
+}
+.profile .profile-content .profile-card .profile-card-wrapper .card-social {
+  padding-top: 10px;
+  padding-bottom: 30px;
+}
+@media (max-width: 767px) {
+  .profile .profile-content .profile-card .profile-card-wrapper .card-social {
+    padding-top: 5px;
+    padding-bottom: 10px;
+  }
+}
+.profile .profile-content .profile-card .profile-card-wrapper .card-social ul li {
+  display: inline-block;
+  margin: 0px 9px;
+}
+@media (max-width: 767px) {
+  .profile .profile-content .profile-card .profile-card-wrapper .card-social ul li {
+    margin: 0 5px;
+  }
+}
+.profile .profile-content .profile-card .profile-card-wrapper .card-social ul li a.facebook {
+  color: #3b5998;
+  border-color: #3b5998;
+}
+.profile .profile-content .profile-card .profile-card-wrapper .card-social ul li a.facebook:hover {
+  color: var(--white);
+  background-color: #3b5998;
+}
+.profile .profile-content .profile-card .profile-card-wrapper .card-social ul li a.twitter {
+  color: #00acee;
+  border-color: #00acee;
+}
+.profile .profile-content .profile-card .profile-card-wrapper .card-social ul li a.twitter:hover {
+  color: var(--white);
+  background-color: #00acee;
+}
+.profile .profile-content .profile-card .profile-card-wrapper .card-social ul li a.instagram {
+  color: #e1306c;
+  border-color: #e1306c;
+}
+.profile .profile-content .profile-card .profile-card-wrapper .card-social ul li a.instagram:hover {
+  color: var(--white);
+  background-color: #e1306c;
+}
+.profile .profile-content .profile-card .profile-card-wrapper .card-social ul li a.linkedin {
+  color: #0077b5;
+  border-color: #0077b5;
+}
+.profile .profile-content .profile-card .profile-card-wrapper .card-social ul li a.linkedin:hover {
+  color: var(--white);
+  background-color: #0077b5;
+}
+
+.d-table {
+  width: 100%;
+  height: 100%;
+}
+
+.d-table {
+  display: table !important;
+}
+
+.d-table-cell {
+  vertical-align: middle;
+}
+
+.d-table-cell {
+  display: table-cell !important;
+}
+
+/*# sourceMappingURL=profile.css.map */

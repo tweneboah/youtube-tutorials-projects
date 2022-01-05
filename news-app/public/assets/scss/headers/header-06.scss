@@ -1,0 +1,90 @@
+@import "../variables";
+@import "../mixin";
+@import "../buttons/buttons";
+
+/*===== HEADER SIX =====*/
+
+.header-six {
+  .header-content-area {
+    background-color: var(--white);
+    padding: 120px 0;
+
+    @media #{$md} {
+      padding: 100px 0;
+    }
+
+    @media #{$xs} {
+      padding: 60px 0;
+    }
+  }
+
+  & .header-content {
+    position: relative;
+    z-index: 9;
+
+    @media #{$md, $xs} {
+      margin-top: 0;
+    }
+  }
+
+  & .header-title {
+    font-size: 55px;
+    line-height: 65px;
+    color: var(--black);
+    font-weight: 700;
+
+    @media #{$lg, $md} {
+      font-size: 45px;
+      line-height: 52px;
+    }
+
+    @media #{$xs} {
+      font-size: 30px;
+      line-height: 40px;
+    }
+  }
+
+  .text {
+    margin-top: 20px;
+  }
+
+  & .header-btn {
+    margin-top: 22px;
+
+    & li {
+      display: inline-block;
+      margin-top: 10px;
+      margin-right: 10px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+
+  .primary-btn {
+    @extend %primary-btn;
+  }
+
+  .primary-btn-outline {
+    @extend %primary-btn-outline;
+  }
+
+  .header-image {
+    @media #{$md} {
+      margin-top: 40px;
+    }
+
+    @media #{$xs} {
+      margin-top: 30px;
+    }
+
+    img {
+      width: 100%;
+    }
+
+    @media #{$laptop,$desktop} {
+      padding: 60px;
+    }
+  }
+}

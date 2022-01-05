@@ -1,0 +1,105 @@
+/* ===== Buttons Css ===== */
+.features-style-eight .primary-btn-outline {
+  border-color: var(--primary);
+  color: var(--primary);
+}
+.features-style-eight .active.primary-btn-outline, .features-style-eight .primary-btn-outline:hover, .features-style-eight .primary-btn-outline:focus {
+  background: var(--primary-dark);
+  color: var(--white);
+}
+.features-style-eight .deactive.primary-btn-outline {
+  color: var(--dark-3);
+  border-color: var(--gray-4);
+  pointer-events: none;
+}
+
+/*===========================
+  Features Eight CSS 
+===========================*/
+.features-eight {
+  background-color: var(--light-2);
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.features-eight .section-title {
+  padding-bottom: 10px;
+}
+.features-eight .section-title .title {
+  font-size: 44px;
+  font-weight: 600;
+  color: var(--white);
+  line-height: 55px;
+}
+@media (max-width: 767px) {
+  .features-eight .section-title .title {
+    font-size: 30px;
+    line-height: 35px;
+  }
+}
+.features-eight .section-title .text {
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--white);
+  margin-top: 24px;
+}
+
+.features-style-eight {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 40px 20px;
+  margin-top: 40px;
+  border-radius: 8px;
+}
+.features-style-eight .features-icon {
+  position: relative;
+  display: inline-block;
+  z-index: 1;
+}
+.features-style-eight .features-icon i {
+  font-size: 70px;
+  line-height: 70px;
+  color: var(--primary);
+}
+.features-style-eight .features-icon .shape {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.features-style-eight .features-content {
+  margin-top: 24px;
+}
+.features-style-eight .features-title {
+  font-size: 28px;
+  line-height: 35px;
+  font-weight: 600;
+  color: var(--black);
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+}
+@media (max-width: 767px) {
+  .features-style-eight .features-title {
+    font-size: 20px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .features-style-eight .features-title {
+    font-size: 22px;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .features-style-eight .features-title {
+    font-size: 24px;
+  }
+}
+.features-style-eight .text {
+  color: var(--dark-3);
+  margin-top: 16px;
+}
+.features-style-eight .features-btn {
+  margin-top: 32px;
+}
+
+/*# sourceMappingURL=feature-08.css.map */

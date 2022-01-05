@@ -1,0 +1,113 @@
+/* ===== Buttons Css ===== */
+.error-text .button .primary-btn {
+  background: var(--primary);
+  color: var(--white);
+  box-shadow: var(--shadow-2);
+}
+.error-text .button .active.primary-btn, .error-text .button .primary-btn:hover, .error-text .button .primary-btn:focus {
+  background: var(--primary-dark);
+  color: var(--white);
+  box-shadow: var(--shadow-4);
+}
+.error-text .button .deactive.primary-btn {
+  background: var(--gray-4);
+  color: var(--dark-3);
+  pointer-events: none;
+}
+
+/*===== ERROR TWO Style =====*/
+.error-two {
+  background-color: var(--white);
+  height: 100vh;
+  width: auto;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  overflow: hidden;
+  z-index: 2;
+}
+@media (max-width: 767px) {
+  .error-two {
+    height: auto;
+    padding: 50px 0;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .error-two {
+    height: auto;
+    padding: 60px 0;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .error-two {
+    height: auto;
+    padding: 80px 0;
+  }
+}
+.error-two .d-table {
+  width: 100%;
+  height: 100%;
+}
+.error-two .d-table {
+  display: table !important;
+}
+.error-two .d-table-cell {
+  vertical-align: middle;
+}
+.error-two .d-table-cell {
+  display: table-cell !important;
+}
+
+.error-image img {
+  width: 60%;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .error-image img {
+    width: 40%;
+  }
+}
+
+@media (max-width: 767px) {
+  .error-text {
+    text-align: center;
+    margin-top: 40px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .error-text {
+    text-align: center;
+    margin-top: 40px;
+  }
+}
+.error-text h3 {
+  color: var(--primary);
+  display: block;
+  font-size: 100px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+@media (max-width: 767px) {
+  .error-text h3 {
+    font-size: 70px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .error-text h3 {
+    font-size: 60px;
+  }
+}
+.error-text .text {
+  text-transform: capitalize;
+  color: var(--dark-3);
+  font-weight: 500;
+  color: var(--dark-2);
+}
+.error-text p {
+  margin-bottom: 8px;
+}
+.error-text .button {
+  margin-top: 30px;
+}
+
+/*# sourceMappingURL=error-02.css.map */

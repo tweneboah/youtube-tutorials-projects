@@ -1,0 +1,110 @@
+@import "../variables";
+@import "../mixin";
+@import "../buttons/buttons";
+
+/*===== Profile Two Style =====*/
+.profile-two {
+  padding-bottom: 50px;
+  .cover-image {
+    background-image: url(../../images/profile/profile-02/cover.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 250px;
+    @media #{$xs} {
+      height: 180px;
+    }
+  }
+  .pf-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 20px;
+    @media #{$xs} {
+      display: block;
+      padding: 0;
+    }
+    .pf-img-des {
+      display: flex;
+      @media #{$xs} {
+        display: block;
+        text-align: center;
+      }
+      .image {
+        border: 4px solid var(--white);
+        position: relative;
+        top: -40px;
+        border-radius: 8px;
+        @media #{$xs} {
+          position: relative;
+          top: 0;
+          margin-top: -40px;
+          margin-bottom: 5px;
+        }
+        @media #{$xs} {
+          display: inline-block;
+        }
+        img {
+          width: 100px;
+          border-radius: 4px;
+        }
+      }
+      .des {
+        margin-left: 15px;
+        padding-top: 10px;
+        @media #{$xs} {
+          margin: 0;
+        }
+      }
+    }
+    .social {
+      padding-top: 10px;
+      display: flex;
+      @media #{$xs} {
+        display: block;
+        text-align: center;
+        margin-top: 5px;
+      }
+      ul {
+        li {
+          display: inline-block;
+          margin-right: 5px;
+          &:last-child {
+            margin: 0;
+          }
+
+          a {
+            height: 38px;
+            width: 38px;
+            line-height: 38px;
+            text-align: center;
+            border: 1px solid var(--gray-4);
+            color: var(--dark-3);
+            border-radius: 50%;
+            font-size: 15px;
+            @include transition(0.2s);
+
+            &:hover {
+              background-color: var(--primary);
+              color: var(--white);
+              border-color: transparent;
+            }
+          }
+        }
+      }
+      .button {
+        margin-left: 15px;
+        @media #{$xs} {
+          margin: 0;
+          margin-top: 15px;
+        }
+        .primary-btn {
+          @extend %primary-btn;
+          text-transform: capitalize;
+          font-size: 14px;
+          font-weight: 500;
+          padding: 7px 15px;
+        }
+      }
+    }
+  }
+}

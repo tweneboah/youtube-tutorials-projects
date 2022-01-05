@@ -1,0 +1,248 @@
+/*===== VIDEO THREE =====*/
+.video-three {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  background-color: var(--light-2);
+  /* Section Title Four */
+}
+.video-three .video-active {
+  margin: 0;
+}
+.video-three .section-title-four {
+  text-align: center;
+  max-width: 550px;
+  margin: auto;
+  margin-bottom: 50px;
+  position: relative;
+  z-index: 5;
+  margin-top: 12px;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .video-three .section-title-four {
+    margin-bottom: 45px;
+  }
+}
+@media (max-width: 767px) {
+  .video-three .section-title-four {
+    margin-bottom: 35px;
+  }
+}
+.video-three .section-title-four span {
+  text-transform: uppercase;
+  color: var(--primary);
+  display: inline-block;
+  margin-bottom: 16px;
+  font-size: 14px;
+  font-weight: 600;
+}
+@media (max-width: 767px) {
+  .video-three .section-title-four span {
+    margin-bottom: 15px;
+  }
+}
+.video-three .section-title-four h2 {
+  margin-bottom: 15px;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .video-three .section-title-four h2 {
+    font-size: 2rem;
+    line-height: 2.8rem;
+  }
+}
+@media (max-width: 767px) {
+  .video-three .section-title-four h2 {
+    font-size: 1.5rem;
+    line-height: 1.9rem;
+  }
+}
+.video-three .section-title-four h3 {
+  font-size: 3.8rem;
+  line-height: 3.8rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  position: absolute;
+  top: -18px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  color: var(--gray-3);
+  z-index: -1;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-color: var(--gray-3);
+  opacity: 0.5;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .video-three .section-title-four h3 {
+    font-size: 3.3rem;
+    line-height: 3.5rem;
+    top: -18px;
+  }
+}
+@media (max-width: 767px) {
+  .video-three .section-title-four h3 {
+    font-size: 2.7rem;
+    line-height: 3.2rem;
+    top: -17px;
+  }
+}
+.video-three .section-title-four p {
+  color: var(--dark-3);
+}
+.video-three .single-video-items {
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.video-three .single-video-items .video-image img {
+  width: 100%;
+}
+.video-three .single-video-items .video-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.video-three .single-video-items .video-icon::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--primary);
+  opacity: 0;
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+}
+.video-three .single-video-items .video-icon a {
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  background-color: var(--white);
+  font-size: 20px;
+  color: var(--primary);
+  border-radius: 50%;
+  padding-left: 5px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+  opacity: 0;
+  visibility: hidden;
+}
+@media (max-width: 767px) {
+  .video-three .single-video-items .video-icon a {
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    font-size: 20px;
+    border: 2px solid var(--white);
+  }
+}
+.video-three .single-video-items:hover .video-icon::before {
+  opacity: 0.8;
+}
+.video-three .single-video-items:hover .video-icon a {
+  -webkit-transform: translate(-50%, -50%) scale(1.1);
+  -moz-transform: translate(-50%, -50%) scale(1.1);
+  -ms-transform: translate(-50%, -50%) scale(1.1);
+  -o-transform: translate(-50%, -50%) scale(1.1);
+  transform: translate(-50%, -50%) scale(1.1);
+  opacity: 1;
+  visibility: visible;
+}
+.video-three .video-active-wrapper {
+  position: relative;
+}
+.video-three .video-active-wrapper .tns-nav {
+  position: absolute;
+  left: 0;
+  bottom: -40px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.video-three .video-active-wrapper .tns-nav button {
+  width: 12px;
+  height: 12px;
+  border: none;
+  background: var(--black);
+  border-radius: 50%;
+  margin: 0 5px;
+}
+.video-three .video-active-wrapper .tns-controls {
+  z-index: 2;
+}
+.video-three .video-active-wrapper .tns-controls button {
+  background: var(--primary);
+  border: none;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  font-size: 40px;
+  line-height: 30px;
+  color: var(--white);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+  height: 50px;
+  width: 50px;
+  z-index: 9;
+  border-radius: 50%;
+}
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+  .video-three .video-active-wrapper .tns-controls button {
+    left: 0;
+    font-size: 22px;
+  }
+}
+@media (max-width: 767px), only screen and (min-width: 992px) and (max-width: 1199px) {
+  .video-three .video-active-wrapper .tns-controls button {
+    font-size: 24px;
+    left: 0;
+  }
+}
+.video-three .video-active-wrapper .tns-controls button:hover {
+  background-color: var(--white);
+  color: var(--primary);
+}
+.video-three .video-active-wrapper .tns-controls button[data-controls=next] {
+  left: auto;
+  right: 0;
+}
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+  .video-three .video-active-wrapper .tns-controls button[data-controls=next] {
+    right: 0;
+    font-size: 28px;
+  }
+}
+@media (max-width: 767px), only screen and (min-width: 992px) and (max-width: 1199px) {
+  .video-three .video-active-wrapper .tns-controls button[data-controls=next] {
+    right: -24px;
+  }
+}
+
+/*# sourceMappingURL=video-03.css.map */

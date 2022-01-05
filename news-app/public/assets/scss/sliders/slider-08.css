@@ -1,0 +1,155 @@
+/* ===== Buttons Css ===== */
+.carousel-section-wrapper .carousel-section.carousel-item .carousel-content .rounded-buttons .primary-btn-outline {
+  border-color: var(--primary);
+  color: var(--primary);
+}
+.carousel-section-wrapper .carousel-section.carousel-item .carousel-content .rounded-buttons .active.primary-btn-outline, .carousel-section-wrapper .carousel-section.carousel-item .carousel-content .rounded-buttons .primary-btn-outline:hover, .carousel-section-wrapper .carousel-section.carousel-item .carousel-content .rounded-buttons .primary-btn-outline:focus {
+  background: var(--primary-dark);
+  color: var(--white);
+}
+.carousel-section-wrapper .carousel-section.carousel-item .carousel-content .rounded-buttons .deactive.primary-btn-outline {
+  color: var(--dark-3);
+  border-color: var(--gray-4);
+  pointer-events: none;
+}
+
+/* ======== slider 8 css =========== */
+.carousel-section-wrapper {
+  position: relative;
+  z-index: 3;
+}
+.carousel-section-wrapper .carousel-section {
+  position: relative;
+  z-index: 3;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-top: 150px;
+  padding-bottom: 150px;
+}
+.carousel-section-wrapper .carousel-section.clip-bg::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: linear-gradient(to right, rgba(111, 88, 232, 0.8) 0%, #3763eb 100%);
+}
+.carousel-section-wrapper .carousel-section.carousel-item .carousel-content .section-title h2 {
+  margin-bottom: 25px;
+  font-size: 45px;
+  font-weight: 700;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .carousel-section-wrapper .carousel-section.carousel-item .carousel-content .section-title h2 {
+    font-size: 40px;
+  }
+}
+@media (max-width: 767px) {
+  .carousel-section-wrapper .carousel-section.carousel-item .carousel-content .section-title h2 {
+    font-size: 30px;
+  }
+}
+.carousel-section-wrapper .carousel-section.carousel-item .carousel-content .section-title p {
+  margin-bottom: 40px;
+  font-size: 17px;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .carousel-section-wrapper .carousel-section.carousel-item .carousel-content .section-title p {
+    font-size: 15px;
+  }
+}
+@media (max-width: 767px) {
+  .carousel-section-wrapper .carousel-section.carousel-item .carousel-content .section-title p {
+    font-size: 14px;
+  }
+}
+.carousel-section-wrapper .carousel-section.carousel-item .carousel-content .rounded-buttons .primary-btn-outline {
+  border-color: var(--white);
+  color: var(--white);
+}
+.carousel-section-wrapper .carousel-section.carousel-item .carousel-content .rounded-buttons .primary-btn-outline:hover {
+  background: var(--white);
+  color: var(--primary);
+}
+.carousel-section-wrapper .carousel-control {
+  background: none;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid var(--white);
+  color: var(--white);
+  top: 50%;
+  left: 30px;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  font-size: 25px;
+  z-index: 99;
+  -webkit-transition: all 0.4s ease-out 0s;
+  -moz-transition: all 0.4s ease-out 0s;
+  -ms-transition: all 0.4s ease-out 0s;
+  -o-transition: all 0.4s ease-out 0s;
+  transition: all 0.4s ease-out 0s;
+}
+.carousel-section-wrapper .carousel-control:hover {
+  background: var(--white);
+  color: var(--primary);
+}
+.carousel-section-wrapper .carousel-control.carousel-control-next {
+  left: auto;
+  right: 30px;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .carousel-section-wrapper .carousel-control {
+    top: auto;
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+    bottom: 80px;
+    margin: auto;
+  }
+  .carousel-section-wrapper .carousel-control.carousel-control-prev {
+    left: 42%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .carousel-section-wrapper .carousel-control.carousel-control-next {
+    left: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (max-width: 767px) {
+  .carousel-section-wrapper .carousel-control {
+    top: auto;
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+    bottom: 80px;
+    margin: auto;
+  }
+  .carousel-section-wrapper .carousel-control.carousel-control-prev {
+    left: 37%;
+  }
+  .carousel-section-wrapper .carousel-control.carousel-control-next {
+    left: 23%;
+  }
+}
+.carousel-section-wrapper .carousel-control span {
+  background: none;
+  width: auto;
+  height: auto;
+}
+
+/*# sourceMappingURL=slider-08.css.map */

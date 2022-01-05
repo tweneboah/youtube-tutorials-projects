@@ -1,0 +1,228 @@
+@import "../variables";
+@import "../mixin";
+@import "../buttons/buttons";
+
+/*===== SLIDER FIVE =====*/
+
+.slider-five {
+  background-color: var(--primary);
+  position: relative;
+
+  & .slider-content {
+    max-width: 560px;
+    margin: 0 auto;
+    padding: 180px 0;
+
+    @media #{$md} {
+      padding-top: 80px;
+      padding-bottom: 80px;
+    }
+
+    @media #{$xs} {
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+
+    & .slider-title {
+      font-size: 44px;
+      font-weight: 600;
+      color: var(--white);
+      line-height: 55px;
+
+      @media #{$xs} {
+        font-size: 28px;
+        line-height: 38px;
+      }
+    }
+
+    & .text {
+      color: var(--white);
+      margin-top: 16px;
+    }
+
+    & .slider-newsletter {
+      max-width: 410px;
+      position: relative;
+      margin-top: 30px;
+
+      & i {
+        font-size: 26px;
+        color: var(--primary);
+        position: absolute;
+        left: 18px;
+        top: 12px;
+      }
+
+      & input {
+        width: 100%;
+        height: 46px;
+        border: 0;
+        border-radius: 5px;
+        background-color: var(--white);
+        padding-left: 60px;
+        padding-right: 165px;
+
+        @include placeholder {
+          opacity: 1;
+          color: var(--dark-3);
+        }
+      }
+
+      & .slider-btn {
+        border: 0;
+        position: absolute;
+        top: 0;
+        right: 0;
+
+        @media #{$xs} {
+          position: relative;
+          right: auto;
+          margin-top: 15px;
+        }
+
+        & .primary-btn {
+          @extend %primary-btn;
+          background-color: var(--white);
+          border-left: 1px solid rgb(211, 211, 211);
+          border-radius: 0 5px 5px 0;
+          box-shadow: none;
+          color: var(--primary);
+          font-weight: 600;
+          text-transform: uppercase;
+
+          &:hover {
+            background-color: var(--white);
+            box-shadow: none;
+            color: var(--black);
+          }
+
+          @media #{$xs} {
+            width: 100%;
+            border-radius: 5px;
+            border: none;
+          }
+        }
+      }
+    }
+  }
+
+  & .carousel {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+
+    @media #{$md} {
+      height: 720px;
+      position: relative;
+      width: 100%;
+    }
+
+    @media #{$xs} {
+      height: 420px;
+      position: relative;
+      width: 100%;
+    }
+
+    & .carousel-inner {
+      height: 100%;
+      width: 100%;
+
+      & .carousel-item {
+        height: 100%;
+        width: 100%;
+      }
+    }
+
+    & .carousel-control-prev,
+    & .carousel-control-next {
+      top: 50%;
+      width: auto;
+      height: auto;
+      font-size: 32px;
+      @include transform(translateY(-50%));
+      bottom: auto;
+      left: 40px;
+      opacity: 1;
+      z-index: 99;
+      @include transition(0.3s);
+      border: 1px solid var(--white);
+      color: var(--white);
+      padding: 10px;
+      border-radius: 8px;
+      font-size: 22px;
+      opacity: 0.7;
+
+      &:hover {
+        opacity: 1;
+        background-color: var(--white);
+        color: var(--primary);
+        border-color: transparent;
+      }
+
+      @media #{$lg} {
+        left: 30px;
+      }
+
+      @media #{$md} {
+        left: 30px;
+      }
+
+      @media #{$xs} {
+        left: 20px;
+        font-size: 20px;
+      }
+
+      @media #{$sm} {
+        font-size: 34px;
+      }
+    }
+
+    & .carousel-control-next {
+      right: 70px;
+      left: auto;
+
+      @media #{$lg} {
+        right: 40px;
+      }
+
+      @media #{$md} {
+        right: 40px;
+      }
+
+      @media #{$xs} {
+        right: 20px;
+      }
+    }
+
+    & .carousel-indicators {
+      margin-bottom: 40px;
+
+      @media #{$md} {
+        margin-bottom: 30px;
+      }
+
+      @media #{$xs} {
+        margin-bottom: 30px;
+      }
+
+      & li {
+        width: 10px;
+        height: 10px;
+        background-color: var(--white);
+        border-radius: 50px;
+        border: 0;
+        @include transition(0.4s);
+        opacity: 1;
+        margin: 0px 5px;
+
+        &.active {
+          width: 20px;
+          background-color: var(--primary);
+          border-radius: 5px;
+        }
+      }
+    }
+  }
+}

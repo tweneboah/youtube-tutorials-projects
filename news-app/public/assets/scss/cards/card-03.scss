@@ -1,0 +1,55 @@
+@import "../variables";
+@import "../mixin";
+
+/*===========================
+  card-03 css 
+===========================*/
+
+.card-style-three {
+  @include box-shadow(var(--shadow-1));
+  border-radius: 8px;
+  overflow: hidden;
+  margin-top: 30px;
+  @include transition(0.3s);
+
+  &:hover {
+    @include box-shadow(var(--shadow-4));
+  }
+
+  & .card-image {
+    & img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  & .card-content {
+    background: var(--primary);
+    padding: 16px;
+
+    & .card-title {
+      margin-bottom: 0;
+
+      & a {
+        color: var(--white);
+        @include transition(0.3s);
+
+        &:hover {
+          color: var(--white);
+        }
+      }
+    }
+
+    & .text {
+      color: var(--white);
+      margin-top: 8px;
+    }
+
+    & .card-btn {
+      margin-top: 24px;
+
+      & .main-btn {
+        line-height: 48px;
+      }
+    }
+  }
+}

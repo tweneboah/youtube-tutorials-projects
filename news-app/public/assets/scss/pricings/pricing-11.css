@@ -1,0 +1,93 @@
+/* ===== Buttons Css ===== */
+.pricing-style-eleven .primary-btn {
+  background: var(--primary);
+  color: var(--white);
+  box-shadow: var(--shadow-2);
+}
+.pricing-style-eleven .active.primary-btn, .pricing-style-eleven .primary-btn:hover, .pricing-style-eleven .primary-btn:focus {
+  background: var(--primary-dark);
+  color: var(--white);
+  box-shadow: var(--shadow-4);
+}
+.pricing-style-eleven .deactive.primary-btn {
+  background: var(--gray-4);
+  color: var(--dark-3);
+  pointer-events: none;
+}
+
+/*===== PRICING ELEVEN =====*/
+.pricing-eleven {
+  padding: 100px 0;
+}
+
+.pricing-style-eleven {
+  box-shadow: var(--shadow-2);
+  border-radius: 8px;
+  position: relative;
+  overflow: hidden;
+  background-color: var(--white);
+  margin-top: 50px;
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+}
+.pricing-style-eleven:hover {
+  box-shadow: var(--shadow-4);
+}
+.pricing-style-eleven .pricing-header {
+  background-color: var(--primary);
+  padding: 15px 20px;
+}
+.pricing-style-eleven .sub-title {
+  color: var(--white);
+  position: relative;
+}
+.pricing-style-eleven .pricing-list {
+  padding: 50px 40px;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
+  .pricing-style-eleven .pricing-list {
+    padding: 35px 30px;
+  }
+}
+.pricing-style-eleven .pricing-list .price {
+  font-size: 55px;
+  font-weight: 600;
+  line-height: 60px;
+  color: var(--black);
+}
+@media (max-width: 767px) {
+  .pricing-style-eleven .pricing-list .price {
+    font-size: 45px;
+    margin-top: 16px;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .pricing-style-eleven .pricing-list .price {
+    font-size: 50px;
+    margin-top: 20px;
+  }
+}
+.pricing-style-eleven .pricing-list .year {
+  color: var(--dark-3);
+  margin-top: 5px;
+}
+.pricing-style-eleven .pricing-list ul {
+  margin-top: 40px;
+}
+.pricing-style-eleven .pricing-list ul li {
+  color: var(--dark-3);
+  margin-top: 16px;
+}
+.pricing-style-eleven .pricing-list ul li i {
+  color: var(--primary);
+  margin-right: 8px;
+}
+.pricing-style-eleven .primary-btn {
+  width: 100%;
+  padding: 15px 20px;
+}
+
+/*# sourceMappingURL=pricing-11.css.map */

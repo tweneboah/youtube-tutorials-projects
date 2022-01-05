@@ -1,0 +1,125 @@
+@import "../variables";
+@import "../mixin";
+
+/*===========================
+  services css 
+===========================*/
+.services-eight {
+  padding-top: 100px;
+  padding-bottom: 70px;
+
+  /* Section Title Three */
+  .section-title-three {
+    text-align: center;
+    max-width: 550px;
+    margin: auto;
+    margin-bottom: 50px;
+    position: relative;
+    z-index: 5;
+
+    @media #{$md} {
+      margin-bottom: 45px;
+    }
+
+    @media #{$xs} {
+      margin-bottom: 35px;
+    }
+
+    h5 {
+      font-weight: 600;
+      margin-bottom: 7px;
+      color: var(--primary);
+      text-transform: uppercase;
+      font-size: 1rem;
+
+      @media #{$xs} {
+        font-size: 0.8rem;
+      }
+    }
+
+    h2 {
+      margin-bottom: 15px;
+
+      @media #{$md} {
+        font-size: 2rem;
+        line-height: 2.8rem;
+      }
+
+      @media #{$xs} {
+        font-size: 1.5rem;
+        line-height: 1.9rem;
+      }
+    }
+
+    p {
+      color: var(--dark-3);
+    }
+  }
+
+  .single-services {
+    padding: 40px 30px;
+    border: 1px solid var(--light-1);
+    border-radius: 10px;
+    margin-bottom: 30px;
+    @include transition(0.3s);
+
+    &:hover {
+      box-shadow: var(--shadow-4);
+
+      .service-icon {
+        color: var(--white);
+        border-color: transparent;
+        background: var(--primary);
+
+        &::after {
+          opacity: 1;
+          visibility: visible;
+        }
+      }
+    }
+
+    .service-icon {
+      width: 78px;
+      height: 78px;
+      border-radius: 50%;
+      margin-bottom: 25px;
+      background: var(--white);
+      border: 2px solid var(--primary);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--primary);
+      font-size: 40px;
+      @include transition(0.3s);
+      position: relative;
+
+      &::after {
+        content: "";
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        position: absolute;
+        opacity: 0;
+        visibility: hidden;
+        background: var(--primary);
+        @include transition(0.3s);
+        z-index: -1;
+        border-radius: 50%;
+        border: 1px solid transparent;
+      }
+    }
+
+    .service-content {
+      h4 {
+        font-size: 20px;
+        font-weight: 600;
+        margin-bottom: 20px;
+      }
+
+      p {
+        color: var(--dark-3);
+      }
+    }
+  }
+}

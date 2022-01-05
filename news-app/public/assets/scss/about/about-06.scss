@@ -1,0 +1,81 @@
+@import "../variables";
+@import "../mixin";
+
+/*===========================
+  about-06 css
+===========================*/
+.about-six {
+  padding-top: 90px;
+  padding-bottom: 120px;
+  position: relative;
+
+  & .faq-title {
+    & .sub-title {
+      color: var(--primary);
+      text-transform: uppercase;
+    }
+    & .title {
+      padding-top: 10px;
+    }
+  }
+
+  & .faq-accordion {
+    margin-top: 45px;
+
+    & .accordion {
+      & .card {
+        border: 0;
+        background: none;
+
+        & .card-header {
+          padding: 0;
+          border: 0;
+          background: none;
+          margin-top: 40px;
+
+          & a {
+            font-size: 18px;
+            font-weight: 500;
+            color: var(--black);
+            display: block;
+            position: relative;
+            padding-right: 20px;
+
+            @media #{$lg} {
+              font-size: 16px;
+            }
+            @media #{$xs} {
+              font-size: 16px;
+            }
+
+            &::before {
+              content: "\eb30";
+              font-family: "LineIcons";
+              position: absolute;
+              top: 50%;
+              right: 0;
+              @include transform(translateY(-50%));
+            }
+          }
+
+          & .collapsed {
+            &::before {
+              content: "\eb5c";
+            }
+          }
+        }
+        & .card-body {
+          padding: 20px 20px 0;
+        }
+      }
+    }
+  }
+
+  & .faq-image {
+    margin-top: 50px;
+
+    & img {
+      width: 100%;
+    }
+  }
+}

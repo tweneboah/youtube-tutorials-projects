@@ -1,0 +1,140 @@
+/* ===== Buttons Css ===== */
+.profile-two .pf-content .social .button .primary-btn {
+  background: var(--primary);
+  color: var(--white);
+  box-shadow: var(--shadow-2);
+}
+.profile-two .pf-content .social .button .active.primary-btn, .profile-two .pf-content .social .button .primary-btn:hover, .profile-two .pf-content .social .button .primary-btn:focus {
+  background: var(--primary-dark);
+  color: var(--white);
+  box-shadow: var(--shadow-4);
+}
+.profile-two .pf-content .social .button .deactive.primary-btn {
+  background: var(--gray-4);
+  color: var(--dark-3);
+  pointer-events: none;
+}
+
+/*===== Profile Two Style =====*/
+.profile-two {
+  padding-bottom: 50px;
+}
+.profile-two .cover-image {
+  background-image: url(../../images/profile/profile-02/cover.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 250px;
+}
+@media (max-width: 767px) {
+  .profile-two .cover-image {
+    height: 180px;
+  }
+}
+.profile-two .pf-content {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 20px;
+}
+@media (max-width: 767px) {
+  .profile-two .pf-content {
+    display: block;
+    padding: 0;
+  }
+}
+.profile-two .pf-content .pf-img-des {
+  display: flex;
+}
+@media (max-width: 767px) {
+  .profile-two .pf-content .pf-img-des {
+    display: block;
+    text-align: center;
+  }
+}
+.profile-two .pf-content .pf-img-des .image {
+  border: 4px solid var(--white);
+  position: relative;
+  top: -40px;
+  border-radius: 8px;
+}
+@media (max-width: 767px) {
+  .profile-two .pf-content .pf-img-des .image {
+    position: relative;
+    top: 0;
+    margin-top: -40px;
+    margin-bottom: 5px;
+  }
+}
+@media (max-width: 767px) {
+  .profile-two .pf-content .pf-img-des .image {
+    display: inline-block;
+  }
+}
+.profile-two .pf-content .pf-img-des .image img {
+  width: 100px;
+  border-radius: 4px;
+}
+.profile-two .pf-content .pf-img-des .des {
+  margin-left: 15px;
+  padding-top: 10px;
+}
+@media (max-width: 767px) {
+  .profile-two .pf-content .pf-img-des .des {
+    margin: 0;
+  }
+}
+.profile-two .pf-content .social {
+  padding-top: 10px;
+  display: flex;
+}
+@media (max-width: 767px) {
+  .profile-two .pf-content .social {
+    display: block;
+    text-align: center;
+    margin-top: 5px;
+  }
+}
+.profile-two .pf-content .social ul li {
+  display: inline-block;
+  margin-right: 5px;
+}
+.profile-two .pf-content .social ul li:last-child {
+  margin: 0;
+}
+.profile-two .pf-content .social ul li a {
+  height: 38px;
+  width: 38px;
+  line-height: 38px;
+  text-align: center;
+  border: 1px solid var(--gray-4);
+  color: var(--dark-3);
+  border-radius: 50%;
+  font-size: 15px;
+  -webkit-transition: all 0.2s ease-out 0s;
+  -moz-transition: all 0.2s ease-out 0s;
+  -ms-transition: all 0.2s ease-out 0s;
+  -o-transition: all 0.2s ease-out 0s;
+  transition: all 0.2s ease-out 0s;
+}
+.profile-two .pf-content .social ul li a:hover {
+  background-color: var(--primary);
+  color: var(--white);
+  border-color: transparent;
+}
+.profile-two .pf-content .social .button {
+  margin-left: 15px;
+}
+@media (max-width: 767px) {
+  .profile-two .pf-content .social .button {
+    margin: 0;
+    margin-top: 15px;
+  }
+}
+.profile-two .pf-content .social .button .primary-btn {
+  text-transform: capitalize;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 7px 15px;
+}
+
+/*# sourceMappingURL=profile-02.css.map */

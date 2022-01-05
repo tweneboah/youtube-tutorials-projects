@@ -1,0 +1,67 @@
+/*===========================
+  services css 
+===========================*/
+.services-three {
+  position: relative;
+  background-color: var(--light-2);
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.services-three .image {
+  border-radius: 8px;
+  overflow: hidden;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .services-three .image {
+    margin-top: 35px;
+  }
+}
+@media (max-width: 767px) {
+  .services-three .image {
+    margin-top: 30px;
+  }
+}
+.services-three .services-content .sub-title {
+  color: var(--primary);
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+.services-three .services-content .services-title {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 55px;
+  color: var(--black);
+  margin-top: 16px;
+  text-transform: capitalize;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .services-three .services-content .services-title {
+    font-size: 35px;
+    line-height: 48px;
+  }
+}
+@media (max-width: 767px) {
+  .services-three .services-content .services-title {
+    font-size: 30px;
+    line-height: 42px;
+  }
+}
+.services-three .services-content .text {
+  color: var(--dark-3);
+  line-height: 25px;
+  margin-top: 20px;
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .services-three .services-content .text {
+    font-size: 18px;
+  }
+}
+@media (max-width: 767px) {
+  .services-three .services-content .text {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+/*# sourceMappingURL=service-03.css.map */

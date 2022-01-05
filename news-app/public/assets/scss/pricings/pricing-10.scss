@@ -1,0 +1,80 @@
+@import "../variables";
+@import "../mixin";
+@import "../buttons/buttons";
+
+/*===== PRICING TEN =====*/
+
+.pricing-ten {
+  padding: 100px 0;
+}
+
+.pricing-style-ten {
+  box-shadow: var(--shadow-2);
+  border-radius: 8px;
+  position: relative;
+  overflow: hidden;
+  background-color: var(--white);
+  margin-top: 50px;
+
+  & .pricing-header {
+    background: var(--secondary);
+    padding: 30px;
+  }
+
+  & .sub-title {
+    color: var(--white);
+    position: relative;
+  }
+
+  & .price {
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 60px;
+    color: var(--white);
+
+    @media #{$xs} {
+      font-size: 40px;
+    }
+
+    @media #{$sm} {
+      font-size: 45px;
+    }
+  }
+
+  & .year {
+    color: var(--white);
+  }
+
+  & .pricing-list {
+    padding: 50px 30px;
+
+    & li {
+      color: var(--dark-3);
+      margin-top: 16px;
+
+      &:first-child {
+        margin: 0;
+      }
+
+      & i {
+        margin-right: 8px;
+        color: var(--primary);
+
+        &.deactive {
+          color: var(--dark-3);
+        }
+      }
+    }
+  }
+
+  .primary-btn {
+    @extend %primary-btn;
+    width: 100%;
+    background-color: var(--secondary);
+    padding: 15px 20px;
+
+    &:hover {
+      background-color: var(--secondary-dark);
+    }
+  }
+}

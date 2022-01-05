@@ -1,0 +1,263 @@
+/* ===== Buttons Css ===== */
+.signin-area-five .primary-btn {
+  background: var(--primary);
+  color: var(--white);
+  box-shadow: var(--shadow-2);
+}
+.signin-area-five .active.primary-btn, .signin-area-five .primary-btn:hover, .signin-area-five .primary-btn:focus {
+  background: var(--primary-dark);
+  color: var(--white);
+  box-shadow: var(--shadow-4);
+}
+.signin-area-five .deactive.primary-btn {
+  background: var(--gray-4);
+  color: var(--dark-3);
+  pointer-events: none;
+}
+
+.signin-area-five .error-btn {
+  background: var(--error);
+  color: var(--white);
+  box-shadow: var(--shadow-2);
+}
+.signin-area-five .active.error-btn, .signin-area-five .error-btn:hover, .signin-area-five .error-btn:focus {
+  background: var(--error-dark);
+  color: var(--white);
+  box-shadow: var(--shadow-4);
+}
+.signin-area-five .deactive.error-btn {
+  background: var(--error-light);
+  color: var(--dark-3);
+  pointer-events: none;
+}
+
+/*===========================
+    SING IN SING UP css 
+===========================*/
+.signin-area-five {
+  position: relative;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: var(--white);
+}
+.signin-area-five .sing-in-form-area {
+  background-color: var(--primary);
+  border-radius: 8px;
+  padding: 55px;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .signin-area-five .sing-in-form-area {
+    padding: 50px;
+  }
+}
+@media (max-width: 767px) {
+  .signin-area-five .sing-in-form-area {
+    padding: 40px;
+  }
+}
+.signin-area-five .sing-in-title {
+  font-size: 32px;
+  font-weight: 600;
+  color: var(--white);
+}
+.signin-area-five .sing-in-title i {
+  color: var(--white);
+  margin-right: 8px;
+}
+.signin-area-five .sing-in-title span {
+  font-weight: 400;
+  color: var(--white);
+}
+.signin-area-five .text {
+  font-size: 16px;
+  margin-top: 25px;
+  color: var(--white);
+}
+.signin-area-five .form-input {
+  margin-top: 24px;
+}
+.signin-area-five .form-input .help-block {
+  margin-top: 2px;
+}
+.signin-area-five .form-input .help-block .list-unstyled li {
+  font-size: 12px;
+  line-height: 16px;
+  color: var(--error);
+}
+.signin-area-five .form-input label {
+  font-size: 15px;
+  line-height: 18px;
+  color: var(--white);
+  margin-bottom: 8px;
+  display: inline-block;
+}
+.signin-area-five .form-input .input-items {
+  position: relative;
+}
+.signin-area-five .form-input .input-items input, .signin-area-five .form-input .input-items textarea {
+  width: 100%;
+  height: 50px;
+  border: 2px solid;
+  padding-left: 44px;
+  padding-right: 12px;
+  position: relative;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+}
+.signin-area-five .form-input .input-items textarea {
+  padding-top: 8px;
+  height: 130px;
+  resize: none;
+}
+.signin-area-five .form-input .input-items i {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  left: 13px;
+  font-size: 20px;
+  z-index: 9;
+}
+.signin-area-five .form-input .input-items.default input, .signin-area-five .form-input .input-items.default textarea {
+  border-color: var(--gray-4);
+  color: var(--dark-3);
+  border-radius: 4px;
+}
+.signin-area-five .form-input .input-items.default input:focus, .signin-area-five .form-input .input-items.default textarea:focus {
+  border-color: var(--primary);
+}
+.signin-area-five .form-input .input-items.default input::placeholder, .signin-area-five .form-input .input-items.default textarea::placeholder {
+  color: var(--dark-3);
+  opacity: 1;
+}
+.signin-area-five .form-input .input-items.default i {
+  color: var(--dark-3);
+}
+.signin-area-five .form-input .input-items.error input, .signin-area-five .form-input .input-items.error textarea {
+  border-color: var(--error);
+  color: var(--error);
+  border-radius: 4px;
+}
+.signin-area-five .form-input .input-items.error input::placeholder, .signin-area-five .form-input .input-items.error textarea::placeholder {
+  color: var(--error);
+  opacity: 1;
+}
+.signin-area-five .form-input .input-items.error i {
+  color: var(--error);
+}
+.signin-area-five .primary-btn {
+  width: 100%;
+  margin-top: 45px;
+  font-weight: 500;
+  background-color: var(--primary-dark);
+  border-radius: 4px;
+  text-transform: capitalize;
+  letter-spacing: 0;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .signin-area-five .primary-btn {
+    margin-top: 40px;
+  }
+}
+@media (max-width: 767px) {
+  .signin-area-five .primary-btn {
+    margin-top: 40px;
+  }
+}
+.signin-area-five .primary-btn:hover {
+  background-color: var(--white);
+  color: var(--primary);
+}
+.signin-area-five .error-btn {
+  width: 100%;
+  margin-top: 45px;
+  font-weight: 500;
+  border-radius: 4px;
+  text-transform: capitalize;
+  letter-spacing: 0;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .signin-area-five .error-btn {
+    margin-top: 40px;
+  }
+}
+@media (max-width: 767px) {
+  .signin-area-five .error-btn {
+    margin-top: 20px;
+  }
+}
+.signin-area-five .form-checkbox {
+  margin-top: 45px;
+}
+.signin-area-five .form-checkbox span {
+  font-size: 17px;
+  color: var(--white);
+}
+.signin-area-five .form-checkbox input[type=checkbox] {
+  display: none;
+}
+.signin-area-five .form-checkbox input[type=checkbox] + label {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin: -3px 10px 0 0;
+  vertical-align: middle;
+  cursor: pointer;
+  border-radius: 3px;
+  border: 1px solid var(--white);
+  position: relative;
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+}
+.signin-area-five .form-checkbox input[type=checkbox] + label::before {
+  color: var(--white);
+  content: "";
+  font-size: 16px;
+  position: absolute;
+  text-align: center;
+  left: 2px;
+  top: -4px;
+  -webkit-transform: scale(0);
+  -moz-transform: scale(0);
+  -ms-transform: scale(0);
+  -o-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+}
+.signin-area-five .form-checkbox input[type=checkbox]:checked + label {
+  background: var(--white);
+  border-color: var(--white);
+}
+.signin-area-five .form-checkbox input[type=checkbox]:checked + label::before {
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+}
+.signin-area-five .new-user {
+  margin-top: 15px;
+}
+.signin-area-five .new-user .text {
+  font-size: 18px;
+  color: var(--white);
+}
+.signin-area-five .new-user .text a {
+  color: var(--white);
+}
+.signin-area-five .new-user .text a:hover {
+  text-decoration: underline;
+}
+
+/*# sourceMappingURL=sign-in-up-05.css.map */

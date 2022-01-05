@@ -1,0 +1,120 @@
+@import "../variables";
+@import "../mixin";
+@import "../buttons/buttons";
+
+/*===== HEADER FOUR =====*/
+
+.header-four {
+  position: relative;
+
+  & .header-content-area {
+    background: -webkit-linear-gradient(rgba(222, 235, 253, 1) 0%,
+        rgba(255, 255, 255, 0) 100%);
+    background: -o-linear-gradient(rgba(222, 235, 253, 1) 0%,
+        rgba(255, 255, 255, 0) 100%);
+    background: linear-gradient(rgba(222, 235, 253, 1) 0%,
+        rgba(255, 255, 255, 0) 100%);
+  }
+
+  & .header-content {
+    padding-top: 220px;
+
+    @media #{$lg, $md} {
+      padding-top: 150px;
+    }
+
+    @media #{$xs} {
+      padding-top: 120px;
+    }
+  }
+
+  & .header-title {
+    font-size: 44px;
+    line-height: 55px;
+    color: var(--black);
+    font-weight: 600;
+
+    @media #{$xs} {
+      font-size: 30px;
+      line-height: 35px;
+    }
+
+    @media #{$sm} {
+      font-size: 36px;
+      line-height: 45px;
+    }
+  }
+
+  & .text {
+    color: var(--dark-3);
+    margin-top: 8px;
+  }
+
+  & .header-newsletter {
+    max-width: 410px;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 40px;
+
+    & i {
+      position: absolute;
+      top: 12px;
+      left: 20px;
+      font-size: 24px;
+      color: var(--primary);
+    }
+
+    & input {
+      width: 100%;
+      height: 48px;
+      padding-left: 60px;
+      padding-right: 30px;
+      border-radius: 50px;
+      border: 2px solid var(--light-3);
+      font-size: 16px;
+      font-weight: 600;
+      color: var(--dark-3);
+      padding-right: 170px;
+
+      &:focus {
+        border-color: var(--primary);
+      }
+    }
+
+    & .header-btn {
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+  }
+
+  .primary-btn {
+    @extend %primary-btn;
+  }
+
+  & .header-image {
+    text-align: center;
+    padding-top: 80px;
+
+    img {
+      max-width: 700px;
+    }
+
+    @media #{$xs} {
+      padding-top: 30px;
+    }
+
+    @media #{$md} {
+      padding-top: 50px;
+    }
+
+    & img {
+      width: 100%;
+
+      @media #{$xs} {
+        object-fit: cover;
+        object-position: center;
+      }
+    }
+  }
+}

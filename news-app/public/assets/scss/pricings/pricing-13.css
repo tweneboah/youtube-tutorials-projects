@@ -1,0 +1,114 @@
+/* ===== Buttons Css ===== */
+.pricing-style-thirteen .primary-btn {
+  background: var(--primary);
+  color: var(--white);
+  box-shadow: var(--shadow-2);
+}
+.pricing-style-thirteen .active.primary-btn, .pricing-style-thirteen .primary-btn:hover, .pricing-style-thirteen .primary-btn:focus {
+  background: var(--primary-dark);
+  color: var(--white);
+  box-shadow: var(--shadow-4);
+}
+.pricing-style-thirteen .deactive.primary-btn {
+  background: var(--gray-4);
+  color: var(--dark-3);
+  pointer-events: none;
+}
+
+.pricing-style-thirteen .primary-btn-outline {
+  border-color: var(--primary);
+  color: var(--primary);
+}
+.pricing-style-thirteen .active.primary-btn-outline, .pricing-style-thirteen .primary-btn-outline:hover, .pricing-style-thirteen .primary-btn-outline:focus {
+  background: var(--primary-dark);
+  color: var(--white);
+}
+.pricing-style-thirteen .deactive.primary-btn-outline {
+  color: var(--dark-3);
+  border-color: var(--gray-4);
+  pointer-events: none;
+}
+
+/*===== PRICING THIRTEEN =====*/
+.pricing-thirteen {
+  padding: 100px 0;
+}
+
+.pricing-style-thirteen {
+  padding: 50px;
+  margin-top: 50px;
+  border-radius: 12px;
+}
+@media (max-width: 767px) {
+  .pricing-style-thirteen {
+    padding: 45px 30px 50px;
+  }
+}
+.pricing-style-thirteen .price {
+  font-size: 45px;
+  color: var(--black);
+  font-weight: 700;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .pricing-style-thirteen .price {
+    font-size: 42px;
+  }
+}
+@media (max-width: 767px) {
+  .pricing-style-thirteen .price {
+    font-size: 40px;
+  }
+}
+.pricing-style-thirteen .price span {
+  font-size: 16px;
+  font-weight: 400;
+  display: inline-block;
+  margin-left: 2px;
+  position: relative;
+  top: -2px;
+}
+.pricing-style-thirteen .pricing-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 30px;
+  margin-top: 20px;
+}
+.pricing-style-thirteen .pricing-title .badge {
+  display: inline-block;
+  padding: 8px 15px;
+  border-radius: 50px;
+  background-color: var(--primary);
+  color: var(--white);
+  font-size: 14px;
+  font-weight: 500;
+}
+.pricing-style-thirteen .pricing-title .title {
+  font-weight: 600;
+  font-size: 22px;
+  padding-left: 10px;
+}
+.pricing-style-thirteen .pricing-list {
+  padding-bottom: 10px;
+}
+.pricing-style-thirteen li {
+  color: var(--dark-3);
+  margin-top: 20px;
+}
+.pricing-style-thirteen .pricing-btn {
+  padding-top: 40px;
+}
+.pricing-style-thirteen.pricing-color-1 .pricing-title .badge {
+  background-color: var(--primary);
+}
+.pricing-style-thirteen.pricing-color-2 .pricing-title .badge {
+  background-color: var(--error);
+}
+.pricing-style-thirteen.pricing-color-3 .pricing-title .badge {
+  background-color: var(--success);
+}
+.pricing-style-thirteen.pricing-active {
+  box-shadow: var(--shadow-4);
+}
+
+/*# sourceMappingURL=pricing-13.css.map */

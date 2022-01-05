@@ -1,0 +1,113 @@
+/* ===== Buttons Css ===== */
+.pricing-style-twelve .primary-btn {
+  background: var(--primary);
+  color: var(--white);
+  box-shadow: var(--shadow-2);
+}
+.pricing-style-twelve .active.primary-btn, .pricing-style-twelve .primary-btn:hover, .pricing-style-twelve .primary-btn:focus {
+  background: var(--primary-dark);
+  color: var(--white);
+  box-shadow: var(--shadow-4);
+}
+.pricing-style-twelve .deactive.primary-btn {
+  background: var(--gray-4);
+  color: var(--dark-3);
+  pointer-events: none;
+}
+
+/*===== PRICING TWELVE =====*/
+.pricing-twelve {
+  padding: 100px 0px;
+}
+
+.pricing-style-twelve {
+  box-shadow: var(--shadow-2);
+  padding: 40px 40px;
+  border-radius: 8px;
+  position: relative;
+  overflow: hidden;
+  background-color: var(--white);
+  margin-top: 50px;
+  text-align: center;
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+  border-top: 4px solid transparent;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
+  .pricing-style-twelve {
+    padding: 35px 30px;
+  }
+}
+.pricing-style-twelve:hover {
+  -webkit-transform: translateY(-5px);
+  -moz-transform: translateY(-5px);
+  -ms-transform: translateY(-5px);
+  -o-transform: translateY(-5px);
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-4);
+  border-color: var(--primary);
+}
+.pricing-style-twelve.active {
+  -webkit-transform: translateY(-5px);
+  -moz-transform: translateY(-5px);
+  -ms-transform: translateY(-5px);
+  -o-transform: translateY(-5px);
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-4);
+  border-color: var(--primary);
+}
+.pricing-style-twelve .pricing-icon {
+  font-size: 45px;
+  color: var(--primary);
+}
+.pricing-style-twelve .pricing-header {
+  margin-top: 15px;
+}
+.pricing-style-twelve .sub-title {
+  color: var(--black);
+  display: block;
+  margin-bottom: 10px;
+}
+.pricing-style-twelve .price {
+  display: block;
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 60px;
+  color: var(--black);
+}
+@media (max-width: 767px) {
+  .pricing-style-twelve .price {
+    font-size: 42px;
+    margin-top: 16px;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .pricing-style-twelve .price {
+    font-size: 45px;
+    margin-top: 20px;
+  }
+}
+.pricing-style-twelve .year {
+  color: var(--dark-3);
+  margin-top: 5px;
+}
+.pricing-style-twelve .pricing-list {
+  margin-top: 35px;
+  text-align: left;
+}
+.pricing-style-twelve li {
+  color: var(--dark-3);
+  margin-top: 16px;
+}
+.pricing-style-twelve li i {
+  color: var(--primary);
+  margin-right: 8px;
+}
+.pricing-style-twelve .pricing-btn {
+  margin-top: 35px;
+}
+
+/*# sourceMappingURL=pricing-12.css.map */

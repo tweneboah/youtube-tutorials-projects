@@ -1,0 +1,112 @@
+/*===========================
+  teams css 
+===========================*/
+.team-area {
+  margin-bottom: 70px;
+}
+
+.team-style-five {
+  position: relative;
+  margin-top: 50px;
+}
+.team-style-five .team-image {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  overflow: hidden;
+  text-align: center;
+}
+.team-style-five .team-image img {
+  width: 100%;
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+}
+.team-style-five:hover .team-image img {
+  -webkit-transform: scale(1.2) rotate(2deg);
+  -moz-transform: scale(1.2) rotate(2deg);
+  -ms-transform: scale(1.2) rotate(2deg);
+  -o-transform: scale(1.2) rotate(2deg);
+  transform: scale(1.2) rotate(2deg);
+}
+.team-style-five .team-content {
+  border-radius: 8px;
+  position: relative;
+  background-color: var(--white);
+  padding: 0px 35px;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .team-style-five .team-content {
+    padding: 0;
+    padding-top: 30px;
+    text-align: center;
+  }
+}
+@media (max-width: 767px) {
+  .team-style-five .team-content {
+    padding: 0;
+    padding-top: 30px;
+    text-align: center;
+  }
+}
+.team-style-five .team-content .name {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 30px;
+  color: var(--black);
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .team-style-five .team-content .name {
+    font-size: 20px;
+  }
+}
+.team-style-five .team-content p {
+  font-size: 15px;
+  margin: 12px 0 16px 0;
+}
+.team-style-five .team-content .sub-title {
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--dark-3);
+  margin-top: 2px;
+  display: block;
+}
+.team-style-five .team-content .social {
+  margin-top: 20px;
+}
+.team-style-five .team-content .social li {
+  display: inline-block;
+  margin-right: 6px;
+}
+.team-style-five .team-content .social li:last-child {
+  margin: 0;
+}
+.team-style-five .team-content .social li a {
+  font-size: 15px;
+  color: var(--gray-1);
+  height: 35px;
+  width: 35px;
+  text-align: center;
+  line-height: 35px;
+  border: 1px solid var(--gray-4);
+  border-radius: 50%;
+  -webkit-transition: all 0.4s ease-out 0s;
+  -moz-transition: all 0.4s ease-out 0s;
+  -ms-transition: all 0.4s ease-out 0s;
+  -o-transition: all 0.4s ease-out 0s;
+  transition: all 0.4s ease-out 0s;
+}
+.team-style-five .team-content .social li a:hover {
+  background-color: var(--primary);
+  color: var(--white);
+  border-color: transparent;
+}
+
+/*# sourceMappingURL=team-05.css.map */

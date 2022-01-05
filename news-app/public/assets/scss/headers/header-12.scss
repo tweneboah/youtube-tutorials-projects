@@ -1,0 +1,104 @@
+@import "../variables";
+@import "../mixin";
+@import "../buttons/buttons";
+
+/*======================================
+    header Area CSS
+========================================*/
+
+.header-twelve {
+  background-color: var(--primary);
+
+  .header-inner {
+    height: 700px;
+    overflow: hidden;
+
+    @media #{$md,$xs} {
+      height: auto;
+    }
+  }
+
+  .header-text {
+    margin-top: 200px;
+
+    @media #{$md,$xs} {
+      margin: 0;
+      padding: 60px 0;
+    }
+
+    .small {
+      color: var(--white);
+      display: block;
+      margin-bottom: 20px;
+      font-size: 15px;
+      font-weight: 400;
+    }
+
+    h1 {
+      font-weight: 700;
+      color: var(--white);
+      margin-bottom: 25px;
+
+      span {
+        font-weight: 700;
+        display: block;
+        margin-bottom: 12px;
+      }
+    }
+
+    p {
+      opacity: 0.7;
+      color: var(--white);
+    }
+
+    ul {
+      display: block;
+      margin-bottom: 20px;
+
+      li {
+        display: inline-block;
+        color: var(--white);
+        margin-right: 10px;
+        font-size: 13px;
+        position: relative;
+        padding-left: 15px;
+        line-height: 26px;
+
+        &:last-child {
+          margin-right: 0;
+        }
+
+        &::before {
+          position: absolute;
+          content: "";
+          left: 0;
+          top: 50%;
+          height: 6px;
+          width: 6px;
+          background-color: var(--white);
+          border-radius: 50%;
+          margin-top: -4px;
+        }
+      }
+    }
+
+    .light-rounded-buttons {
+      margin-top: 30px;
+
+      .primary-btn {
+        @extend %primary-btn;
+        background-color: var(--white);
+        color: var(--primary);
+      }
+    }
+  }
+
+  .personal-image {
+    margin-top: 110px;
+    text-align: center;
+
+    @media #{$md,$xs} {
+      display: none;
+    }
+  }
+}

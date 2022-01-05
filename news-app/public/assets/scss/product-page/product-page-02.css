@@ -1,0 +1,140 @@
+/* ===== Buttons Css ===== */
+/*===== order Style =====*/
+.order-title .sub-title {
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--dark-3);
+  line-height: 30px;
+}
+@media (max-width: 767px) {
+  .order-title .sub-title {
+    font-size: 18px;
+    line-height: 28px;
+  }
+}
+.order-title .main-title {
+  font-size: 52px;
+  font-weight: 600;
+  line-height: 65px;
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .order-title .main-title {
+    font-size: 32px;
+    line-height: 38px;
+  }
+}
+@media (max-width: 767px) {
+  .order-title .main-title {
+    font-size: 38px;
+    line-height: 45px;
+  }
+}
+.order-title .text {
+  margin-top: 19px;
+}
+
+.order-area {
+  background-color: var(--light-1);
+  padding: 100px 0;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .order-area {
+    padding: 80px 0;
+  }
+}
+@media (max-width: 767px) {
+  .order-area {
+    padding: 70px 0;
+  }
+}
+
+.single-order {
+  background-color: var(--white);
+  padding: 38px 16px;
+  box-shadow: var(--shadow-2);
+  border-radius: 4px;
+  margin-top: 32px;
+}
+.single-order .order-title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+}
+@media (max-width: 767px) {
+  .single-order .order-title {
+    font-size: 18px;
+  }
+}
+.single-order .text {
+  margin-top: 4px;
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--dark-3);
+}
+.single-order .main-btn {
+  margin-top: 16px;
+}
+
+.order-link {
+  padding-top: 22px;
+}
+.order-link a {
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--black);
+  text-transform: uppercase;
+  line-height: 24px;
+  padding: 8px 16px;
+  background-color: rgba(255, 255, 255, 0.38);
+  margin: 10px 3px 0;
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+  box-shadow: var(--shadow-2);
+}
+.order-link a i {
+  margin-right: 5px;
+}
+.order-link a:hover {
+  color: var(--primary);
+}
+
+.order-image {
+  margin-top: 50px;
+}
+.order-image img {
+  width: 100%;
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .brand-area {
+    margin-top: 50px;
+  }
+}
+
+.bread-title .main-title {
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 45px;
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .bread-title .main-title {
+    font-size: 32px;
+    line-height: 38px;
+  }
+}
+@media (max-width: 767px) {
+  .bread-title .main-title {
+    font-size: 26px;
+    line-height: 34px;
+  }
+}
+
+.bread-logo {
+  margin-top: 15px;
+}
+
+/*# sourceMappingURL=product-page-02.css.map */

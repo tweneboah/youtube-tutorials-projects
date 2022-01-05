@@ -1,0 +1,257 @@
+@import "../variables";
+@import "../mixin";
+@import "../buttons/buttons";
+
+/*===========================
+    SING IN SING UP css 
+===========================*/
+
+.signin-area-five {
+  position: relative;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: var(--white);
+
+  .sing-in-form-area {
+    background-color: var(--primary);
+    border-radius: 8px;
+    padding: 55px;
+
+    @media #{$md} {
+      padding: 50px;
+    }
+
+    @media #{$xs} {
+      padding: 40px;
+    }
+  }
+
+  & .sing-in-title {
+    font-size: 32px;
+    font-weight: 600;
+    color: var(--white);
+
+    & i {
+      color: var(--white);
+      margin-right: 8px;
+    }
+
+
+    & span {
+      font-weight: 400;
+      color: var(--white);
+    }
+  }
+
+  & .text {
+    font-size: 16px;
+    margin-top: 25px;
+    color: var(--white);
+  }
+
+  .form-input {
+    margin-top: 24px;
+
+    .help-block {
+      margin-top: 2px;
+
+      & .list-unstyled {
+        & li {
+          font-size: 12px;
+          line-height: 16px;
+          color: var(--error);
+        }
+      }
+    }
+
+    & label {
+      font-size: 15px;
+      line-height: 18px;
+      color: var(--white);
+      margin-bottom: 8px;
+      display: inline-block;
+    }
+
+    & .input-items {
+      position: relative;
+
+      & input,
+      & textarea {
+        width: 100%;
+        height: 50px;
+        border: 2px solid;
+        padding-left: 44px;
+        padding-right: 12px;
+        position: relative;
+        font-size: 16px;
+        border: none;
+        border-radius: 4px;
+      }
+
+      & textarea {
+        padding-top: 8px;
+        height: 130px;
+        resize: none;
+      }
+
+      & i {
+        position: absolute;
+        top: 50%;
+        @include transform(translateY(-50%));
+        left: 13px;
+        font-size: 20px;
+        z-index: 9;
+      }
+
+      &.default {
+
+        & input,
+        & textarea {
+          border-color: var(--gray-4);
+          color: var(--dark-3);
+          border-radius: 4px;
+
+          &:focus {
+            border-color: var(--primary);
+          }
+
+          @include placeholder {
+            color: var(--dark-3);
+            opacity: 1;
+          }
+        }
+
+        & i {
+          color: var(--dark-3);
+        }
+      }
+
+      &.error {
+
+        & input,
+        & textarea {
+          border-color: var(--error);
+          color: var(--error);
+          border-radius: 4px;
+
+          @include placeholder {
+            color: var(--error);
+            opacity: 1;
+          }
+        }
+
+        & i {
+          color: var(--error);
+        }
+      }
+    }
+  }
+
+  .primary-btn {
+    @extend %primary-btn;
+    width: 100%;
+    margin-top: 45px;
+    font-weight: 500;
+    background-color: var(--primary-dark);
+    border-radius: 4px;
+    text-transform: capitalize;
+    letter-spacing: 0;
+
+    @media #{$md} {
+      margin-top: 40px;
+    }
+
+    @media #{$xs} {
+      margin-top: 40px;
+    }
+
+    &:hover {
+      background-color: var(--white);
+      color: var(--primary);
+    }
+  }
+
+  .error-btn {
+    @extend %error-btn;
+    width: 100%;
+    margin-top: 45px;
+    font-weight: 500;
+    border-radius: 4px;
+    text-transform: capitalize;
+    letter-spacing: 0;
+
+    @media #{$md} {
+      margin-top: 40px;
+    }
+
+    @media #{$xs} {
+      margin-top: 20px;
+    }
+  }
+
+  & .form-checkbox {
+    margin-top: 45px;
+
+    & span {
+      font-size: 17px;
+      color: var(--white);
+    }
+
+    & input[type="checkbox"] {
+      display: none;
+
+      &+label {
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        margin: -3px 10px 0 0;
+        vertical-align: middle;
+        cursor: pointer;
+        border-radius: 3px;
+        border: 1px solid var(--white);
+        position: relative;
+        @include transition(0.3s);
+
+        &::before {
+          color: var(--white);
+          content: "";
+          font-size: 16px;
+          position: absolute;
+          text-align: center;
+          left: 2px;
+          top: -4px;
+          @include transform(scale(0));
+          @include transition(0.3s);
+        }
+      }
+
+      &:checked {
+        &+label {
+          background: var(--white);
+          border-color: var(--white);
+
+          &::before {
+            @include transform(scale(1));
+          }
+        }
+      }
+    }
+  }
+
+  & .new-user {
+    margin-top: 15px;
+
+    & .text {
+      font-size: 18px;
+      color: var(--white);
+
+      & a {
+        color: var(--white);
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}

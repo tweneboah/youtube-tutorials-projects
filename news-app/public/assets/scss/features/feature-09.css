@@ -1,0 +1,91 @@
+/* ===== Buttons Css ===== */
+.features-nine .primary-btn {
+  background: var(--primary);
+  color: var(--white);
+  box-shadow: var(--shadow-2);
+}
+.features-nine .active.primary-btn, .features-nine .primary-btn:hover, .features-nine .primary-btn:focus {
+  background: var(--primary-dark);
+  color: var(--white);
+  box-shadow: var(--shadow-4);
+}
+.features-nine .deactive.primary-btn {
+  background: var(--gray-4);
+  color: var(--dark-3);
+  pointer-events: none;
+}
+
+.features-nine .primary-btn-outline {
+  border-color: var(--primary);
+  color: var(--primary);
+}
+.features-nine .active.primary-btn-outline, .features-nine .primary-btn-outline:hover, .features-nine .primary-btn-outline:focus {
+  background: var(--primary-dark);
+  color: var(--white);
+}
+.features-nine .deactive.primary-btn-outline {
+  color: var(--dark-3);
+  border-color: var(--gray-4);
+  pointer-events: none;
+}
+
+/*===========================
+  features css 
+===========================*/
+.features-nine {
+  margin-bottom: 100px;
+}
+.features-nine .features-items {
+  padding-top: 70px;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .features-nine .features-items {
+    padding-top: 40px;
+  }
+}
+@media (max-width: 767px) {
+  .features-nine .features-items {
+    padding-top: 20px;
+  }
+}
+.features-nine .features-title {
+  margin-top: 50px;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .features-nine .features-title {
+    margin-top: 30px;
+  }
+}
+@media (max-width: 767px) {
+  .features-nine .features-title {
+    margin-top: 20px;
+  }
+}
+.features-nine .sub-title {
+  color: var(--primary);
+}
+.features-nine .main-title {
+  font-weight: 700;
+  margin-top: 10px;
+}
+@media (max-width: 767px) {
+  .features-nine .main-title {
+    font-size: 28px;
+    line-height: 36px;
+  }
+}
+.features-nine .text-lg {
+  margin-top: 19px;
+}
+.features-nine .features-image {
+  margin-top: 50px;
+}
+.features-nine .features-image img {
+  width: 100%;
+  border-radius: 8px;
+}
+.features-nine .feature-btn {
+  margin-top: 32px;
+}
+
+/*# sourceMappingURL=feature-09.css.map */

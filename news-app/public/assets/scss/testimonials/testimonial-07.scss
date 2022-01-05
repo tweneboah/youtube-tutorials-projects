@@ -1,0 +1,122 @@
+@import "../variables";
+@import "../mixin";
+
+/*===== TESTIMONIAL STYLE FOUR =====*/
+.testimonial-7 {
+  padding-bottom: 0;
+  position: relative;
+  padding: 100px 0;
+
+  .single-testimonial {
+    background-color: var(--primary);
+    position: relative;
+
+    .testimonial-content {
+      padding: 50px;
+
+      @media #{$md} {
+        padding: 45px;
+      }
+
+      @media #{$xs} {
+        padding: 35px;
+      }
+
+      i {
+        font-size: 50px;
+        display: block;
+        margin-bottom: 30px;
+        color: var(--white);
+
+        @media #{$md} {
+          margin-bottom: 25px;
+          font-size: 45px;
+        }
+
+        @media #{$xs} {
+          margin-bottom: 20px;
+          font-size: 40px;
+        }
+      }
+
+      h2 {
+        color: var(--white);
+        font-weight: 700;
+        font-size: 27px;
+        line-height: 37px;
+
+        @media #{$md} {
+          font-size: 25px;
+          line-height: 32px;
+        }
+
+        @media #{$xs} {
+          font-size: 22px;
+          line-height: 28px;
+        }
+      }
+
+      .name {
+        color: var(--white);
+        display: block;
+        margin-top: 30px;
+        font-size: 13px;
+        font-weight: 600;
+
+        span {
+          display: block;
+          margin-top: 4px;
+        }
+      }
+    }
+
+    .testimonial-image {
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+  .testimonial-slider-head {
+    position: relative;
+
+    .tns-controls {
+      position: absolute;
+      right: 35%;
+      bottom: 180px;
+      z-index: 9;
+
+      @media #{$md} {
+        right: 20px;
+      }
+
+      @media #{$xs} {
+        right: 20px;
+        bottom: 20px;
+      }
+
+      button {
+        width: 60px;
+        height: 50px;
+        cursor: pointer;
+        z-index: 2;
+        color: var(--black);
+        font-size: 18px;
+        background: var(--white);
+        border: 0;
+        padding: 2px 5px;
+        border-radius: 0;
+        -webkit-transition: all 0.3s ease-out 0s;
+        transition: all 0.3s ease-out 0s;
+
+        &:hover {
+          color: var(--primary);
+        }
+      }
+
+      button:first-child {
+        border-right: 1px solid var(--gray-4);
+      }
+    }
+  }
+}

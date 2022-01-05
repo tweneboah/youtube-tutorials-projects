@@ -1,0 +1,109 @@
+/* ===== Buttons Css ===== */
+.pricing-style-three .primary-btn {
+  background: var(--primary);
+  color: var(--white);
+  box-shadow: var(--shadow-2);
+}
+.pricing-style-three .active.primary-btn, .pricing-style-three .primary-btn:hover, .pricing-style-three .primary-btn:focus {
+  background: var(--primary-dark);
+  color: var(--white);
+  box-shadow: var(--shadow-4);
+}
+.pricing-style-three .deactive.primary-btn {
+  background: var(--gray-4);
+  color: var(--dark-3);
+  pointer-events: none;
+}
+
+/*===== PRICING STYLE THREE =====*/
+.pricing-three {
+  padding: 100px 0;
+}
+
+.pricing-style-three {
+  box-shadow: var(--shadow-2);
+  padding: 40px 40px;
+  border-radius: 8px;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  background-color: var(--white);
+  margin-top: 50px;
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
+  .pricing-style-three {
+    padding: 35px 30px;
+  }
+}
+.pricing-style-three:hover {
+  box-shadow: var(--shadow-4);
+}
+.pricing-style-three .sub-title {
+  color: var(--primary);
+  position: relative;
+  padding-bottom: 8px;
+}
+.pricing-style-three .price {
+  display: block;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 60px;
+  margin-top: 25px;
+  color: var(--black);
+}
+.pricing-style-three .price span {
+  font-size: 15px;
+  color: var(--dark-3);
+}
+@media (max-width: 767px) {
+  .pricing-style-three .price {
+    font-size: 45px;
+    margin-top: 16px;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .pricing-style-three .price {
+    font-size: 50px;
+    margin-top: 20px;
+  }
+}
+.pricing-style-three .text {
+  color: var(--dark-3);
+  margin-top: 3px;
+  font-size: 18px;
+}
+.pricing-style-three .pricing-icon {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  color: var(--primary);
+  font-size: 50px;
+}
+.pricing-style-three .pricing-list {
+  margin-top: 40px;
+}
+.pricing-style-three .pricing-list li {
+  color: var(--dark-3);
+  margin-top: 16px;
+}
+.pricing-style-three .pricing-list li i {
+  color: var(--primary);
+  margin-right: 8px;
+}
+.pricing-style-three .pricing-btn {
+  margin-top: 42px;
+}
+.pricing-style-three .bottom-shape {
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+  width: 101%;
+  z-index: -1;
+}
+
+/*# sourceMappingURL=pricing-03.css.map */

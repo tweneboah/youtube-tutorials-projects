@@ -1,0 +1,74 @@
+@import "../variables";
+@import "../mixin";
+@import "../buttons/buttons";
+
+/*===== BLOG STYLE SEVEN =====*/
+
+.blog-style-seven {
+  margin-top: 50px;
+
+  & .blog-image {
+    & img {
+      width: 100%;
+      border-top-left-radius: 8px;
+      border-top-right-radius: 8px;
+    }
+  }
+
+  & .blog-content {
+    border: 1px solid var(--light-1);
+    border-top: 0;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    padding: 30px;
+
+    @media #{$md} {
+      padding: 25px;
+    }
+
+    @media #{$xs} {
+      padding: 20px;
+    }
+
+    .category {
+      color: var(--primary);
+      margin-bottom: 15px;
+    }
+
+    & .blog-title {
+      & a {
+        font-weight: 600;
+        color: var(--black);
+        @include transition(0.3s);
+
+        &:hover {
+          color: var(--primary);
+        }
+      }
+    }
+
+    & .text {
+      color: var(--dark-3);
+      margin-top: 16px;
+    }
+
+    & span {
+      font-size: 14px;
+      line-height: 20px;
+      color: var(--dark-3);
+      margin-right: 10px;
+    }
+
+    .blog-date {
+      margin-top: 15px;
+    }
+
+    & .rounded-buttons {
+      margin-top: 15px;
+
+      .primary-btn-outline {
+        @extend %primary-btn-outline;
+      }
+    }
+  }
+}

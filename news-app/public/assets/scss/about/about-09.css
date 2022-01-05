@@ -1,0 +1,135 @@
+/*======================================
+    About Us CSS
+========================================*/
+.about-section {
+  background: var(--light-3);
+  padding: 180px 0;
+  position: relative;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .about-section {
+    padding: 120px 0;
+  }
+}
+@media (max-width: 767px) {
+  .about-section {
+    padding: 120px 0;
+  }
+}
+.about-section .section-title {
+  margin-bottom: 30px;
+}
+.about-section .section-title span {
+  font-size: 20px;
+  color: var(--primary);
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.about-section .section-title h2 {
+  font-size: 45px;
+  line-height: 55px;
+}
+@media (max-width: 767px) {
+  .about-section .section-title h2 {
+    font-size: 38px;
+    line-height: 45px;
+  }
+}
+.about-section .about-img-wrapper {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 46%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .about-section .about-img-wrapper {
+    position: relative;
+    top: 0;
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+    width: 100%;
+    margin-bottom: 50px;
+  }
+}
+@media (max-width: 767px) {
+  .about-section .about-img-wrapper {
+    position: relative;
+    top: 0;
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+    width: 100%;
+    margin-bottom: 50px;
+  }
+}
+.about-section .about-img-wrapper img {
+  width: 100%;
+}
+.about-section .about-img-wrapper .about-experience {
+  width: 300px;
+  border-radius: 27px;
+  background: linear-gradient(to top left, var(--primary) 0%, var(--primary-dark) 100%);
+  border: 5px solid #eff2f9;
+  padding: 40px 20px;
+  position: absolute;
+  right: -40px;
+  bottom: 10px;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
+  .about-section .about-img-wrapper .about-experience {
+    right: 40px;
+  }
+}
+.about-section .about-img-wrapper .about-experience h3 {
+  color: var(--white);
+  margin-bottom: 15px;
+}
+.about-section .about-img-wrapper .about-experience p {
+  color: var(--white);
+}
+.about-section .about-content-wrapper .about-content > p {
+  margin-bottom: 45px;
+}
+.about-section .about-content-wrapper .about-content .counter-up {
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 767px) {
+  .about-section .about-content-wrapper .about-content .counter-up {
+    display: block;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .about-section .about-content-wrapper .about-content .counter-up {
+    display: flex;
+  }
+}
+.about-section .about-content-wrapper .about-content .counter-up .counter {
+  margin-right: 10px;
+}
+.about-section .about-content-wrapper .about-content .counter-up .counter:last-child {
+  margin-right: 0;
+}
+.about-section .about-content-wrapper .about-content .counter-up .counter span {
+  font-size: 40px;
+  font-weight: 600;
+  color: var(--primary);
+  display: block;
+  margin-bottom: 8px;
+}
+.about-section .about-content-wrapper .about-content .counter-up .counter h4 {
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+/*# sourceMappingURL=about-09.css.map */

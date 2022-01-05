@@ -1,0 +1,166 @@
+@import "../variables";
+@import "../mixin";
+
+/*===== portfolio THREE =====*/
+
+.portfolio-three {
+  padding-top: 100px;
+  padding-bottom: 100px;
+
+  & .portfolio-menu {
+    margin-bottom: 30px;
+
+    @media #{$md,$xs} {
+      margin-bottom: 15px;
+    }
+
+    & button {
+      border: none;
+      background: none;
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--dark-3);
+      line-height: 48px;
+      padding: 0 30px;
+      position: relative;
+      display: inline-block;
+      z-index: 5;
+      @include transition(0.3s);
+      cursor: pointer;
+      margin: 0 2px;
+      text-transform: uppercase;
+
+      @media #{$md} {
+        font-size: 14px;
+        padding: 0 26px;
+      }
+
+      @media #{$xs} {
+        font-size: 14px;
+        padding: 0 22px;
+        line-height: 42px;
+      }
+
+      &::before {
+        position: absolute;
+        content: "";
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 4px;
+        background: var(--primary);
+        z-index: -1;
+        opacity: 0;
+        @include transition(0.3s);
+        border-radius: 4px;
+      }
+
+      &:hover,
+      &.active {
+        color: var(--primary);
+
+        &::before {
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+  .hide {
+    display: none;
+  }
+
+  .show {
+    display: block;
+  }
+}
+
+.portfolio-style-three {
+  margin-top: 30px;
+
+  & .portfolio-image {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+
+    & img {
+      width: 100%;
+      @include transition(0.3s);
+    }
+
+    & .portfolio-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      visibility: hidden;
+      @include transition(0.5s);
+      background-color: rgba(255, 255, 255, 0.8);
+      @include transform(scale(0.95));
+      border-radius: 8px;
+    }
+
+    & .portfolio-content {
+      padding: 16px;
+    }
+
+    & .portfolio-icon {
+      position: relative;
+      display: inline-block;
+      margin: 0 5px;
+
+      & a {
+        font-size: 28px;
+        color: var(--white);
+        position: relative;
+        z-index: 5;
+        line-height: 60px;
+        height: 60px;
+        width: 60px;
+        text-align: center;
+        line-height: 60px;
+        background-color: var(--primary);
+        border-radius: 8px;
+        @include transition(0.3s);
+
+        &:hover {
+          background-color: var(--primary-dark);
+        }
+      }
+    }
+  }
+
+  & .portfolio-text {
+    padding-top: 16px;
+  }
+
+  & .portfolio-title {
+    & a {
+      color: var(--black);
+      font-size: 24px;
+      line-height: 30px;
+
+      @media #{$lg} {
+        font-size: 20px;
+      }
+
+      @media #{$xs} {
+        font-size: 20px;
+      }
+    }
+  }
+
+  & .text {
+    color: var(--black);
+    margin-top: 8px;
+  }
+
+  &:hover {
+    & .portfolio-overlay {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+}

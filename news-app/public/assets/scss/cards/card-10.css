@@ -1,0 +1,76 @@
+/* ===== Buttons Css ===== */
+.mini-card-style-nine .card-content .card-btn .primary-btn-outline {
+  border-color: var(--primary);
+  color: var(--primary);
+}
+.mini-card-style-nine .card-content .card-btn .active.primary-btn-outline, .mini-card-style-nine .card-content .card-btn .primary-btn-outline:hover, .mini-card-style-nine .card-content .card-btn .primary-btn-outline:focus {
+  background: var(--primary-dark);
+  color: var(--white);
+}
+.mini-card-style-nine .card-content .card-btn .deactive.primary-btn-outline {
+  color: var(--dark-3);
+  border-color: var(--gray-4);
+  pointer-events: none;
+}
+
+/*===========================
+  card-10 css 
+===========================*/
+.mini-card-style-nine {
+  border-radius: 8px;
+  overflow: hidden;
+  margin-top: 30px;
+}
+.mini-card-style-nine .card-image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 8px;
+}
+@media (max-width: 767px) {
+  .mini-card-style-nine .card-image img {
+    height: 210px;
+  }
+}
+.mini-card-style-nine .card-content {
+  padding: 16px;
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .mini-card-style-nine .card-content {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+.mini-card-style-nine .card-content .card-title {
+  margin-bottom: 0;
+}
+.mini-card-style-nine .card-content .card-title a {
+  font-size: 20px;
+  line-height: 30px;
+  color: var(--black);
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+}
+@media (max-width: 767px) {
+  .mini-card-style-nine .card-content .card-title a {
+    font-size: 18px;
+  }
+}
+.mini-card-style-nine .card-content .card-title a:hover {
+  color: var(--primary);
+}
+.mini-card-style-nine .card-content .text {
+  color: var(--dark-3);
+  font-size: 14px;
+  line-height: 24px;
+  margin-top: 8px;
+}
+.mini-card-style-nine .card-content .card-btn {
+  margin-top: 24px;
+}
+
+/*# sourceMappingURL=card-10.css.map */

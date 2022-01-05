@@ -1,0 +1,95 @@
+/*===========================
+  Features Three CSS 
+===========================*/
+.features-three {
+  background-color: var(--light-2);
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.features-three .section-title {
+  padding-bottom: 10px;
+}
+.features-three .title {
+  font-size: 44px;
+  font-weight: 600;
+  color: var(--black);
+  line-height: 55px;
+}
+@media (max-width: 767px) {
+  .features-three .title {
+    font-size: 30px;
+    line-height: 35px;
+  }
+}
+.features-three .text {
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--dark-3);
+  margin-top: 24px;
+}
+
+.features-style-three {
+  margin-top: 40px;
+  background-color: var(--white);
+  border-radius: 8px;
+  padding: 35px;
+  -webkit-transition: all 0.4s ease-out 0s;
+  -moz-transition: all 0.4s ease-out 0s;
+  -ms-transition: all 0.4s ease-out 0s;
+  -o-transition: all 0.4s ease-out 0s;
+  transition: all 0.4s ease-out 0s;
+}
+.features-style-three:hover {
+  box-shadow: var(--shadow-4);
+}
+@media (max-width: 767px) {
+  .features-style-three {
+    padding: 20px;
+  }
+}
+.features-style-three .features-icon {
+  position: relative;
+  display: inline-block;
+}
+.features-style-three .features-icon i {
+  font-size: 60px;
+  color: var(--secondary);
+  position: relative;
+  z-index: 5;
+}
+.features-style-three .features-icon .shape {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.5;
+}
+.features-style-three .features-content {
+  margin-top: 30px;
+}
+.features-style-three .features-title {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 600;
+  color: var(--black);
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .features-style-three .features-title {
+    font-size: 20px;
+  }
+}
+@media (max-width: 767px) {
+  .features-style-three .features-title {
+    font-size: 20px;
+  }
+}
+.features-style-three .text {
+  color: var(--dark-3);
+  margin-top: 16px;
+}
+
+/*# sourceMappingURL=feature-03.css.map */

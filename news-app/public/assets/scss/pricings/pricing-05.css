@@ -1,0 +1,96 @@
+/* ===== Buttons Css ===== */
+.pricing-style-five .primary-btn {
+  background: var(--primary);
+  color: var(--white);
+  box-shadow: var(--shadow-2);
+}
+.pricing-style-five .active.primary-btn, .pricing-style-five .primary-btn:hover, .pricing-style-five .primary-btn:focus {
+  background: var(--primary-dark);
+  color: var(--white);
+  box-shadow: var(--shadow-4);
+}
+.pricing-style-five .deactive.primary-btn {
+  background: var(--gray-4);
+  color: var(--dark-3);
+  pointer-events: none;
+}
+
+/*===== PRICING FIVE =====*/
+.pricing-five {
+  padding: 100px 0;
+}
+
+.pricing-style-five {
+  box-shadow: var(--shadow-2);
+  padding: 50px 40px;
+  border-radius: 8px;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  background: var(--primary);
+  margin-top: 50px;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
+  .pricing-style-five {
+    padding: 35px 30px;
+  }
+}
+.pricing-style-five .sub-title {
+  color: var(--white);
+  position: relative;
+  padding-bottom: 8px;
+}
+.pricing-style-five .price {
+  display: block;
+  font-size: 60px;
+  font-weight: 600;
+  line-height: 60px;
+  margin-top: 15px;
+  color: var(--white);
+}
+@media (max-width: 767px) {
+  .pricing-style-five .price {
+    font-size: 45px;
+    margin-top: 16px;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .pricing-style-five .price {
+    font-size: 50px;
+    margin-top: 20px;
+  }
+}
+.pricing-style-five .year {
+  color: var(--white);
+  margin-top: 5px;
+}
+.pricing-style-five .pricing-baloon {
+  position: absolute;
+  top: 0;
+  right: -78px;
+  width: 156px;
+}
+.pricing-style-five .pricing-list {
+  margin-top: 40px;
+}
+.pricing-style-five .pricing-list li {
+  color: var(--white);
+  margin-top: 16px;
+}
+.pricing-style-five .pricing-list li i {
+  color: var(--white);
+  margin-right: 8px;
+}
+.pricing-style-five .pricing-btn {
+  margin-top: 42px;
+}
+.pricing-style-five .primary-btn {
+  background-color: var(--white);
+  color: var(--primary);
+}
+.pricing-style-five .primary-btn:hover {
+  background: var(--info);
+  color: var(--white);
+}
+
+/*# sourceMappingURL=pricing-05.css.map */

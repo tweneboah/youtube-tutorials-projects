@@ -1,0 +1,131 @@
+@import "../variables";
+@import "../mixin";
+@import "../buttons/buttons";
+
+/*===== BLOG STYLE EIGHT =====*/
+
+.blog-style-eight {
+  margin-top: 50px;
+
+  & .blog-image {
+    & img {
+      width: 100%;
+      border-radius: 8px;
+    }
+  }
+
+  & .blog-content {
+    padding-top: 16px;
+
+    & .blog-title {
+      & a {
+        font-size: 30px;
+        font-weight: 600;
+        line-height: 40px;
+        color: var(--black);
+        @include transition(0.3s);
+
+        @media #{$lg} {
+          font-size: 30px;
+          line-height: 40px;
+        }
+
+        @media #{$xs} {
+          font-size: 24px;
+          line-height: 35px;
+        }
+
+        &:hover {
+          color: var(--primary);
+        }
+      }
+    }
+
+    & span {
+      font-size: 14px;
+      line-height: 20px;
+      color: var(--dark-3);
+      margin-top: 8px;
+      margin-right: 10px;
+      display: inline-block;
+    }
+
+    & .text {
+      color: var(--dark-3);
+      margin-top: 16px;
+    }
+
+    & .rounded-buttons {
+      margin-top: 25px;
+
+      .primary-btn-outline {
+        @extend %primary-btn-outline;
+      }
+    }
+  }
+}
+
+/*===== BLOG STYLE NINE =====*/
+
+.blog-author-one {
+  margin-top: 50px;
+  background-color: var(--light-2);
+  padding: 40px;
+  border-radius: 8px;
+
+  @media #{$xs} {
+    padding: 20px;
+  }
+
+  & .blog-image {
+    & img {
+      width: 100%;
+      border-radius: 50%;
+      border: 8px solid var(--white);
+    }
+  }
+
+  & .blog-content {
+    padding-top: 20px;
+
+    & .sub-title {
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 24px;
+      text-transform: uppercase;
+    }
+
+    & .blog-title {
+      & a {
+        font-size: 30px;
+        font-weight: 300;
+        line-height: 40px;
+        color: var(--black);
+        @include transition(0.3s);
+
+        @media #{$xs} {
+          font-size: 24px;
+          line-height: 35px;
+        }
+
+        &:hover {
+          color: var(--primary);
+        }
+      }
+    }
+
+    & .text {
+      color: var(--dark-3);
+      margin-top: 16px;
+    }
+
+    & .more {
+      text-transform: uppercase;
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--primary);
+      margin-top: 30px;
+      display: inline-block;
+    }
+  }
+}

@@ -1,0 +1,148 @@
+@import "../variables";
+@import "../mixin";
+
+/* Footer eleven css */
+.footer-eleven {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: var(--white);
+  position: relative;
+
+  @media #{$md, $xs} {
+    padding-top: 30px;
+    padding-bottom: 70px;
+  }
+
+  .footer-widget {
+    @media #{$md} {
+      margin-top: 40px;
+    }
+
+    @media #{$xs} {
+      margin-top: 40px;
+      text-align: center;
+    }
+
+    h5 {
+      font-weight: 700;
+      margin-bottom: 35px;
+      color: var(--black);
+
+      @media #{$md, $xs} {
+        margin-bottom: 25px;
+      }
+    }
+  }
+
+  .f-about {
+    padding-right: 30px;
+
+    @media #{$xs} {
+      padding: 0;
+    }
+
+    p {
+      color: var(--dark-3);
+      margin-top: 20px;
+    }
+
+    .copyright-text {
+      color: var(--dark-3);
+      margin-top: 40px;
+
+      span {
+        display: block;
+      }
+
+      @media #{$xs} {
+        margin-top: 20px;
+      }
+
+      a {
+        color: var(--primary);
+
+        &:hover {
+          color: var(--primary-dark);
+        }
+      }
+    }
+  }
+
+  .f-link {
+    li {
+      display: block;
+      margin-bottom: 12px;
+
+      &:last-child {
+        margin: 0;
+      }
+
+      a {
+        color: var(--dark-3);
+        @include transition(0.4s);
+
+        &:hover {
+          color: var(--primary);
+        }
+      }
+    }
+  }
+
+  .newsletter {
+    @media #{$laptop,$desktop} {
+      padding-left: 80px;
+    }
+
+    p {
+      color: var(--dark-3);
+    }
+  }
+
+  .newsletter-form {
+    margin-top: 30px;
+    position: relative;
+
+    input {
+      height: 55px;
+      width: 100%;
+      border-radius: 8px;
+      border: 1px solid var(--gray-4);
+      box-shadow: none;
+      text-shadow: none;
+      padding-left: 18px;
+      padding-right: 65px;
+      transition: all 0.4s ease;
+
+      &:focus {
+        border-color: var(--primary);
+      }
+    }
+
+    .button {
+      position: absolute;
+      right: 7px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    .sub-btn {
+      height: 42px;
+      width: 42px;
+      border-radius: 6px;
+      background-color: var(--primary);
+      color: var(--white);
+      text-align: center;
+      line-height: 42px;
+      border: none;
+      box-shadow: none;
+      text-shadow: none;
+      font-size: 17px;
+      transition: all 0.4s ease;
+
+      &:hover {
+        color: var(--white);
+        background-color: var(--primary-dark);
+      }
+    }
+  }
+}

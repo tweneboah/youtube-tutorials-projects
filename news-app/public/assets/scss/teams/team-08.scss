@@ -1,0 +1,210 @@
+@import "../variables";
+@import "../mixin";
+
+/*======================================
+	Team CSS
+========================================*/
+.team-style-eight {
+    padding: 100px 0;
+    background: var(--light-2);
+
+    .title-line {
+        margin-bottom: 40px;
+    }
+
+    .section-title {
+        text-align: center;
+        max-width: 550px;
+        margin: auto;
+        margin-bottom: 40px;
+        position: relative;
+        z-index: 5;
+
+        @media #{$md} {
+            margin-bottom: 35px;
+        }
+
+        @media #{$xs} {
+            margin-bottom: 25px;
+        }
+
+        span {
+            text-transform: uppercase;
+            color: var(--primary);
+            display: inline-block;
+            margin-bottom: 10px;
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        h2 {
+            font-size: 30px;
+            margin-bottom: 18px;
+            line-height: 40px;
+            text-transform: capitalize;
+            position: relative;
+            font-weight: 700;
+        }
+
+        h3 {
+            font-size: 62px;
+            font-weight: 800;
+            text-transform: uppercase;
+            position: absolute;
+            top: -27px;
+            left: 50%;
+            -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+            color: var(--gray-4);
+            z-index: -1;
+            -webkit-text-stroke-width: 1px;
+            -webkit-text-fill-color: transparent;
+            -webkit-text-stroke-color: var(--gray-4);
+            opacity: 0.5;
+
+            @media #{$md} {
+                font-size: 40px;
+            }
+
+            @media #{$xs} {
+                font-size: 35px;
+            }
+        }
+
+        h3.gray-bg {
+            -webkit-text-stroke-width: 1px;
+            -webkit-text-fill-color: transparent;
+            -webkit-text-stroke-color: var(--primary) !important;
+            opacity: 0.1 !important;
+        }
+
+        p {
+            color: var(--dark-3);
+        }
+    }
+
+    .single-team {
+        margin-top: 30px;
+        position: relative;
+        -webkit-transition: all 500ms ease;
+        -moz-transition: all 500ms ease;
+        transition: all 500ms ease;
+        display: inline-block;
+        overflow: hidden;
+        text-align: left;
+        background: transparent;
+        background-color: var(--white);
+        border-radius: 5px;
+        overflow: hidden;
+        box-shadow: var(--shadow-2);
+
+        .info-head {
+            background: transparent;
+            position: relative;
+            z-index: 2;
+            -webkit-transition: all 0.4s ease;
+            -moz-transition: all 0.4s ease;
+            transition: all 0.4s ease;
+            padding: 25px;
+        }
+
+        .image {
+            position: relative;
+            text-align: center;
+
+            &::before {
+                position: absolute;
+                content: "";
+                left: 0;
+                bottom: 0;
+                height: 0;
+                width: 100%;
+                background: linear-gradient(transparent, var(--primary));
+                transition: all 0.4s ease-in-out;
+                opacity: 0;
+                visibility: hidden;
+            }
+
+            img {
+                height: 100%;
+                width: 100%;
+            }
+
+            .social {
+                position: absolute;
+                left: 0;
+                bottom: -30px;
+                padding: 25px;
+                padding-bottom: 20px;
+                opacity: 0;
+                visibility: hidden;
+                transition: all 0.4s ease-in-out;
+
+                li {
+                    display: inline-block;
+                    margin-right: 15px;
+
+                    &:last-child {
+                        margin-right: 0px;
+                    }
+
+                    a {
+                        color: var(--white);
+                        display: block;
+                        font-size: 16px;
+
+                        &:hover {
+                            opacity: 0.7;
+                        }
+                    }
+                }
+            }
+        }
+
+        .info-box {
+            text-align: left;
+
+            .name {
+                display: block;
+                font-size: 18px;
+                color: var(--black);
+                margin-bottom: 3px;
+                text-transform: capitalize;
+            }
+
+            .designation {
+                color: var(--dark-3);
+                font-size: 14px;
+                -webkit-transition: all 0.4s ease;
+                -moz-transition: all 0.4s ease;
+                transition: all 0.4s ease;
+            }
+        }
+
+        &:hover {
+            box-shadow: var(--shadow-4);
+
+            .info-head:before {
+                opacity: 1;
+                visibility: visible;
+                height: 100%;
+            }
+
+            .info-head {
+                border-color: transparent;
+            }
+
+            .image::before {
+                opacity: 1;
+                visibility: visible;
+                height: 150px;
+            }
+
+            .social {
+                opacity: 1;
+                visibility: visible;
+                bottom: 0;
+            }
+        }
+    }
+}

@@ -1,0 +1,91 @@
+/* ===== Buttons Css ===== */
+.header-three .primary-btn {
+  background: var(--primary);
+  color: var(--white);
+  box-shadow: var(--shadow-2);
+}
+.header-three .active.primary-btn, .header-three .primary-btn:hover, .header-three .primary-btn:focus {
+  background: var(--primary-dark);
+  color: var(--white);
+  box-shadow: var(--shadow-4);
+}
+.header-three .deactive.primary-btn {
+  background: var(--gray-4);
+  color: var(--dark-3);
+  pointer-events: none;
+}
+
+/*===== HEADER THREE =====*/
+.header-three {
+  position: relative;
+}
+.header-three .header-content-area {
+  background: var(--primary);
+}
+.header-three .header-content-area .header-content {
+  padding: 150px 0;
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px) {
+  .header-three .header-content-area .header-content {
+    padding: 150px 0;
+  }
+}
+@media (max-width: 767px) {
+  .header-three .header-content-area .header-content {
+    padding-top: 120px;
+  }
+}
+.header-three .header-content-area .header-title {
+  font-size: 44px;
+  line-height: 55px;
+  color: var(--white);
+  font-weight: 600;
+}
+@media (max-width: 767px) {
+  .header-three .header-content-area .header-title {
+    font-size: 30px;
+    line-height: 35px;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .header-three .header-content-area .header-title {
+    font-size: 36px;
+    line-height: 45px;
+  }
+}
+.header-three .header-content-area .text {
+  color: var(--white);
+  margin-top: 8px;
+}
+.header-three .header-content-area .header-btn {
+  margin-top: 40px;
+}
+.header-three .primary-btn {
+  background: var(--white);
+  color: var(--primary);
+}
+.header-three .header-image {
+  padding-top: 80px;
+}
+@media (max-width: 767px) {
+  .header-three .header-image {
+    padding-top: 30px;
+  }
+}
+.header-three .header-image img {
+  width: 100%;
+}
+@media (max-width: 767px) {
+  .header-three .header-image img {
+    height: 160px;
+    object-fit: cover;
+    object-position: center;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .header-three .header-image img {
+    height: 200px;
+  }
+}
+
+/*# sourceMappingURL=header-03.css.map */

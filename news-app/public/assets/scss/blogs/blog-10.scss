@@ -1,0 +1,67 @@
+@import "../variables";
+@import "../mixin";
+
+/*===== BLOG MINI STYLE =====*/
+
+.single-mini-blog {
+  margin-top: 50px;
+
+  & .blog-image {
+    max-width: 80px;
+    width: 100%;
+    height: 80px;
+    border-radius: 4px;
+
+    & img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+  & .blog-content {
+    padding-left: 12px;
+
+    & .blog-title {
+      & a {
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 24px;
+        color: var(--black);
+        @include transition(0.3s);
+
+        @media #{$lg} {
+          font-size: 14px;
+          line-height: 20px;
+        }
+        @media #{$xs} {
+          font-size: 14px;
+          line-height: 20px;
+        }
+        @media #{$sm} {
+          font-size: 16px;
+          line-height: 24px;
+        }
+
+        &:hover {
+          color: var(--primary);
+        }
+      }
+    }
+    & span {
+      font-size: 13px;
+      line-height: 18px;
+      color: var(--dark-3);
+      margin-top: 8px;
+      margin-right: 8px;
+    }
+  }
+
+  &.mini-style-two {
+    & .blog-image {
+      & img {
+        border-radius: 50%;
+      }
+    }
+  }
+}

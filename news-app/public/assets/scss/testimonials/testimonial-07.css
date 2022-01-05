@@ -1,0 +1,115 @@
+/*===== TESTIMONIAL STYLE FOUR =====*/
+.testimonial-7 {
+  padding-bottom: 0;
+  position: relative;
+  padding: 100px 0;
+}
+.testimonial-7 .single-testimonial {
+  background-color: var(--primary);
+  position: relative;
+}
+.testimonial-7 .single-testimonial .testimonial-content {
+  padding: 50px;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .testimonial-7 .single-testimonial .testimonial-content {
+    padding: 45px;
+  }
+}
+@media (max-width: 767px) {
+  .testimonial-7 .single-testimonial .testimonial-content {
+    padding: 35px;
+  }
+}
+.testimonial-7 .single-testimonial .testimonial-content i {
+  font-size: 50px;
+  display: block;
+  margin-bottom: 30px;
+  color: var(--white);
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .testimonial-7 .single-testimonial .testimonial-content i {
+    margin-bottom: 25px;
+    font-size: 45px;
+  }
+}
+@media (max-width: 767px) {
+  .testimonial-7 .single-testimonial .testimonial-content i {
+    margin-bottom: 20px;
+    font-size: 40px;
+  }
+}
+.testimonial-7 .single-testimonial .testimonial-content h2 {
+  color: var(--white);
+  font-weight: 700;
+  font-size: 27px;
+  line-height: 37px;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .testimonial-7 .single-testimonial .testimonial-content h2 {
+    font-size: 25px;
+    line-height: 32px;
+  }
+}
+@media (max-width: 767px) {
+  .testimonial-7 .single-testimonial .testimonial-content h2 {
+    font-size: 22px;
+    line-height: 28px;
+  }
+}
+.testimonial-7 .single-testimonial .testimonial-content .name {
+  color: var(--white);
+  display: block;
+  margin-top: 30px;
+  font-size: 13px;
+  font-weight: 600;
+}
+.testimonial-7 .single-testimonial .testimonial-content .name span {
+  display: block;
+  margin-top: 4px;
+}
+.testimonial-7 .single-testimonial .testimonial-image img {
+  width: 100%;
+}
+.testimonial-7 .testimonial-slider-head {
+  position: relative;
+}
+.testimonial-7 .testimonial-slider-head .tns-controls {
+  position: absolute;
+  right: 35%;
+  bottom: 180px;
+  z-index: 9;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .testimonial-7 .testimonial-slider-head .tns-controls {
+    right: 20px;
+  }
+}
+@media (max-width: 767px) {
+  .testimonial-7 .testimonial-slider-head .tns-controls {
+    right: 20px;
+    bottom: 20px;
+  }
+}
+.testimonial-7 .testimonial-slider-head .tns-controls button {
+  width: 60px;
+  height: 50px;
+  cursor: pointer;
+  z-index: 2;
+  color: var(--black);
+  font-size: 18px;
+  background: var(--white);
+  border: 0;
+  padding: 2px 5px;
+  border-radius: 0;
+  -webkit-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+}
+.testimonial-7 .testimonial-slider-head .tns-controls button:hover {
+  color: var(--primary);
+}
+.testimonial-7 .testimonial-slider-head .tns-controls button:first-child {
+  border-right: 1px solid var(--gray-4);
+}
+
+/*# sourceMappingURL=testimonial-07.css.map */

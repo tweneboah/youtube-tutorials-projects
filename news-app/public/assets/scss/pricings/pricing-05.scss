@@ -1,0 +1,90 @@
+@import "../variables";
+@import "../mixin";
+@import "../buttons/buttons";
+
+/*===== PRICING FIVE =====*/
+
+.pricing-five {
+  padding: 100px 0;
+}
+
+.pricing-style-five {
+  box-shadow: var(--shadow-2);
+  padding: 50px 40px;
+  border-radius: 8px;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  background: var(--primary);
+  margin-top: 50px;
+
+  @media #{$md,$xs} {
+    padding: 35px 30px;
+  }
+
+  & .sub-title {
+    color: var(--white);
+    position: relative;
+    padding-bottom: 8px;
+  }
+
+  & .price {
+    display: block;
+    font-size: 60px;
+    font-weight: 600;
+    line-height: 60px;
+    margin-top: 15px;
+    color: var(--white);
+
+    @media #{$xs} {
+      font-size: 45px;
+      margin-top: 16px;
+    }
+
+    @media #{$sm} {
+      font-size: 50px;
+      margin-top: 20px;
+    }
+  }
+
+  & .year {
+    color: var(--white);
+    margin-top: 5px;
+  }
+
+  & .pricing-baloon {
+    position: absolute;
+    top: 0;
+    right: -78px;
+    width: 156px;
+  }
+
+  & .pricing-list {
+    margin-top: 40px;
+
+    & li {
+      color: var(--white);
+      margin-top: 16px;
+
+      & i {
+        color: var(--white);
+        margin-right: 8px;
+      }
+    }
+  }
+
+  & .pricing-btn {
+    margin-top: 42px;
+  }
+
+  & .primary-btn {
+    @extend %primary-btn;
+    background-color: var(--white);
+    color: var(--primary);
+
+    &:hover {
+      background: var(--info);
+      color: var(--white);
+    }
+  }
+}

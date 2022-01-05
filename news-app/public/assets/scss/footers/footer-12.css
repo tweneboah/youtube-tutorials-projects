@@ -1,0 +1,137 @@
+/*======================================
+	Footer CSS
+========================================*/
+.footer-twelve {
+  background-color: var(--black);
+  z-index: 2;
+  position: relative;
+}
+.footer-twelve .logo {
+  margin-bottom: 26px;
+}
+.footer-twelve .f-about p {
+  color: var(--white);
+  line-height: 28px;
+}
+.footer-twelve .footer-social {
+  margin-top: 35px;
+}
+.footer-twelve .footer-social li {
+  display: inline-block;
+  margin-right: 6px;
+}
+.footer-twelve .footer-social li:last-child {
+  margin-right: 0;
+}
+.footer-twelve .footer-social a {
+  font-size: 18px;
+  height: 45px;
+  width: 45px;
+  text-align: center;
+  display: block;
+  line-height: 45px;
+  background: transparent;
+  border: none;
+  color: var(--white);
+  position: relative;
+  z-index: 3;
+}
+.footer-twelve .footer-social a::before {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: var(--primary);
+  border-radius: 100%;
+  z-index: -1;
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(0);
+  transition: all 0.2s ease;
+}
+.footer-twelve .footer-social a:hover::before {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1);
+}
+.footer-twelve .footer-middle {
+  padding-bottom: 60px;
+  padding-top: 70px;
+}
+.footer-twelve .footer-widget {
+  margin-top: 30px;
+}
+.footer-twelve .footer-widget h3 {
+  color: var(--white);
+  font-size: 18px;
+  font-weight: 600;
+  position: relative;
+  text-transform: capitalize;
+  margin-bottom: 30px;
+  font-weight: 600;
+  border-left: 3px solid var(--primary);
+  padding-left: 10px;
+  padding-top: 3px;
+}
+.footer-twelve .f-link li {
+  margin-bottom: 15px;
+  position: relative;
+}
+.footer-twelve .f-link li:last-child {
+  margin: 0;
+}
+.footer-twelve .f-link a {
+  display: inline-block;
+  color: var(--white);
+  font-size: 15px;
+  font-weight: 500;
+  position: relative;
+  transition: all 0.3s ease;
+}
+.footer-twelve .f-link a::before {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 0;
+  height: 1px;
+  width: 0%;
+  background-color: var(--white);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+}
+.footer-twelve .f-link a:hover::before {
+  width: 100%;
+  opacity: 0.7;
+  visibility: visible;
+}
+.footer-twelve .f-link a:hover {
+  color: var(--white);
+  letter-spacing: 1px;
+}
+.footer-twelve .inner {
+  padding: 30px 0;
+  border-top: 1px solid #535353;
+  text-align: center;
+}
+.footer-twelve .inner p {
+  color: var(--white);
+}
+.footer-twelve .inner a {
+  font-weight: 400;
+  display: inline-block;
+  margin-left: 6px;
+  color: var(--white);
+  -webkit-transition: all 0.4s ease-out 0s;
+  -moz-transition: all 0.4s ease-out 0s;
+  -ms-transition: all 0.4s ease-out 0s;
+  -o-transition: all 0.4s ease-out 0s;
+  transition: all 0.4s ease-out 0s;
+}
+.footer-twelve .inner a:hover {
+  color: var(--primary);
+}
+
+/*# sourceMappingURL=footer-12.css.map */

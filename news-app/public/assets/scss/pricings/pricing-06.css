@@ -1,0 +1,115 @@
+/* ===== Buttons Css ===== */
+.pricing-style-six .primary-btn {
+  background: var(--primary);
+  color: var(--white);
+  box-shadow: var(--shadow-2);
+}
+.pricing-style-six .active.primary-btn, .pricing-style-six .primary-btn:hover, .pricing-style-six .primary-btn:focus {
+  background: var(--primary-dark);
+  color: var(--white);
+  box-shadow: var(--shadow-4);
+}
+.pricing-style-six .deactive.primary-btn {
+  background: var(--gray-4);
+  color: var(--dark-3);
+  pointer-events: none;
+}
+
+/*===== PRICING SIX =====*/
+.pricing-six {
+  padding: 100px 0;
+}
+
+.pricing-style-six {
+  box-shadow: var(--shadow-2);
+  padding: 40px 40px 50px 40px;
+  border-radius: 8px;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  background: var(--info);
+  margin-top: 50px;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
+  .pricing-style-six {
+    padding: 35px 30px;
+  }
+}
+.pricing-style-six .sub-title {
+  color: var(--white);
+  position: relative;
+  padding-bottom: 8px;
+}
+.pricing-style-six .sub-title::before {
+  position: absolute;
+  content: "";
+  width: 72px;
+  height: 4px;
+  bottom: 0;
+  right: 0;
+  background-color: var(--white);
+  margin: 0 auto;
+  border-radius: 4px;
+}
+.pricing-style-six .price {
+  display: block;
+  font-size: 55px;
+  font-weight: 600;
+  line-height: 60px;
+  margin-top: 25px;
+  color: var(--white);
+}
+@media (max-width: 767px) {
+  .pricing-style-six .price {
+    font-size: 45px;
+    margin-top: 16px;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .pricing-style-six .price {
+    font-size: 50px;
+    margin-top: 20px;
+  }
+}
+.pricing-style-six .year {
+  color: var(--white);
+  margin-top: 3px;
+}
+.pricing-style-six .pricing-baloon-two {
+  position: absolute;
+  top: 0;
+  left: -70px;
+  width: 140px;
+  opacity: 0.5;
+}
+.pricing-style-six .pricing-list {
+  margin-top: 40px;
+}
+.pricing-style-six .pricing-list li {
+  color: var(--white);
+  margin-top: 16px;
+}
+.pricing-style-six .pricing-list li i {
+  color: var(--white);
+  margin-right: 8px;
+}
+.pricing-style-six .pricing-btn {
+  margin-top: 42px;
+}
+.pricing-style-six .primary-btn {
+  background-color: var(--white);
+  color: var(--primary);
+}
+.pricing-style-six .primary-btn:hover {
+  background: var(--primary);
+  color: var(--white);
+}
+.pricing-style-six .bottom-shape {
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+  width: 101%;
+  z-index: -1;
+}
+
+/*# sourceMappingURL=pricing-06.css.map */

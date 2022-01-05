@@ -1,0 +1,70 @@
+@import "../variables";
+@import "../mixin";
+@import "../buttons/buttons";
+
+/*===========================
+  card-10 css 
+===========================*/
+
+.mini-card-style-nine {
+  border-radius: 8px;
+  overflow: hidden;
+  margin-top: 30px;
+
+  & .card-image {
+    & img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      object-position: center;
+      border-radius: 8px;
+
+      @media #{$xs} {
+        height: 210px;
+      }
+    }
+  }
+
+  & .card-content {
+    padding: 16px;
+
+    @media #{$lg} {
+      padding-left: 0px;
+      padding-right: 0px;
+    }
+
+    & .card-title {
+      margin-bottom: 0;
+
+      & a {
+        font-size: 20px;
+        line-height: 30px;
+        color: var(--black);
+        @include transition(0.3s);
+
+        @media #{$xs} {
+          font-size: 18px;
+        }
+
+        &:hover {
+          color: var(--primary);
+        }
+      }
+    }
+
+    & .text {
+      color: var(--dark-3);
+      font-size: 14px;
+      line-height: 24px;
+      margin-top: 8px;
+    }
+
+    & .card-btn {
+      margin-top: 24px;
+
+      .primary-btn-outline {
+        @extend %primary-btn-outline;
+      }
+    }
+  }
+}

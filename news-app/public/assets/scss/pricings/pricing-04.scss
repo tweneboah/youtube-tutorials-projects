@@ -1,0 +1,107 @@
+@import "../variables";
+@import "../mixin";
+@import "../buttons/buttons";
+
+/*===== PRICING FOUR =====*/
+
+.pricing-four {
+  padding: 100px 0;
+}
+
+.pricing-style-four {
+  box-shadow: var(--shadow-2);
+  padding: 40px 40px;
+  border-radius: 8px;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  background-color: var(--primary);
+  margin-top: 50px;
+
+  @media #{$md,$xs} {
+    padding: 35px 30px;
+  }
+
+  & .pricing-header {
+    & .sub-title {
+      color: var(--white);
+      position: relative;
+      padding-bottom: 12px;
+
+      &::before {
+        position: absolute;
+        content: "";
+        width: 72px;
+        height: 4px;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: var(--white);
+        margin: 0 auto;
+        border-radius: 4px;
+      }
+    }
+
+    & .price {
+      display: block;
+      font-size: 50px;
+      font-weight: 600;
+      line-height: 60px;
+      margin-top: 30px;
+      color: var(--white);
+
+      @media #{$xs} {
+        font-size: 45px;
+        margin-top: 16px;
+      }
+
+      @media #{$sm} {
+        font-size: 50px;
+        margin-top: 20px;
+      }
+    }
+
+    & .year {
+      color: var(--white);
+      margin-top: 3px;
+    }
+  }
+
+  & .pricing-list {
+    margin-top: 40px;
+
+    & li {
+      color: var(--white);
+      margin-top: 16px;
+
+      & i {
+        color: var(--white);
+        margin-right: 8px;
+      }
+    }
+  }
+
+  & .pricing-btn {
+    margin-top: 42px;
+  }
+
+  & .primary-btn {
+    @extend %primary-btn;
+    background-color: var(--white);
+    color: var(--primary);
+
+    &:hover {
+      background: var(--white);
+      color: var(--primary);
+      box-shadow: var(--shadow-4);
+    }
+  }
+
+  & .bottom-shape {
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    width: 101%;
+    z-index: -1;
+  }
+}

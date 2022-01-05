@@ -1,0 +1,252 @@
+@import "../variables";
+@import "../mixin";
+@import "../buttons/buttons";
+
+/*===== Profile One Style =====*/
+
+.profile {
+  text-align: center;
+  background-color: #fff;
+  position: relative;
+  overflow: hidden;
+  background-color: var(--white);
+  z-index: 2;
+  background-image: url(../../images/profile/bg-1.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: auto;
+  padding: 100px 0;
+  @media #{$xs} {
+    padding: 60px;
+  }
+  @media #{$sm} {
+    padding: 70px;
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    background-color: var(--primary);
+    height: 100%;
+    width: 100%;
+    opacity: 0.8;
+    z-index: -1;
+  }
+  .profile-content {
+    background-color: var(--white);
+    display: inline-block;
+    box-shadow: var(--shadow-5);
+    border-radius: 10px;
+    overflow: hidden;
+
+    .profile-card {
+      max-width: 560px;
+
+      @media #{$md} {
+        max-width: 540px;
+      }
+      @media #{$xs} {
+        max-width: 100%;
+      }
+      @media #{$sm} {
+        max-width: 420px;
+      }
+
+      .profile-card-wrapper {
+        background-color: var(--white);
+        z-index: 999;
+        border-radius: 5px;
+        overflow: hidden;
+
+        & .card-header {
+          height: 170px;
+          width: 100%;
+
+          @media #{$laptop} {
+            height: 200px;
+          }
+          @media #{$lg} {
+            height: 170px;
+          }
+          @media #{$md} {
+            height: 160px;
+          }
+          @media #{$xs} {
+            height: 90px;
+          }
+          @media #{$sm} {
+            height: 140px;
+          }
+        }
+        & .card-profile {
+          max-width: 150px;
+          width: 100%;
+          margin-left: auto;
+          margin-right: auto;
+          margin-top: -75px;
+          position: relative;
+          z-index: 9;
+
+          @media #{$desktop} {
+            max-width: 170px;
+            margin-top: -85px;
+          }
+          @media #{$md} {
+            max-width: 150px;
+            margin-top: -75px;
+          }
+          @media #{$xs} {
+            max-width: 100px;
+            margin-top: -50px;
+          }
+          @media #{$sm} {
+            max-width: 140px;
+            margin-top: -70px;
+          }
+
+          & img {
+            border-radius: 50%;
+            width: 100%;
+            padding: 8px;
+            background-color: var(--white);
+          }
+        }
+        & .card-content {
+          padding: 25px;
+
+          @media #{$desktop} {
+            padding: 30px;
+          }
+          @media #{$xs} {
+            padding: 10px;
+          }
+          @media #{$sm} {
+            padding: 20px;
+          }
+
+          & .card-title {
+            font-size: 48px;
+            color: var(--black);
+            margin-bottom: 20px;
+
+            @media #{$md} {
+              font-size: 44px;
+            }
+
+            @media #{$xs} {
+              font-size: 26px;
+              margin-bottom: 10px;
+            }
+            @media #{$sm} {
+              font-size: 36px;
+              margin-bottom: 10px;
+            }
+          }
+
+          & .text {
+            color: var(--dark-3);
+            padding-bottom: 20px;
+
+            @media #{$xs} {
+              font-size: 14px;
+              line-height: 24px;
+              padding-bottom: 10px;
+            }
+            @media #{$sm} {
+              font-size: 15px;
+              line-height: 26px;
+              padding-bottom: 20px;
+            }
+          }
+        }
+        .primary-btn {
+          @extend %primary-btn;
+        }
+        & .card-social {
+          padding-top: 10px;
+          padding-bottom: 30px;
+
+          @media #{$xs} {
+            padding-top: 5px;
+            padding-bottom: 10px;
+          }
+
+          & ul {
+            & li {
+              display: inline-block;
+              margin: 0px 9px;
+
+              @media #{$xs} {
+                margin: 0 5px;
+              }
+
+              & a {
+                @extend %primary-btn-outline;
+
+                &.facebook {
+                  color: #3b5998;
+                  border-color: #3b5998;
+
+                  &:hover {
+                    color: var(--white);
+                    background-color: #3b5998;
+                  }
+                }
+
+                &.twitter {
+                  color: #00acee;
+                  border-color: #00acee;
+
+                  &:hover {
+                    color: var(--white);
+                    background-color: #00acee;
+                  }
+                }
+
+                &.instagram {
+                  color: #e1306c;
+                  border-color: #e1306c;
+
+                  &:hover {
+                    color: var(--white);
+                    background-color: #e1306c;
+                  }
+                }
+
+                &.linkedin {
+                  color: #0077b5;
+                  border-color: #0077b5;
+
+                  &:hover {
+                    color: var(--white);
+                    background-color: #0077b5;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.d-table {
+  width: 100%;
+  height: 100%;
+}
+
+.d-table {
+  display: table !important;
+}
+
+.d-table-cell {
+  vertical-align: middle;
+}
+
+.d-table-cell {
+  display: table-cell !important;
+}

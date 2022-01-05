@@ -1,0 +1,69 @@
+@import "../variables";
+@import "../mixin";
+
+/*===========================
+  services css 
+===========================*/
+
+.services-three {
+  position: relative;
+  background-color: var(--light-2);
+  padding-top: 120px;
+  padding-bottom: 120px;
+
+  & .image {
+    border-radius: 8px;
+    overflow: hidden;
+
+    @media #{$md} {
+      margin-top: 35px;
+    }
+
+    @media #{$xs} {
+      margin-top: 30px;
+    }
+  }
+
+  & .services-content {
+    & .sub-title {
+      color: var(--primary);
+      font-weight: 600;
+      text-transform: uppercase;
+      font-size: 18px;
+    }
+
+    & .services-title {
+      font-size: 40px;
+      font-weight: 700;
+      line-height: 55px;
+      color: var(--black);
+      margin-top: 16px;
+      text-transform: capitalize;
+
+      @media #{$md} {
+        font-size: 35px;
+        line-height: 48px;
+      }
+
+      @media #{$xs} {
+        font-size: 30px;
+        line-height: 42px;
+      }
+    }
+
+    & .text {
+      color: var(--dark-3);
+      line-height: 25px;
+      margin-top: 20px;
+
+      @media #{$lg} {
+        font-size: 18px;
+      }
+
+      @media #{$xs} {
+        font-size: 16px;
+        line-height: 24px;
+      }
+    }
+  }
+}

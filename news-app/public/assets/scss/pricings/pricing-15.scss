@@ -1,0 +1,151 @@
+@import "../variables";
+@import "../mixin";
+@import "../buttons/buttons";
+
+/*===== PRICING THIRTEEN =====*/
+
+.pricing-fifteen {
+  padding: 65px 50px 70px;
+
+  @media #{$xs} {
+    padding: 45px 30px 50px;
+  }
+
+  /* Section Title Five */
+  .section-title-three {
+    text-align: center;
+    max-width: 550px;
+    margin: auto;
+    margin-bottom: 50px;
+    position: relative;
+    z-index: 5;
+
+    @media #{$md} {
+      margin-bottom: 45px;
+    }
+
+    @media #{$xs} {
+      margin-bottom: 35px;
+    }
+
+    h5 {
+      font-weight: 600;
+      margin-bottom: 7px;
+      color: var(--primary);
+      text-transform: uppercase;
+      font-size: 1rem;
+
+      @media #{$xs} {
+        font-size: 0.8rem;
+      }
+    }
+
+    h2 {
+      margin-bottom: 15px;
+
+      @media #{$md} {
+        font-size: 2rem;
+        line-height: 2.8rem;
+      }
+
+      @media #{$xs} {
+        font-size: 1.5rem;
+        line-height: 1.9rem;
+      }
+    }
+
+    p {
+      color: var(--dark-3);
+    }
+  }
+}
+
+.pricing-style-fifteen {
+  border: 1px solid var(--gray-4);
+  border-radius: 10px;
+  margin-top: 30px;
+  background-color: var(--white);
+  transition: all 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55) 0s;
+
+  &:hover {
+    box-shadow: var(--shadow-4);
+  }
+
+  .table-head {
+    padding: 25px;
+    border-bottom: 1px solid var(--gray-4);
+  }
+
+  .title {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+
+  p {
+    font-weight: 400;
+    line-height: 22px;
+    color: var(--dark-3);
+  }
+
+  .price {
+    padding: 30px 0;
+  }
+
+  .amount {
+    font-size: 40px;
+    font-weight: 700;
+    display: inline-block;
+  }
+
+  .duration {
+    display: inline-block;
+    font-size: 16px;
+    color: var(--dark-3);
+    font-weight: 400;
+    margin-left: 5px;
+    display: inline-block
+  }
+
+  .primary-btn {
+    @extend %primary-btn;
+    font-size: 15px;
+    text-transform: none;
+    width: 100%;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 10px 20px;
+  }
+
+  .table-content {
+    padding: 25px;
+  }
+
+  .middle-title {
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+  }
+
+  .table-list {
+    li {
+      position: relative;
+      padding-left: 25px;
+      margin-bottom: 13px;
+      color: var(--dark-3);
+
+      &:last-child {
+        margin: 0;
+      }
+
+      i {
+        color: var(--primary);
+        font-size: 14px;
+        position: absolute;
+        left: 0;
+        top: 4px;
+      }
+    }
+  }
+}

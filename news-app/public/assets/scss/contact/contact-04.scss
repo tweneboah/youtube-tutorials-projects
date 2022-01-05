@@ -1,0 +1,251 @@
+@import "../variables";
+@import "../mixin";
+@import "../buttons/buttons";
+
+/*===== CONTACT FOUR STYLE =====*/
+
+.contact-area-four {
+  background-color: var(--light-2);
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.contact-map-four {
+  & iframe {
+    width: 100%;
+    height: 550px;
+
+    @media #{$xs} {
+      height: 350px;
+    }
+  }
+}
+
+.contact-info-four {
+  padding-top: 30px;
+
+  & .single-contact-info {
+    margin-top: 30px;
+
+    & .contact-info-icon {
+      & i {
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        text-align: center;
+        font-size: 24px;
+        color: var(--white);
+        border-radius: 50%;
+      }
+    }
+    & .contact-info-content {
+      padding-left: 20px;
+
+      & .text {
+        color: var(--black);
+      }
+    }
+
+    &.contact-color-1 {
+      & .contact-info-icon {
+        & i {
+          background-color: var(--black);
+        }
+      }
+    }
+    &.contact-color-2 {
+      & .contact-info-icon {
+        & i {
+          background-color: var(--error);
+        }
+      }
+    }
+    &.contact-color-3 {
+      & .contact-info-icon {
+        & i {
+          background-color: var(--primary-dark);
+        }
+      }
+    }
+  }
+}
+
+.contact-wrapper-form {
+  padding-top: 115px;
+
+  & .contact-title {
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--black);
+    padding-bottom: 20px;
+
+    @media #{$xs} {
+      font-size: 26px;
+    }
+
+    & i {
+      color: var(--black);
+      margin-right: 8px;
+    }
+
+    & span {
+      font-weight: 400;
+    }
+  }
+  .form-input {
+    margin-top: 25px;
+
+    .help-block {
+      margin-top: 2px;
+    }
+
+    & label {
+      font-size: 12px;
+      line-height: 18px;
+      color: var(--dark-3);
+      margin-bottom: 8px;
+      display: inline-block;
+    }
+
+    & .input-items {
+      position: relative;
+
+      & input,
+      & textarea {
+        width: 100%;
+        height: 44px;
+        border: 2px solid;
+        padding-left: 44px;
+        padding-right: 12px;
+        position: relative;
+        font-size: 16px;
+      }
+
+      & textarea {
+        padding-top: 8px;
+        height: 130px;
+        resize: none;
+      }
+
+      & i {
+        position: absolute;
+        top: 11px;
+        left: 13px;
+        font-size: 20px;
+        z-index: 9;
+      }
+
+      &.default {
+        & input,
+        & textarea {
+          border-color: var(--gray-3);
+          color: var(--dark-3);
+
+          &:focus {
+            border-color: var(--primary);
+          }
+
+          @include placeholder {
+            color: var(--dark-3);
+            opacity: 1;
+          }
+        }
+
+        & i {
+          color: var(--dark-3);
+        }
+      }
+
+      &.active {
+        & input,
+        & textarea {
+          border-color: var(--primary-dark);
+          color: var(--black);
+
+          @include placeholder {
+            color: var(--black);
+            opacity: 1;
+          }
+        }
+
+        & i {
+          color: var(--primary-dark);
+        }
+      }
+
+      &.error {
+        & input,
+        & textarea {
+          border-color: var(--error);
+          color: var(--error);
+
+          @include placeholder {
+            color: var(--error);
+            opacity: 1;
+          }
+        }
+
+        & i {
+          color: var(--error);
+        }
+      }
+
+      &.success {
+        & input,
+        & textarea {
+          border-color: var(--success);
+          color: var(--success);
+
+          @include placeholder {
+            color: var(--success);
+            opacity: 1;
+          }
+        }
+
+        & i {
+          color: var(--success);
+        }
+      }
+
+      &.disabled {
+        & input,
+        & textarea {
+          border-color: var(--gray-3);
+          color: var(--dark-3);
+          background: none;
+
+          @include placeholder {
+            color: var(--dark-3);
+            opacity: 1;
+          }
+        }
+
+        & i {
+          color: var(--dark-3);
+        }
+      }
+    }
+  }
+
+  .form-style-two {
+    & .form-input {
+      & .input-items {
+        & input,
+        & textarea {
+          border-radius: 5px;
+          padding-left: 12px;
+          padding-right: 44px;
+        }
+        & i {
+          left: auto;
+          right: 13px;
+        }
+      }
+    }
+  }
+  .standard-buttons {
+    .primary-btn {
+      @extend %primary-btn;
+    }
+  }
+}

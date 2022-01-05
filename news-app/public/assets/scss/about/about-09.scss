@@ -1,0 +1,134 @@
+@import "../variables";
+@import "../mixin";
+
+/*======================================
+    About Us CSS
+========================================*/
+.about-section {
+  background: var(--light-3);
+  padding: 180px 0;
+  position: relative;
+
+  @media #{$md} {
+    padding: 120px 0;
+  }
+  @media #{$xs} {
+    padding: 120px 0;
+  }
+
+  .section-title {
+    margin-bottom: 30px;
+
+    span {
+      font-size: 20px;
+      color: var(--primary);
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      font-size: 45px;
+      line-height: 55px;
+
+      @media #{$xs} {
+        font-size: 38px;
+        line-height: 45px;
+      }
+    }
+  }
+
+  .about-img-wrapper {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 46%;
+    @include transform(translateY(-50%));
+
+    @media #{$md} {
+      position: relative;
+      top: 0;
+      @include transform(translateY(0));
+      width: 100%;
+      margin-bottom: 50px;
+    }
+    @media #{$xs} {
+      position: relative;
+      top: 0;
+      @include transform(translateY(0));
+      width: 100%;
+      margin-bottom: 50px;
+    }
+
+    img {
+      width: 100%;
+    }
+
+    .about-experience {
+      width: 300px;
+      border-radius: 27px;
+      background: linear-gradient(
+        to top left,
+        var(--primary) 0%,
+        var(--primary-dark) 100%
+      );
+      border: 5px solid #eff2f9;
+      padding: 40px 20px;
+      position: absolute;
+      right: -40px;
+      bottom: 10px;
+
+      @media #{$md, $xs} {
+        right: 40px;
+      }
+
+      h3 {
+        color: var(--white);
+        margin-bottom: 15px;
+      }
+      p {
+        color: var(--white);
+      }
+    }
+  }
+
+  .about-content-wrapper {
+    .about-content {
+      & > p {
+        margin-bottom: 45px;
+      }
+
+      .counter-up {
+        display: flex;
+        justify-content: space-between;
+
+        @media #{$xs} {
+          display: block;
+        }
+        @media #{$sm} {
+          display: flex;
+        }
+
+        .counter {
+          margin-right: 10px;
+
+          &:last-child {
+            margin-right: 0;
+          }
+
+          span {
+            font-size: 40px;
+            font-weight: 600;
+            color: var(--primary);
+            display: block;
+            margin-bottom: 8px;
+          }
+
+          h4 {
+            font-weight: 500;
+            margin-bottom: 10px;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,110 @@
+@import "../variables";
+@import "../mixin";
+
+/*===========================
+  teams css 
+===========================*/
+.team-area {
+  margin-bottom: 70px;
+}
+
+.team-style-five {
+  position: relative;
+  margin-top: 50px;
+
+  & .team-image {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    overflow: hidden;
+    text-align: center;
+
+    & img {
+      width: 100%;
+      @include transition(0.3s);
+    }
+  }
+
+  &:hover {
+    .team-image {
+      img {
+        @include transform(scale(1.2) rotate(2deg));
+      }
+    }
+  }
+
+  & .team-content {
+    border-radius: 8px;
+    position: relative;
+    background-color: var(--white);
+    padding: 0px 35px;
+
+    @media #{$md} {
+      padding: 0;
+      padding-top: 30px;
+      text-align: center;
+    }
+
+    @media #{$xs} {
+      padding: 0;
+      padding-top: 30px;
+      text-align: center;
+    }
+
+    & .name {
+      font-size: 22px;
+      font-weight: 600;
+      line-height: 30px;
+      color: var(--black);
+      @include transition(0.3s);
+
+      @media #{$lg} {
+        font-size: 20px;
+      }
+    }
+
+    p {
+      font-size: 15px;
+      margin: 12px 0 16px 0;
+    }
+
+    & .sub-title {
+      font-size: 16px;
+      line-height: 24px;
+      color: var(--dark-3);
+      margin-top: 2px;
+      display: block;
+    }
+
+    & .social {
+      margin-top: 20px;
+
+      & li {
+        display: inline-block;
+        margin-right: 6px;
+
+        &:last-child {
+          margin: 0;
+        }
+
+        & a {
+          font-size: 15px;
+          color: var(--gray-1);
+          height: 35px;
+          width: 35px;
+          text-align: center;
+          line-height: 35px;
+          border: 1px solid var(--gray-4);
+          border-radius: 50%;
+          @include transition(0.4s);
+
+          &:hover {
+            background-color: var(--primary);
+            color: var(--white);
+            border-color: transparent;
+          }
+        }
+      }
+    }
+  }
+}

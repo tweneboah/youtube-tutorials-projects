@@ -1,0 +1,74 @@
+/*===========================
+  about-03 css
+===========================*/
+.about-three {
+  background-color: var(--light-3);
+  padding-top: 90px;
+  padding-bottom: 120px;
+}
+
+.about-feature-three .about-feature-image img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.about-feature-items-three {
+  padding-left: 50px;
+  padding-right: 100px;
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .about-feature-items-three {
+    padding: 0;
+    margin-top: 30px;
+  }
+}
+@media (max-width: 767px) {
+  .about-feature-items-three {
+    padding: 0;
+    margin-top: 30px;
+  }
+}
+.about-feature-items-three ul li {
+  position: relative;
+  margin-bottom: 40px;
+}
+.about-feature-items-three ul li:last-child {
+  margin: 0;
+}
+.about-feature-items-three ul li span {
+  max-width: 45px;
+  min-width: 45px;
+  max-height: 45px;
+  min-height: 45px;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background-color: var(--primary);
+  color: var(--white);
+  position: absolute;
+  left: 0;
+  top: 0;
+  border: 3px solid transparent;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  font-size: 18px;
+}
+.about-feature-items-three ul li .content {
+  display: inline-block;
+  padding-left: 70px;
+}
+.about-feature-items-three ul li .content .list-title {
+  margin-bottom: 10px;
+}
+
+/*# sourceMappingURL=about-03.css.map */

@@ -1,0 +1,179 @@
+/*===========================
+  services css 
+===========================*/
+.services-six {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  position: relative;
+  /* Section Title Six */
+}
+@media only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
+  .services-six {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+.services-six .section-title-four {
+  text-align: center;
+  max-width: 550px;
+  margin: auto;
+  margin-bottom: 50px;
+  position: relative;
+  z-index: 5;
+  margin-top: 12px;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .services-six .section-title-four {
+    margin-bottom: 45px;
+  }
+}
+@media (max-width: 767px) {
+  .services-six .section-title-four {
+    margin-bottom: 35px;
+  }
+}
+.services-six .section-title-four span {
+  text-transform: uppercase;
+  color: var(--primary);
+  display: inline-block;
+  margin-bottom: 16px;
+  font-size: 14px;
+  font-weight: 600;
+}
+@media (max-width: 767px) {
+  .services-six .section-title-four span {
+    margin-bottom: 15px;
+  }
+}
+.services-six .section-title-four h2 {
+  margin-bottom: 15px;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .services-six .section-title-four h2 {
+    font-size: 2rem;
+    line-height: 2.8rem;
+  }
+}
+@media (max-width: 767px) {
+  .services-six .section-title-four h2 {
+    font-size: 1.5rem;
+    line-height: 1.9rem;
+  }
+}
+.services-six .section-title-four h3 {
+  font-size: 3.8rem;
+  line-height: 3.8rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  position: absolute;
+  top: -18px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  color: var(--gray-3);
+  z-index: -1;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-color: var(--gray-3);
+  opacity: 0.5;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .services-six .section-title-four h3 {
+    font-size: 3.3rem;
+    line-height: 3.5rem;
+    top: -18px;
+  }
+}
+@media (max-width: 767px) {
+  .services-six .section-title-four h3 {
+    font-size: 2.7rem;
+    line-height: 3.2rem;
+    top: -17px;
+  }
+}
+.services-six .section-title-four p {
+  color: var(--dark-3);
+}
+.services-six .single-service {
+  padding: 20px;
+  padding-bottom: 50px;
+  background-color: var(--white);
+  box-shadow: var(--shadow-2);
+  border: none;
+  border-radius: 10px;
+  transition: all 0.4s ease-in-out;
+  overflow: hidden;
+  position: relative;
+  margin-top: 30px;
+  text-align: center;
+  -webkit-transition: all 0.4s ease-out 0s;
+  -moz-transition: all 0.4s ease-out 0s;
+  -ms-transition: all 0.4s ease-out 0s;
+  -o-transition: all 0.4s ease-out 0s;
+  transition: all 0.4s ease-out 0s;
+}
+.services-six .single-service:hover {
+  box-shadow: var(--shadow-4);
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .services-six .single-service {
+    padding: 25px;
+    padding-bottom: 30px;
+  }
+}
+@media (max-width: 767px) {
+  .services-six .single-service {
+    padding: 20px;
+    padding-bottom: 30px;
+  }
+}
+.services-six .single-service::before {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 0;
+  height: 4px;
+  width: 0%;
+  background-color: var(--primary);
+  transition: all 0.4s ease-in-out;
+}
+.services-six .single-service:hover::before {
+  width: 100%;
+}
+.services-six .single-service img {
+  margin-bottom: 30px;
+  width: 100%;
+  border-radius: 8px;
+}
+.services-six .single-service h3 {
+  color: var(--black);
+  font-weight: 600;
+}
+.services-six .single-service p {
+  color: var(--dark-3);
+  margin-top: 15px;
+}
+.services-six .single-service .more {
+  color: var(--black);
+  font-weight: 600;
+  margin-top: 30px;
+  display: inline-block;
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+}
+.services-six .single-service .more i {
+  display: inline-block;
+  margin-left: 5px;
+  font-size: 15px;
+  position: relative;
+  top: 2px;
+}
+.services-six .single-service .more:hover {
+  letter-spacing: 1px;
+  color: var(--primary);
+}
+
+/*# sourceMappingURL=service-06.css.map */
