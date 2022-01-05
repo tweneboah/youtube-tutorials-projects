@@ -1,0 +1,67 @@
+@import "../variables";
+@import "../mixin";
+
+/*===========================
+  features css 
+===========================*/
+
+.features-five {
+  background-color: var(--light-2);
+  padding-top: 120px;
+  padding-bottom: 120px;
+
+  & .section-title {
+    padding-bottom: 10px;
+
+    & .title {
+      font-size: 44px;
+      font-weight: 600;
+      color: var(--black);
+      line-height: 55px;
+
+      @media #{$xs} {
+        font-size: 30px;
+        line-height: 35px;
+      }
+    }
+  }
+}
+
+.features-style-five {
+  position: relative;
+  padding: 0 20px;
+  margin-top: 40px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 4px;
+    top: 0;
+    left: 0;
+    background: var(--primary);
+  }
+
+  & .features-title {
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 600;
+    color: var(--black);
+    @include transition(0.3s);
+
+    @media #{$lg} {
+      font-size: 20px;
+    }
+
+    @media #{$xs} {
+      font-size: 20px;
+    }
+  }
+
+  & .text {
+    font-size: 14px;
+    line-height: 20px;
+    color: var(--dark-3);
+    margin-top: 16px;
+  }
+}

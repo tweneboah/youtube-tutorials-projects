@@ -1,0 +1,170 @@
+/*===== portfolio THREE =====*/
+.portfolio-three {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.portfolio-three .portfolio-menu {
+  margin-bottom: 30px;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
+  .portfolio-three .portfolio-menu {
+    margin-bottom: 15px;
+  }
+}
+.portfolio-three .portfolio-menu button {
+  border: none;
+  background: none;
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--dark-3);
+  line-height: 48px;
+  padding: 0 30px;
+  position: relative;
+  display: inline-block;
+  z-index: 5;
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+  cursor: pointer;
+  margin: 0 2px;
+  text-transform: uppercase;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .portfolio-three .portfolio-menu button {
+    font-size: 14px;
+    padding: 0 26px;
+  }
+}
+@media (max-width: 767px) {
+  .portfolio-three .portfolio-menu button {
+    font-size: 14px;
+    padding: 0 22px;
+    line-height: 42px;
+  }
+}
+.portfolio-three .portfolio-menu button::before {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: var(--primary);
+  z-index: -1;
+  opacity: 0;
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+  border-radius: 4px;
+}
+.portfolio-three .portfolio-menu button:hover, .portfolio-three .portfolio-menu button.active {
+  color: var(--primary);
+}
+.portfolio-three .portfolio-menu button:hover::before, .portfolio-three .portfolio-menu button.active::before {
+  opacity: 1;
+}
+.portfolio-three .hide {
+  display: none;
+}
+.portfolio-three .show {
+  display: block;
+}
+
+.portfolio-style-three {
+  margin-top: 30px;
+}
+.portfolio-style-three .portfolio-image {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+}
+.portfolio-style-three .portfolio-image img {
+  width: 100%;
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+}
+.portfolio-style-three .portfolio-image .portfolio-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all 0.5s ease-out 0s;
+  -moz-transition: all 0.5s ease-out 0s;
+  -ms-transition: all 0.5s ease-out 0s;
+  -o-transition: all 0.5s ease-out 0s;
+  transition: all 0.5s ease-out 0s;
+  background-color: rgba(255, 255, 255, 0.8);
+  -webkit-transform: scale(0.95);
+  -moz-transform: scale(0.95);
+  -ms-transform: scale(0.95);
+  -o-transform: scale(0.95);
+  transform: scale(0.95);
+  border-radius: 8px;
+}
+.portfolio-style-three .portfolio-image .portfolio-content {
+  padding: 16px;
+}
+.portfolio-style-three .portfolio-image .portfolio-icon {
+  position: relative;
+  display: inline-block;
+  margin: 0 5px;
+}
+.portfolio-style-three .portfolio-image .portfolio-icon a {
+  font-size: 28px;
+  color: var(--white);
+  position: relative;
+  z-index: 5;
+  line-height: 60px;
+  height: 60px;
+  width: 60px;
+  text-align: center;
+  line-height: 60px;
+  background-color: var(--primary);
+  border-radius: 8px;
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+}
+.portfolio-style-three .portfolio-image .portfolio-icon a:hover {
+  background-color: var(--primary-dark);
+}
+.portfolio-style-three .portfolio-text {
+  padding-top: 16px;
+}
+.portfolio-style-three .portfolio-title a {
+  color: var(--black);
+  font-size: 24px;
+  line-height: 30px;
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .portfolio-style-three .portfolio-title a {
+    font-size: 20px;
+  }
+}
+@media (max-width: 767px) {
+  .portfolio-style-three .portfolio-title a {
+    font-size: 20px;
+  }
+}
+.portfolio-style-three .text {
+  color: var(--black);
+  margin-top: 8px;
+}
+.portfolio-style-three:hover .portfolio-overlay {
+  opacity: 1;
+  visibility: visible;
+}
+
+/*# sourceMappingURL=portfolio-03.css.map */

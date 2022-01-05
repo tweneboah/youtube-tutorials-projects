@@ -1,0 +1,104 @@
+@import "../variables";
+@import "../mixin";
+@import "../buttons/buttons";
+
+/*===== PRICING STYLE THREE =====*/
+
+.pricing-three {
+  padding: 100px 0;
+}
+
+.pricing-style-three {
+  box-shadow: var(--shadow-2);
+  padding: 40px 40px;
+  border-radius: 8px;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  background-color: var(--white);
+  margin-top: 50px;
+  @include transition(0.3s);
+
+  @media #{$md,$xs} {
+    padding: 35px 30px;
+  }
+
+  &:hover {
+    box-shadow: var(--shadow-4);
+  }
+
+  & .sub-title {
+    color: var(--primary);
+    position: relative;
+    padding-bottom: 8px;
+
+  }
+
+  & .price {
+    display: block;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 60px;
+    margin-top: 25px;
+    color: var(--black);
+
+    span {
+      font-size: 15px;
+      color: var(--dark-3);
+    }
+
+    @media #{$xs} {
+      font-size: 45px;
+      margin-top: 16px;
+    }
+
+    @media #{$sm} {
+      font-size: 50px;
+      margin-top: 20px;
+    }
+  }
+
+  & .text {
+    color: var(--dark-3);
+    margin-top: 3px;
+    font-size: 18px;
+  }
+
+  & .pricing-icon {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    color: var(--primary);
+    font-size: 50px;
+  }
+
+  & .pricing-list {
+    margin-top: 40px;
+
+    & li {
+      color: var(--dark-3);
+      margin-top: 16px;
+
+      & i {
+        color: var(--primary);
+        margin-right: 8px;
+      }
+    }
+  }
+
+  & .pricing-btn {
+    margin-top: 42px;
+  }
+
+  & .primary-btn {
+    @extend %primary-btn;
+  }
+
+  & .bottom-shape {
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    width: 101%;
+    z-index: -1;
+  }
+}

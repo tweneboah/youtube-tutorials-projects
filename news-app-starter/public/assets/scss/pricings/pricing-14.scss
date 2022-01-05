@@ -1,0 +1,167 @@
+@import "../variables";
+@import "../mixin";
+@import "../buttons/buttons";
+
+/*===== PRICING THIRTEEN =====*/
+
+.pricing-fourteen {
+  padding: 65px 50px 70px;
+
+  @media #{$xs} {
+    padding: 45px 30px 50px;
+  }
+
+  /* Section Title Five */
+  .section-title-five {
+    text-align: center;
+    max-width: 550px;
+    margin: auto;
+    margin-bottom: 50px;
+    position: relative;
+    z-index: 5;
+    margin-top: 12px;
+
+    @media #{$md} {
+      margin-bottom: 45px;
+    }
+
+    @media #{$xs} {
+      margin-bottom: 35px;
+    }
+
+    h6 {
+      font-weight: 600;
+      display: inline-block;
+      margin-bottom: 20px;
+      color: var(--primary);
+      border: 2px solid var(--primary);
+      border-radius: 30px;
+      padding: 8px 30px;
+    }
+
+    h2 {
+      margin-bottom: 15px;
+
+      @media #{$md} {
+        font-size: 2rem;
+        line-height: 2.8rem;
+      }
+
+      @media #{$xs} {
+        font-size: 1.5rem;
+        line-height: 1.9rem;
+      }
+    }
+
+    p {
+      color: var(--dark-3);
+    }
+  }
+}
+
+.pricing-style-fourteen {
+  border: 1px solid var(--light-1);
+  border-radius: 10px;
+  margin-top: 40px;
+  background-color: var(--white);
+  transition: all 0.4s ease;
+  padding: 50px 35px;
+  text-align: center;
+  z-index: 0;
+
+  &:hover {
+    box-shadow: var(--shadow-4);
+  }
+
+  &.middle {
+    box-shadow: var(--shadow-4);
+
+    .title {
+      border-color: var(--primary);
+      background: var(--primary);
+      color: var(--white);
+    }
+  }
+
+  .title {
+    font-weight: 500;
+    margin-bottom: 25px;
+    color: var(--primary);
+    padding: 8px 20px;
+    border: 2px solid var(--primary);
+    display: inline-block;
+    border-radius: 30px;
+    font-size: 16px;
+  }
+
+  .table-head {
+    p {
+      color: var(--dark-3);
+    }
+  }
+
+  .price {
+    padding-top: 30px;
+  }
+
+  .amount {
+    font-weight: 600;
+    display: inline-block;
+    position: relative;
+    padding-left: 15px;
+    font-size: 55px;
+  }
+
+  .currency {
+    font-weight: 400;
+    color: var(--dark-3);
+    font-size: 20px;
+    position: absolute;
+    left: 0;
+    top: 6px;
+  }
+
+  .duration {
+    display: inline-block;
+    font-size: 18px;
+    color: var(--dark-3);
+    font-weight: 400;
+  }
+
+  .light-rounded-buttons {
+    margin: 0;
+    margin-top: 30px;
+    margin-bottom: 40px;
+  }
+
+  .table-list {
+    li {
+      position: relative;
+      margin-bottom: 10px;
+      color: var(--dark-3);
+      text-align: left;
+
+      &:last-child {
+        margin: 0;
+      }
+
+      i {
+        color: var(--primary);
+        font-size: 16px;
+        padding-right: 8px;
+
+        &.deactive {
+          color: var(--dark-3);
+        }
+      }
+    }
+  }
+
+  .primary-btn {
+    @extend %primary-btn;
+  }
+
+  .primary-btn-outline {
+    @extend %primary-btn-outline;
+  }
+}

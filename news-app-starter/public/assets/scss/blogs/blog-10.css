@@ -1,0 +1,63 @@
+/*===== BLOG MINI STYLE =====*/
+.single-mini-blog {
+  margin-top: 50px;
+}
+.single-mini-blog .blog-image {
+  max-width: 80px;
+  width: 100%;
+  height: 80px;
+  border-radius: 4px;
+}
+.single-mini-blog .blog-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.single-mini-blog .blog-content {
+  padding-left: 12px;
+}
+.single-mini-blog .blog-content .blog-title a {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  color: var(--black);
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .single-mini-blog .blog-content .blog-title a {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+@media (max-width: 767px) {
+  .single-mini-blog .blog-content .blog-title a {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .single-mini-blog .blog-content .blog-title a {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+.single-mini-blog .blog-content .blog-title a:hover {
+  color: var(--primary);
+}
+.single-mini-blog .blog-content span {
+  font-size: 13px;
+  line-height: 18px;
+  color: var(--dark-3);
+  margin-top: 8px;
+  margin-right: 8px;
+}
+.single-mini-blog.mini-style-two .blog-image img {
+  border-radius: 50%;
+}
+
+/*# sourceMappingURL=blog-10.css.map */

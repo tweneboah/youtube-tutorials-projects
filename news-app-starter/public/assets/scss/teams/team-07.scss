@@ -1,0 +1,158 @@
+@import "../variables";
+@import "../mixin";
+
+/*======================================
+	Team CSS
+========================================*/
+.team-style-seven {
+    background-color: var(--light-2);
+    padding: 100px 0;
+
+    .single-team {
+        margin-top: 30px;
+        position: relative;
+        -webkit-transition: all 500ms ease;
+        -moz-transition: all 500ms ease;
+        transition: all 500ms ease;
+        display: inline-block;
+        overflow: hidden;
+        text-align: center;
+        background: transparent;
+
+        .shapes {
+            position: relative;
+
+            .shape1 {
+                height: 50px;
+                width: 50px;
+                position: absolute;
+                left: 0;
+                top: 15px;
+                -webkit-transition: all 0.4s ease;
+                -moz-transition: all 0.4s ease;
+                transition: all 0.4s ease;
+                opacity: 0;
+                visibility: hidden;
+            }
+
+            .shape2 {
+                height: 40px;
+                width: 40px;
+                position: absolute;
+                right: 0;
+                bottom: 3px;
+                -webkit-transition: all 0.4s ease;
+                -moz-transition: all 0.4s ease;
+                transition: all 0.4s ease;
+                opacity: 0;
+                visibility: hidden;
+                transform: scale(0);
+            }
+        }
+
+        &:hover .shapes .shape1 {
+            top: 0;
+            opacity: 1;
+            visibility: visible;
+        }
+
+        &:hover .shapes .shape2 {
+            opacity: 1;
+            visibility: visible;
+            transform: scale(1);
+        }
+
+        .info-head {
+            background: transparent;
+            position: relative;
+            z-index: 2;
+            -webkit-transition: all 0.4s ease;
+            -moz-transition: all 0.4s ease;
+            transition: all 0.4s ease;
+            margin-top: 20px;
+        }
+
+        &:hover .info-head {
+            border-color: transparent;
+
+            &:before {
+                opacity: 1;
+                visibility: visible;
+                height: 100%;
+            }
+        }
+
+        .image {
+            height: 200px;
+            width: 200px;
+            border-radius: 50%;
+            overflow: hidden;
+
+            img {
+                height: 100%;
+                width: 100%;
+            }
+        }
+
+        .info-box {
+            text-align: center;
+
+            .name {
+                display: block;
+                font-size: 18px;
+                color: var(--black);
+                margin-bottom: 3px;
+                text-transform: capitalize;
+
+                a {
+                    font-weight: 600;
+                    font-size: 16px;
+
+                    &:hover {
+                        color: var(--primary);
+                    }
+                }
+            }
+
+            .designation {
+                color: var(--dark-3);
+                font-size: 14px;
+                -webkit-transition: all 0.4s ease;
+                -moz-transition: all 0.4s ease;
+                transition: all 0.4s ease;
+            }
+        }
+
+        .social-links {
+            -webkit-transition: all 500ms ease;
+            -moz-transition: all 500ms ease;
+            transition: all 500ms ease;
+            margin-top: 15px;
+
+            .social {
+                border: 1px solid var(--gray-4);
+                padding: 12px 30px;
+                border-radius: 30px;
+
+                li {
+                    display: inline-block;
+                    margin-right: 15px;
+
+                    &:last-child {
+                        margin-right: 0px;
+                    }
+
+                    a {
+                        color: var(--dark-3);
+                        display: block;
+                        font-size: 16px;
+
+                        &:hover {
+                            color: var(--primary);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

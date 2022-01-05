@@ -1,0 +1,183 @@
+@import "../variables";
+@import "../mixin";
+@import "../buttons/buttons";
+
+/*======================================
+    header Area CSS
+========================================*/
+.header-ten {
+  position: relative;
+  background: var(--light-1);
+  overflow: hidden;
+  padding: 100px 0;
+
+  .header-inner {
+    height: auto;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 3;
+  }
+
+  .header-text {
+    float: none;
+
+    h6 {
+      color: var(--primary);
+      font-size: 14px;
+      font-weight: 600;
+      display: block;
+      margin-bottom: 15px;
+    }
+
+    h1 {
+      font-weight: 600;
+      margin-bottom: 25px;
+      color: var(--black);
+      letter-spacing: -1px;
+    }
+
+    p {
+      color: var(--dark-3);
+    }
+
+    .light-rounded-buttons {
+      margin-top: 30px;
+
+      .primary-btn {
+        @extend %primary-btn;
+      }
+    }
+  }
+
+  .header-image {
+    float: right;
+    height: 500px;
+    width: 500px;
+    display: block;
+    border-radius: 50%;
+    background-image: url("../../images/header/header-10/04.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 5;
+
+    @media #{$md,$xs} {
+      display: none;
+    }
+
+    &::before {
+      position: absolute;
+      content: "";
+      left: 0;
+      top: 0;
+      background-image: url("../../images/header/header-10/shape2.png");
+      background-repeat: no-repeat;
+      height: 100px;
+      width: 100px;
+      z-index: -1;
+      background-size: contain;
+      background-position: center;
+    }
+
+    .shape3 {
+      position: absolute;
+      bottom: 35px;
+      right: 60px;
+      z-index: -1;
+    }
+  }
+
+  .verticle-lines {
+    .vlines {
+      width: 3px;
+      height: 100%;
+      background: #473bf036;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      -webkit-transform: scaleY(0);
+      -ms-transform: scaleY(0);
+      transform: scaleY(0);
+      -webkit-transform-origin: top left;
+      -ms-transform-origin: top left;
+      transform-origin: top left;
+      -webkit-animation-name: lineanim;
+      animation-name: lineanim;
+      -webkit-animation-iteration-count: infinite;
+      animation-iteration-count: infinite;
+      -webkit-animation-timing-function: cubic-bezier(0.785, 0.135, 0.15, 0.86);
+      animation-timing-function: cubic-bezier(0.785, 0.135, 0.15, 0.86);
+      -webkit-animation-duration: 3s;
+      animation-duration: 3s;
+      opacity: 0.2;
+
+      &.vlines.one {
+        left: 20%;
+        -webkit-animation-delay: 1s;
+        animation-delay: 1s;
+      }
+
+      &.vlines.two {
+        left: 40%;
+        -webkit-animation-delay: 0s;
+        animation-delay: 0s;
+      }
+
+      &.vlines.three {
+        left: 60%;
+        -webkit-animation-delay: 2s;
+        animation-delay: 2s;
+      }
+
+      &.vlines.four {
+        left: 80%;
+        -webkit-animation-delay: 1.5s;
+        animation-delay: 1.5s;
+      }
+    }
+  }
+}
+
+@-webkit-keyframes lineanim {
+  50% {
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
+    -webkit-transform-origin: top left;
+    transform-origin: top left;
+  }
+
+  50.1% {
+    -webkit-transform-origin: bottom left;
+    transform-origin: bottom left;
+  }
+
+  100% {
+    -webkit-transform: scaleY(0);
+    transform: scaleY(0);
+    -webkit-transform-origin: bottom left;
+    transform-origin: bottom left;
+  }
+}
+
+@keyframes lineanim {
+  50% {
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
+    -webkit-transform-origin: top left;
+    transform-origin: top left;
+  }
+
+  50.1% {
+    -webkit-transform-origin: bottom left;
+    transform-origin: bottom left;
+  }
+
+  100% {
+    -webkit-transform: scaleY(0);
+    transform: scaleY(0);
+    -webkit-transform-origin: bottom left;
+    transform-origin: bottom left;
+  }
+}

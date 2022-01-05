@@ -1,0 +1,51 @@
+/* ===== Buttons Css ===== */
+.call-action-three .call-action-content .primary-btn {
+  background: var(--primary);
+  color: var(--white);
+  box-shadow: var(--shadow-2);
+}
+.call-action-three .call-action-content .active.primary-btn, .call-action-three .call-action-content .primary-btn:hover, .call-action-three .call-action-content .primary-btn:focus {
+  background: var(--primary-dark);
+  color: var(--white);
+  box-shadow: var(--shadow-4);
+}
+.call-action-three .call-action-content .deactive.primary-btn {
+  background: var(--gray-4);
+  color: var(--dark-3);
+  pointer-events: none;
+}
+
+/*===== call action three =====*/
+.call-action-three {
+  background-color: var(--light-2);
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+.call-action-three .call-action-content {
+  margin-bottom: 50px;
+}
+.call-action-three .call-action-content .action-title {
+  font-weight: 600;
+  color: var(--black);
+  margin-bottom: 25px;
+  font-size: 35px;
+  line-height: 45px;
+  position: relative;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .call-action-three .call-action-content .action-title {
+    font-size: 30px;
+    line-height: 40px;
+  }
+}
+@media (max-width: 767px) {
+  .call-action-three .call-action-content .action-title {
+    font-size: 28px;
+    line-height: 38px;
+  }
+}
+.call-action-three .call-action-content .text {
+  margin-bottom: 40px;
+}
+
+/*# sourceMappingURL=call-to-action-03.css.map */

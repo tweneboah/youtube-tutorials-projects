@@ -1,0 +1,181 @@
+/* ===== Buttons Css ===== */
+.account-login .light-rounded-buttons .primary-btn {
+  background: var(--primary);
+  color: var(--white);
+  box-shadow: var(--shadow-2);
+}
+.account-login .light-rounded-buttons .active.primary-btn, .account-login .light-rounded-buttons .primary-btn:hover, .account-login .light-rounded-buttons .primary-btn:focus {
+  background: var(--primary-dark);
+  color: var(--white);
+  box-shadow: var(--shadow-4);
+}
+.account-login .light-rounded-buttons .deactive.primary-btn {
+  background: var(--gray-4);
+  color: var(--dark-3);
+  pointer-events: none;
+}
+
+.account-login .light-rounded-buttons .primary-btn-outline {
+  border-color: var(--primary);
+  color: var(--primary);
+}
+.account-login .light-rounded-buttons .active.primary-btn-outline, .account-login .light-rounded-buttons .primary-btn-outline:hover, .account-login .light-rounded-buttons .primary-btn-outline:focus {
+  background: var(--primary-dark);
+  color: var(--white);
+}
+.account-login .light-rounded-buttons .deactive.primary-btn-outline {
+  color: var(--dark-3);
+  border-color: var(--gray-4);
+  pointer-events: none;
+}
+
+/*===========================
+    SING IN SING UP css 
+===========================*/
+.account-login {
+  background-color: var(--light-2);
+  padding: 100px 0;
+}
+.account-login .inner-content {
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: var(--shadow-2);
+}
+.account-login .login-form {
+  padding: 70px 50px;
+  background-color: var(--white);
+  border: none;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .account-login .login-form {
+    padding: 50px;
+  }
+}
+@media (max-width: 767px) {
+  .account-login .login-form {
+    padding: 35px;
+  }
+}
+.account-login .login-form .card-body {
+  padding: 0;
+}
+.account-login .login-form .title {
+  margin-bottom: 45px;
+}
+@media (max-width: 767px) {
+  .account-login .login-form .title {
+    margin-bottom: 30px;
+  }
+}
+.account-login .login-form .title h3 {
+  font-size: 25px;
+  font-weight: 700;
+  color: var(--black);
+  margin-bottom: 10px;
+}
+@media (max-width: 767px) {
+  .account-login .login-form .title h3 {
+    font-size: 22px;
+  }
+}
+.account-login .bottom-content {
+  margin-top: 25px;
+}
+.account-login .form-group {
+  margin-bottom: 15px;
+  position: relative;
+}
+.account-login .form-group label {
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 9;
+}
+.account-login .form-group .form-control {
+  padding: 0 18px;
+  transition: all 0.4s ease;
+  border: 1px solid var(--gray-4);
+  background-color: var(--white);
+  color: var(--dark-3);
+  font-size: 15px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  height: 52px;
+  border-radius: 6px !important;
+  overflow: hidden;
+  width: 100%;
+  padding-left: 55px;
+}
+.account-login .form-group .form-control:focus {
+  border-color: var(--primary);
+  box-shadow: var(--shadow-2);
+}
+.account-login .lost-pass {
+  color: var(--dark-3);
+}
+.account-login .lost-pass:hover {
+  color: var(--primary);
+}
+.account-login .alt-option {
+  margin-top: 60px;
+}
+@media (max-width: 767px) {
+  .account-login .alt-option {
+    margin-top: 35px;
+  }
+}
+.account-login .alt-option li {
+  font-weight: 600;
+  display: inline-block;
+  margin-right: 15px;
+}
+@media (max-width: 767px) {
+  .account-login .alt-option li {
+    margin-top: 5px;
+  }
+}
+.account-login .alt-option li span {
+  color: var(--dark-3);
+  display: inline-block;
+}
+.account-login .alt-option li:last-child {
+  margin: 0;
+}
+.account-login .alt-option li a {
+  color: var(--primary);
+  -webkit-transition: all 0.4s ease-out 0s;
+  -moz-transition: all 0.4s ease-out 0s;
+  -ms-transition: all 0.4s ease-out 0s;
+  -o-transition: all 0.4s ease-out 0s;
+  transition: all 0.4s ease-out 0s;
+  font-weight: 600;
+}
+.account-login .alt-option li a:hover {
+  color: var(--primary-3);
+}
+.account-login .light-rounded-buttons {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: -8px;
+  margin-right: -8px;
+}
+.account-login .light-rounded-buttons .btn {
+  width: 100%;
+  margin: 8px;
+}
+.account-login .light-rounded-buttons .primary-btn {
+  font-weight: 600;
+  letter-spacing: 0;
+  text-transform: capitalize;
+}
+.account-login .light-rounded-buttons .primary-btn-outline {
+  font-weight: 600;
+  letter-spacing: 0;
+  text-transform: capitalize;
+}
+
+/*# sourceMappingURL=sign-in-up-06.css.map */

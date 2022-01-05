@@ -1,0 +1,66 @@
+/*===== portfolio FIVE =====*/
+.portfolio-area {
+  padding-top: 100px;
+  margin-bottom: 100px;
+}
+
+.portfolio-style-five {
+  position: relative;
+}
+.portfolio-style-five .hide {
+  display: none;
+}
+.portfolio-style-five .show {
+  display: block;
+}
+.portfolio-style-five .image img {
+  width: 100%;
+}
+.portfolio-style-five .gallery-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-transform: scale(0.9);
+  -moz-transform: scale(0.9);
+  -ms-transform: scale(0.9);
+  -o-transform: scale(0.9);
+  transform: scale(0.9);
+  background-color: var(--primary);
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+}
+.portfolio-style-five .gallery-icon a {
+  color: var(--white);
+  font-size: 70px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .portfolio-style-five .gallery-icon a {
+    font-size: 100px;
+  }
+}
+@media (max-width: 767px) {
+  .portfolio-style-five .gallery-icon a {
+    font-size: 100px;
+  }
+}
+.portfolio-style-five:hover .gallery-icon {
+  opacity: 1;
+  visibility: visible;
+}
+
+/*# sourceMappingURL=portfolio-05.css.map */

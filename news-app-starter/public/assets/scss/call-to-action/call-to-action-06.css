@@ -1,0 +1,78 @@
+/* ===== Buttons Css ===== */
+.call-action .primary-btn-outline {
+  border-color: var(--primary);
+  color: var(--primary);
+}
+.call-action .active.primary-btn-outline, .call-action .primary-btn-outline:hover, .call-action .primary-btn-outline:focus {
+  background: var(--primary-dark);
+  color: var(--white);
+}
+.call-action .deactive.primary-btn-outline {
+  color: var(--dark-3);
+  border-color: var(--gray-4);
+  pointer-events: none;
+}
+
+/*===== call action four =====*/
+.call-action {
+  background-color: var(--white);
+  padding: 100px 0;
+}
+.call-action .inner-content {
+  position: relative;
+  padding: 50px;
+  border-radius: 10px;
+  background-color: var(--primary);
+  z-index: 0;
+  overflow: hidden;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .call-action .inner-content {
+    padding: 40px;
+  }
+}
+@media (max-width: 767px) {
+  .call-action .inner-content {
+    padding: 30px;
+    text-align: center;
+  }
+}
+.call-action .inner-content .bg-shape {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+.call-action .text h2 {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 42px;
+  color: var(--white);
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .call-action .text h2 {
+    font-size: 25px;
+    line-height: 38px;
+  }
+}
+@media (max-width: 767px) {
+  .call-action .text h2 {
+    font-size: 22px;
+    line-height: 32px;
+  }
+}
+.call-action .text h2 span {
+  display: block;
+  color: var(--primary);
+}
+.call-action .primary-btn-outline {
+  border-color: var(--white);
+  color: var(--white);
+}
+@media (max-width: 767px) {
+  .call-action .primary-btn-outline {
+    margin-top: 20px;
+  }
+}
+
+/*# sourceMappingURL=call-to-action-06.css.map */

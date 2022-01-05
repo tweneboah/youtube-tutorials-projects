@@ -1,0 +1,134 @@
+/* ===== Buttons Css ===== */
+.profile-two .pf-content .social .button .primary-btn {
+  background: var(--primary);
+  color: var(--white);
+  box-shadow: var(--shadow-2);
+}
+.profile-two .pf-content .social .button .active.primary-btn, .profile-two .pf-content .social .button .primary-btn:hover, .profile-two .pf-content .social .button .primary-btn:focus {
+  background: var(--primary-dark);
+  color: var(--white);
+  box-shadow: var(--shadow-4);
+}
+.profile-two .pf-content .social .button .deactive.primary-btn {
+  background: var(--gray-4);
+  color: var(--dark-3);
+  pointer-events: none;
+}
+
+/*===== Profile Two Style =====*/
+.profile-two {
+  padding-bottom: 50px;
+}
+.profile-two .cover-image {
+  background-image: url(../../images/profile/profile-03/cover.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 250px;
+}
+@media (max-width: 767px) {
+  .profile-two .cover-image {
+    height: 180px;
+  }
+}
+.profile-two .pf-content {
+  display: block;
+  padding: 0;
+  text-align: center;
+  padding: 0px 260px;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .profile-two .pf-content {
+    padding: 0px;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .profile-two .pf-content {
+    padding: 0px;
+  }
+}
+@media (max-width: 767px) {
+  .profile-two .pf-content {
+    padding: 0px;
+  }
+}
+.profile-two .pf-content .pf-img-des {
+  display: block;
+  text-align: center;
+  position: relative;
+  margin-top: -50px;
+}
+.profile-two .pf-content .pf-img-des .image {
+  border: 4px solid var(--white);
+  border-radius: 50%;
+  display: inline-block;
+}
+.profile-two .pf-content .pf-img-des .image img {
+  width: 100px;
+  border-radius: 50%;
+}
+.profile-two .pf-content .pf-img-des .des {
+  margin-left: 15px;
+  padding-top: 10px;
+}
+.profile-two .pf-content .pf-img-des .des p {
+  margin-bottom: 4px;
+}
+.profile-two .pf-content .pf-img-des .des h5 {
+  margin-bottom: 15px;
+}
+.profile-two .pf-content .social {
+  padding-top: 20px;
+  display: block;
+  text-align: center;
+}
+@media (max-width: 767px) {
+  .profile-two .pf-content .social {
+    display: block;
+    text-align: center;
+    margin-top: 5px;
+  }
+}
+.profile-two .pf-content .social ul li {
+  display: inline-block;
+  margin-right: 5px;
+}
+.profile-two .pf-content .social ul li:last-child {
+  margin: 0;
+}
+.profile-two .pf-content .social ul li a {
+  height: 38px;
+  width: 38px;
+  line-height: 38px;
+  text-align: center;
+  border: 1px solid var(--gray-4);
+  color: var(--dark-3);
+  border-radius: 50%;
+  font-size: 15px;
+  -webkit-transition: all 0.2s ease-out 0s;
+  -moz-transition: all 0.2s ease-out 0s;
+  -ms-transition: all 0.2s ease-out 0s;
+  -o-transition: all 0.2s ease-out 0s;
+  transition: all 0.2s ease-out 0s;
+}
+.profile-two .pf-content .social ul li a:hover {
+  background-color: var(--primary);
+  color: var(--white);
+  border-color: transparent;
+  -webkit-transform: rotate(360deg);
+  -moz-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  -o-transform: rotate(360deg);
+  transform: rotate(360deg);
+}
+.profile-two .pf-content .social .button {
+  margin-top: 20px;
+}
+.profile-two .pf-content .social .button .primary-btn {
+  text-transform: capitalize;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 10px 25px;
+}
+
+/*# sourceMappingURL=profile-03.css.map */

@@ -1,0 +1,82 @@
+/* ===== Buttons Css ===== */
+.header-eleven .header-text .light-rounded-buttons .primary-btn {
+  background: var(--primary);
+  color: var(--white);
+  box-shadow: var(--shadow-2);
+}
+.header-eleven .header-text .light-rounded-buttons .active.primary-btn, .header-eleven .header-text .light-rounded-buttons .primary-btn:hover, .header-eleven .header-text .light-rounded-buttons .primary-btn:focus {
+  background: var(--primary-dark);
+  color: var(--white);
+  box-shadow: var(--shadow-4);
+}
+.header-eleven .header-text .light-rounded-buttons .deactive.primary-btn {
+  background: var(--gray-4);
+  color: var(--dark-3);
+  pointer-events: none;
+}
+
+/*======================================
+    header Area CSS
+========================================*/
+.header-eleven {
+  background-color: var(--primary);
+  position: relative;
+  overflow: hidden;
+  padding: 100px 0;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .header-eleven {
+    padding: 90px 0;
+  }
+}
+@media (max-width: 767px) {
+  .header-eleven {
+    padding: 80px 0;
+  }
+}
+.header-eleven .shape {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 500px;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
+  .header-eleven .shape {
+    height: 100px;
+  }
+}
+.header-eleven .header-inner {
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  z-index: 3;
+}
+.header-eleven .header-text h1 {
+  font-weight: 700;
+  margin-bottom: 25px;
+  color: var(--white);
+}
+.header-eleven .header-text h1 span {
+  font-weight: 300;
+}
+.header-eleven .header-text p {
+  color: var(--white);
+  opacity: 0.7;
+}
+.header-eleven .header-text .light-rounded-buttons {
+  margin-top: 30px;
+}
+.header-eleven .header-text .light-rounded-buttons .primary-btn {
+  background-color: var(--white);
+  color: var(--primary);
+}
+.header-eleven .mobile-screen {
+  text-align: center;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
+  .header-eleven .mobile-screen {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=header-11.css.map */

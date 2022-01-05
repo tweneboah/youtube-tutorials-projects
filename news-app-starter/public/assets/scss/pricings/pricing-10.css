@@ -1,0 +1,84 @@
+/* ===== Buttons Css ===== */
+.pricing-style-ten .primary-btn {
+  background: var(--primary);
+  color: var(--white);
+  box-shadow: var(--shadow-2);
+}
+.pricing-style-ten .active.primary-btn, .pricing-style-ten .primary-btn:hover, .pricing-style-ten .primary-btn:focus {
+  background: var(--primary-dark);
+  color: var(--white);
+  box-shadow: var(--shadow-4);
+}
+.pricing-style-ten .deactive.primary-btn {
+  background: var(--gray-4);
+  color: var(--dark-3);
+  pointer-events: none;
+}
+
+/*===== PRICING TEN =====*/
+.pricing-ten {
+  padding: 100px 0;
+}
+
+.pricing-style-ten {
+  box-shadow: var(--shadow-2);
+  border-radius: 8px;
+  position: relative;
+  overflow: hidden;
+  background-color: var(--white);
+  margin-top: 50px;
+}
+.pricing-style-ten .pricing-header {
+  background: var(--secondary);
+  padding: 30px;
+}
+.pricing-style-ten .sub-title {
+  color: var(--white);
+  position: relative;
+}
+.pricing-style-ten .price {
+  font-size: 50px;
+  font-weight: 600;
+  line-height: 60px;
+  color: var(--white);
+}
+@media (max-width: 767px) {
+  .pricing-style-ten .price {
+    font-size: 40px;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .pricing-style-ten .price {
+    font-size: 45px;
+  }
+}
+.pricing-style-ten .year {
+  color: var(--white);
+}
+.pricing-style-ten .pricing-list {
+  padding: 50px 30px;
+}
+.pricing-style-ten .pricing-list li {
+  color: var(--dark-3);
+  margin-top: 16px;
+}
+.pricing-style-ten .pricing-list li:first-child {
+  margin: 0;
+}
+.pricing-style-ten .pricing-list li i {
+  margin-right: 8px;
+  color: var(--primary);
+}
+.pricing-style-ten .pricing-list li i.deactive {
+  color: var(--dark-3);
+}
+.pricing-style-ten .primary-btn {
+  width: 100%;
+  background-color: var(--secondary);
+  padding: 15px 20px;
+}
+.pricing-style-ten .primary-btn:hover {
+  background-color: var(--secondary-dark);
+}
+
+/*# sourceMappingURL=pricing-10.css.map */

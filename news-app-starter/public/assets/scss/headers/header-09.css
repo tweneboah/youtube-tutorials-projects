@@ -1,0 +1,152 @@
+/* ===== Buttons Css ===== */
+.header-nine .primary-btn {
+  background: var(--primary);
+  color: var(--white);
+  box-shadow: var(--shadow-2);
+}
+.header-nine .active.primary-btn, .header-nine .primary-btn:hover, .header-nine .primary-btn:focus {
+  background: var(--primary-dark);
+  color: var(--white);
+  box-shadow: var(--shadow-4);
+}
+.header-nine .deactive.primary-btn {
+  background: var(--gray-4);
+  color: var(--dark-3);
+  pointer-events: none;
+}
+
+.header-nine .primary-btn-outline {
+  border-color: var(--primary);
+  color: var(--primary);
+}
+.header-nine .active.primary-btn-outline, .header-nine .primary-btn-outline:hover, .header-nine .primary-btn-outline:focus {
+  background: var(--primary-dark);
+  color: var(--white);
+}
+.header-nine .deactive.primary-btn-outline {
+  color: var(--dark-3);
+  border-color: var(--gray-4);
+  pointer-events: none;
+}
+
+/*======================================
+    header Area CSS
+========================================*/
+.header-nine {
+  position: relative;
+  background-color: var(--white);
+  padding: 100px 0;
+  overflow: hidden;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .header-nine {
+    padding: 90px 0;
+  }
+}
+@media (max-width: 767px) {
+  .header-nine {
+    padding: 80px 0;
+  }
+}
+.header-nine .main__circle {
+  top: -98px;
+  right: calc(50% - 1145px);
+  width: 1000px;
+  height: 1000px;
+  background: var(--primary);
+  position: absolute;
+  border-radius: 50%;
+  z-index: 1;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
+  .header-nine .main__circle {
+    display: none;
+  }
+}
+@media only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 1400px) {
+  .header-nine .header-content {
+    padding-right: 20px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .header-nine .header-content {
+    padding: 0px 110px;
+  }
+}
+.header-nine .header-content h6 {
+  display: inline-block;
+  margin-bottom: 20px;
+}
+.header-nine .header-content h1 {
+  text-transform: capitalize;
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+.header-nine .header-content h1 .color2 {
+  color: var(--primary);
+}
+.header-nine .header-content p {
+  color: var(--dark-3);
+}
+@media (max-width: 767px) {
+  .header-nine .header-content p {
+    margin-bottom: 10px;
+  }
+}
+@media only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 1400px) {
+  .header-nine .header-content p {
+    padding-right: 60px;
+  }
+}
+.header-nine .button {
+  margin-top: 20px;
+  display: flex;
+}
+@media (max-width: 767px) {
+  .header-nine .button {
+    display: block;
+  }
+}
+.header-nine .primary-btn {
+  margin-right: 12px;
+}
+.header-nine .video {
+  display: inline-flex;
+  align-items: center;
+}
+@media (max-width: 767px) {
+  .header-nine .video {
+    display: block;
+    margin-top: 15px;
+  }
+}
+.header-nine .video-text {
+  display: inline-block;
+  margin-left: 15px;
+}
+.header-nine .header-image {
+  box-shadow: none;
+  z-index: 2;
+  position: relative;
+}
+.header-nine .header-image .shape {
+  position: absolute;
+  right: -30px;
+  top: -30px;
+  z-index: -1;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
+  .header-nine .header-image {
+    display: none;
+  }
+}
+.header-nine .header-image img {
+  width: 640px;
+}
+@media only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 1400px) {
+  .header-nine .header-image {
+    margin-left: 40px;
+  }
+}
+
+/*# sourceMappingURL=header-09.css.map */

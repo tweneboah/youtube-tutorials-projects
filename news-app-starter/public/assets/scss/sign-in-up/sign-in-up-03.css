@@ -1,0 +1,234 @@
+/* ===== Buttons Css ===== */
+.signin-three .light-rounded-buttons .primary-btn, .signin-three .signin-header .social-signin li a.primary-btn {
+  background: var(--primary);
+  color: var(--white);
+  box-shadow: var(--shadow-2);
+}
+.signin-three .light-rounded-buttons .active.primary-btn, .signin-three .signin-header .social-signin li a.active.primary-btn, .signin-three .light-rounded-buttons .primary-btn:hover, .signin-three .signin-header .social-signin li a.primary-btn:hover, .signin-three .light-rounded-buttons .primary-btn:focus, .signin-three .signin-header .social-signin li a.primary-btn:focus {
+  background: var(--primary-dark);
+  color: var(--white);
+  box-shadow: var(--shadow-4);
+}
+.signin-three .light-rounded-buttons .deactive.primary-btn, .signin-three .signin-header .social-signin li a.deactive.primary-btn {
+  background: var(--gray-4);
+  color: var(--dark-3);
+  pointer-events: none;
+}
+
+/*===========================
+  SING IN SING UP css 
+===========================*/
+.signin-area-three {
+  padding: 100px 0;
+}
+
+.signin-three {
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid var(--gray-4);
+  box-shadow: var(--shadow-2);
+}
+.signin-three .signin-header {
+  background-color: var(--light-2);
+  padding: 40px 30px;
+}
+@media (max-width: 767px) {
+  .signin-three .signin-header {
+    padding: 50px 15px;
+  }
+}
+.signin-three .signin-header p {
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--dark-3);
+}
+.signin-three .signin-header .social-signin li {
+  display: inline-block;
+  margin: 16px 8px 0;
+}
+.signin-three .signin-header .social-signin li a.primary-btn {
+  background-color: var(--white);
+  color: var(--primary);
+  font-weight: 500;
+  text-transform: capitalize;
+}
+.signin-three .signin-header .social-signin li a.primary-btn .icon {
+  display: inline-block;
+  margin-right: 5px;
+  position: relative;
+  top: -1px;
+}
+.signin-three .signin-form {
+  padding: 50px 30px;
+  background-color: var(--white);
+  border-bottom: 1px solid var(--gray-4);
+}
+@media (max-width: 767px) {
+  .signin-three .signin-form {
+    padding: 50px 15px;
+  }
+}
+.signin-three .signin-form .text {
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--dark-3);
+}
+.signin-three .signin-form .password {
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--dark-3);
+  font-style: italic;
+  margin-top: 24px;
+}
+.signin-three .signin-form .password span {
+  color: var(--success);
+  font-weight: 700;
+}
+.signin-three .light-rounded-buttons {
+  margin-top: 40px;
+}
+.signin-three .form-input {
+  margin-top: 30px;
+}
+.signin-three .form-input .help-block {
+  margin-top: 2px;
+}
+.signin-three .form-input .help-block .list-unstyled li {
+  font-size: 12px;
+  line-height: 16px;
+  color: var(--error);
+}
+.signin-three .form-input label {
+  font-size: 12px;
+  line-height: 18px;
+  color: var(--dark-3);
+  margin-bottom: 8px;
+  display: inline-block;
+}
+.signin-three .form-input .input-items {
+  position: relative;
+}
+.signin-three .form-input .input-items input, .signin-three .form-input .input-items textarea {
+  width: 100%;
+  height: 44px;
+  border: 2px solid;
+  padding-left: 44px;
+  padding-right: 12px;
+  position: relative;
+  font-size: 16px;
+}
+.signin-three .form-input .input-items textarea {
+  padding-top: 8px;
+  height: 130px;
+  resize: none;
+}
+.signin-three .form-input .input-items i {
+  position: absolute;
+  top: 11px;
+  left: 13px;
+  font-size: 20px;
+  z-index: 9;
+}
+.signin-three .form-input .input-items.default input, .signin-three .form-input .input-items.default textarea {
+  border-color: var(--gray-4);
+  color: var(--dark-3);
+}
+.signin-three .form-input .input-items.default input:focus, .signin-three .form-input .input-items.default textarea:focus {
+  border-color: var(--primary);
+}
+.signin-three .form-input .input-items.default input::placeholder, .signin-three .form-input .input-items.default textarea::placeholder {
+  color: var(--dark-3);
+  opacity: 1;
+}
+.signin-three .form-input .input-items.default i {
+  color: var(--dark-3);
+}
+.signin-three .form-input .input-items.error input, .signin-three .form-input .input-items.error textarea {
+  border-color: var(--error);
+  color: var(--error);
+}
+.signin-three .form-input .input-items.error input::placeholder, .signin-three .form-input .input-items.error textarea::placeholder {
+  color: var(--error);
+  opacity: 1;
+}
+.signin-three .form-input .input-items.error i {
+  color: var(--error);
+}
+.signin-three .form-style-two .form-input .input-items input, .signin-three .form-style-two .form-input .input-items textarea {
+  border-radius: 5px;
+  padding-left: 12px;
+  padding-right: 44px;
+}
+.signin-three .form-style-two .form-input .input-items i {
+  left: auto;
+  right: 13px;
+}
+
+.signin-checkbox {
+  margin-top: 24px;
+}
+.signin-checkbox label {
+  color: var(--black);
+  font-size: 14px;
+  cursor: pointer;
+  font-weight: 400;
+  margin-bottom: 0;
+}
+.signin-checkbox input[type=checkbox] {
+  display: none;
+}
+.signin-checkbox input[type=checkbox] + label {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin: -1px 8px 0 0;
+  vertical-align: middle;
+  cursor: pointer;
+  border-radius: 5px;
+  position: relative;
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+  background-color: var(--light-1);
+}
+.signin-checkbox input[type=checkbox] + label::before {
+  color: var(--white);
+  content: "";
+  font-size: 13px;
+  position: absolute;
+  text-align: center;
+  left: 2px;
+  top: -2px;
+  -webkit-transform: scale(0);
+  -moz-transform: scale(0);
+  -ms-transform: scale(0);
+  -o-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+}
+.signin-checkbox input[type=checkbox]:checked + label {
+  background-color: var(--primary);
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+}
+.signin-checkbox input[type=checkbox]:checked + label::before {
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+}
+.signin-checkbox span a {
+  color: var(--primary);
+}
+
+/*# sourceMappingURL=sign-in-up-03.css.map */

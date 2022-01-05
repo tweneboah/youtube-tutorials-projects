@@ -1,0 +1,165 @@
+/* ===== Buttons Css ===== */
+.contact-us .form-main .form .primary-btn {
+  background: var(--primary);
+  color: var(--white);
+  box-shadow: var(--shadow-2);
+}
+.contact-us .form-main .form .active.primary-btn, .contact-us .form-main .form .primary-btn:hover, .contact-us .form-main .form .primary-btn:focus {
+  background: var(--primary-dark);
+  color: var(--white);
+  box-shadow: var(--shadow-4);
+}
+.contact-us .form-main .form .deactive.primary-btn {
+  background: var(--gray-4);
+  color: var(--dark-3);
+  pointer-events: none;
+}
+
+/*======================================
+	Contact CSS
+========================================*/
+.contact-us {
+  position: relative;
+  background-color: var(--light-1);
+  padding: 100px 0;
+}
+.contact-us .inner-title {
+  font-weight: 600;
+  border-bottom: 1px dashed var(--primary);
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+}
+.contact-us .inner-content {
+  padding: 50px;
+  border-radius: 5px;
+  overflow: hidden;
+  background-color: var(--white);
+}
+@media only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
+  .contact-us .inner-content {
+    padding: 30px;
+  }
+}
+.contact-us .single-head {
+  position: relative;
+  z-index: 5;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
+  .contact-us .contact-info {
+    margin-top: 40px;
+  }
+}
+.contact-us .single-info {
+  text-align: left;
+  margin-bottom: 30px;
+  padding-left: 70px;
+  position: relative;
+}
+.contact-us .single-info:last-child {
+  margin: 0;
+}
+.contact-us .single-info i {
+  font-size: 22px;
+  display: inline-block;
+  margin-right: 20px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 50px;
+  width: 50px;
+  display: block;
+  text-align: center;
+  background: var(--primary);
+  color: var(--white);
+  line-height: 50px;
+  border-radius: 5px;
+}
+.contact-us .single-info ul {
+  display: inline-block;
+}
+.contact-us .single-info ul span {
+  display: block;
+  margin-bottom: 7px;
+  font-size: 17px;
+  font-weight: 700;
+  text-transform: capitalize;
+  color: var(--black);
+}
+.contact-us .single-info ul li {
+  font-weight: 500;
+  display: inline-block;
+  font-size: 15px;
+  color: var(--dark-3);
+  display: block;
+  margin-bottom: 4px;
+}
+.contact-us .single-info ul li:last-child {
+  margin-bottom: 0;
+}
+.contact-us .single-info ul li a {
+  font-weight: 500;
+  display: inline-block;
+  font-size: 15px;
+  color: var(--black);
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+}
+.contact-us .single-info ul li a:hover {
+  color: var(--primary);
+}
+.contact-us .single-info .title {
+  margin-bottom: 10px;
+  font-weight: 500;
+  color: var(--white);
+  font-size: 18px;
+}
+.contact-us .single-info .title span {
+  display: block;
+  font-size: 14px;
+  margin-top: 8px;
+  font-weight: 500;
+}
+.contact-us .form-main {
+  margin-right: 50px;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
+  .contact-us .form-main {
+    margin: 0;
+  }
+}
+.contact-us .form-main .form .form-group {
+  margin-bottom: 15px;
+  display: block;
+}
+.contact-us .form-main .form .form-group textarea,
+.contact-us .form-main .form .form-group input {
+  height: 55px;
+  line-height: 55px;
+  width: 100%;
+  border: 1px solid var(--gray-4);
+  padding: 0px 20px;
+  color: var(--black);
+  border-radius: 0px;
+  font-weight: 400;
+  border-radius: 5px;
+}
+.contact-us .form-main .form .form-group textarea:focus,
+.contact-us .form-main .form .form-group input:focus {
+  border-color: var(--primary);
+}
+.contact-us .form-main .form .form-group textarea {
+  height: 180px;
+}
+.map-section {
+  background-color: var(--white);
+}
+.map-section .map-container {
+  box-shadow: --shadow-2;
+  padding: 20px;
+  border-radius: 7px;
+}
+
+/*# sourceMappingURL=contact-07.css.map */

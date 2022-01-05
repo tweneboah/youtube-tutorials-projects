@@ -1,0 +1,96 @@
+@import "../variables";
+@import "../mixin";
+
+/*===== FOOTER TEN =====*/
+
+.footer-ten {
+  background-color: var(--primary);
+
+  .footer-logo {
+    margin-bottom: 30px;
+  }
+
+  .social-title {
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    color: var(--white);
+  }
+
+  .footer-top-content {
+    padding: 100px 0 60px 0;
+
+    @media #{$md} {
+      padding: 80px 0 60px 0;
+    }
+
+    @media #{$xs} {
+      padding: 50px 0 50px 0;
+    }
+
+    p {
+      color: var(--white);
+    }
+  }
+
+  & .social {
+    margin-top: 25px;
+
+    & li {
+      display: inline-block;
+      margin: 0 4px;
+
+      @media #{$xs} {
+        margin: 4px;
+      }
+    }
+
+    & a {
+      font-size: 18px;
+      color: var(--primary);
+      @include transition(0.3s);
+      height: 45px;
+      width: 45px;
+      line-height: 45px;
+      text-align: center;
+      border-radius: 50%;
+      background-color: var(--white);
+
+      &:hover {
+        color: var(--white);
+        background-color: var(--primary-dark);
+        border-color: transparent;
+      }
+    }
+  }
+
+  & .footer-support {
+    padding-top: 21px;
+
+    & span {
+      font-size: 16px;
+      line-height: 24px;
+      color: var(--black);
+      font-weight: 600;
+      margin-top: 9px;
+      display: block;
+
+      @media #{$xs} {
+        display: block;
+      }
+    }
+  }
+
+  .footer-copyright {
+    padding: 25px 0;
+    background-color: var(--primary-dark);
+
+    & .copyright {
+
+      & .text {
+        color: var(--white);
+      }
+    }
+  }
+}

@@ -1,0 +1,75 @@
+/* ===== Buttons Css ===== */
+.blog-style-seven .blog-content .rounded-buttons .primary-btn-outline {
+  border-color: var(--primary);
+  color: var(--primary);
+}
+.blog-style-seven .blog-content .rounded-buttons .active.primary-btn-outline, .blog-style-seven .blog-content .rounded-buttons .primary-btn-outline:hover, .blog-style-seven .blog-content .rounded-buttons .primary-btn-outline:focus {
+  background: var(--primary-dark);
+  color: var(--white);
+}
+.blog-style-seven .blog-content .rounded-buttons .deactive.primary-btn-outline {
+  color: var(--dark-3);
+  border-color: var(--gray-4);
+  pointer-events: none;
+}
+
+/*===== BLOG STYLE SEVEN =====*/
+.blog-style-seven {
+  margin-top: 50px;
+}
+.blog-style-seven .blog-image img {
+  width: 100%;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+.blog-style-seven .blog-content {
+  border: 1px solid var(--light-1);
+  border-top: 0;
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+  padding: 30px;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .blog-style-seven .blog-content {
+    padding: 25px;
+  }
+}
+@media (max-width: 767px) {
+  .blog-style-seven .blog-content {
+    padding: 20px;
+  }
+}
+.blog-style-seven .blog-content .category {
+  color: var(--primary);
+  margin-bottom: 15px;
+}
+.blog-style-seven .blog-content .blog-title a {
+  font-weight: 600;
+  color: var(--black);
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+}
+.blog-style-seven .blog-content .blog-title a:hover {
+  color: var(--primary);
+}
+.blog-style-seven .blog-content .text {
+  color: var(--dark-3);
+  margin-top: 16px;
+}
+.blog-style-seven .blog-content span {
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--dark-3);
+  margin-right: 10px;
+}
+.blog-style-seven .blog-content .blog-date {
+  margin-top: 15px;
+}
+.blog-style-seven .blog-content .rounded-buttons {
+  margin-top: 15px;
+}
+
+/*# sourceMappingURL=blog-07.css.map */

@@ -1,0 +1,125 @@
+/* ===== Buttons Css ===== */
+.blog-style-nine .blog-content .rounded-buttons .primary-btn-outline {
+  border-color: var(--primary);
+  color: var(--primary);
+}
+.blog-style-nine .blog-content .rounded-buttons .active.primary-btn-outline, .blog-style-nine .blog-content .rounded-buttons .primary-btn-outline:hover, .blog-style-nine .blog-content .rounded-buttons .primary-btn-outline:focus {
+  background: var(--primary-dark);
+  color: var(--white);
+}
+.blog-style-nine .blog-content .rounded-buttons .deactive.primary-btn-outline {
+  color: var(--dark-3);
+  border-color: var(--gray-4);
+  pointer-events: none;
+}
+
+/*===== BLOG STYLE TEN =====*/
+.blog-author-two {
+  margin-top: 50px;
+}
+.blog-author-two .blog-image img {
+  width: 100%;
+  border-radius: 8px;
+}
+.blog-author-two .blog-content {
+  padding-top: 20px;
+}
+.blog-author-two .blog-content .sub-title {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+.blog-author-two .blog-content .blog-title a {
+  font-size: 30px;
+  font-weight: 300;
+  line-height: 45px;
+  color: var(--black);
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+}
+@media (max-width: 767px) {
+  .blog-author-two .blog-content .blog-title a {
+    font-size: 24px;
+    line-height: 35px;
+  }
+}
+.blog-author-two .blog-content .blog-title a:hover {
+  color: var(--primary);
+}
+.blog-author-two .blog-content .text {
+  color: var(--dark-3);
+  margin-top: 16px;
+}
+.blog-author-two .blog-content .more {
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--primary);
+  margin-top: 30px;
+  display: inline-block;
+}
+
+/*===== BLOG STYLE ELEVEN =====*/
+.blog-style-nine {
+  margin-top: 50px;
+}
+.blog-style-nine .blog-image img {
+  width: 100%;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+.blog-style-nine .blog-content {
+  border: 1px solid var(--gray-3);
+  border-top: 0;
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+  padding: 16px 16px 28px;
+}
+.blog-style-nine .blog-content .blog-title a {
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 40px;
+  color: var(--black);
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .blog-style-nine .blog-content .blog-title a {
+    font-size: 30px;
+    line-height: 40px;
+  }
+}
+@media (max-width: 767px) {
+  .blog-style-nine .blog-content .blog-title a {
+    font-size: 24px;
+    line-height: 35px;
+  }
+}
+.blog-style-nine .blog-content .blog-title a:hover {
+  color: var(--primary);
+}
+.blog-style-nine .blog-content .text {
+  color: var(--dark-3);
+  margin-top: 16px;
+}
+.blog-style-nine .blog-content span {
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--dark-3);
+  margin-right: 10px;
+}
+.blog-style-nine .blog-content .blog-date {
+  margin-top: 15px;
+}
+.blog-style-nine .blog-content .rounded-buttons {
+  margin-top: 15px;
+}
+
+/*# sourceMappingURL=blog-09.css.map */

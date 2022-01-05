@@ -1,0 +1,93 @@
+@import "../variables";
+@import "../mixin";
+@import "../buttons/buttons";
+
+/*======================================
+  About Eight CSS
+========================================*/
+.about-eight {
+  position: relative;
+  background-color: var(--light-2);
+  z-index: 2;
+  padding-top: 120px;
+  padding-bottom: 90px;
+
+  img {
+    width: 100%;
+  }
+
+  .section-title-two {
+    text-align: center;
+    max-width: 550px;
+    margin: auto;
+    margin-bottom: 50px;
+    position: relative;
+    z-index: 5;
+
+    @media #{$md} {
+      margin-bottom: 40px;
+    }
+
+    @media #{$xs} {
+      margin-bottom: 30px;
+    }
+
+    span {
+      text-transform: capitalize;
+      color: var(--white);
+      background: var(--primary);
+      display: inline-block;
+      margin-bottom: 10px;
+      padding: 5px 15px;
+      border-radius: 4px;
+    }
+
+    h2 {
+      margin-bottom: 15px;
+
+      @media #{$md} {
+        font-size: 2rem;
+        line-height: 2.8rem;
+      }
+
+      @media #{$xs} {
+        font-size: 1.5rem;
+        line-height: 1.9rem;
+      }
+    }
+
+    p {
+      color: var(--dark-3);
+    }
+  }
+
+  .content {
+    text-align: left;
+
+    .icon {
+      height: 70px;
+      width: 70px;
+      line-height: 70px;
+      text-align: center;
+      display: block;
+      background: var(--primary);
+      color: var(--white);
+      border-radius: 10px;
+      font-size: 30px;
+      margin-bottom: 30px;
+    }
+
+    p {
+      margin: 20px 0;
+      color: var(--dark-3);
+    }
+
+    .light-rounded-buttons {
+      padding-top: 20px;
+
+      .primary-btn-outline {
+        @extend %primary-btn-outline;
+      }
+    }
+  }
+}

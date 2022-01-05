@@ -1,0 +1,100 @@
+/* ===== Buttons Css ===== */
+.blog-style-six .blog-content .rounded-buttons .primary-btn-outline {
+  border-color: var(--primary);
+  color: var(--primary);
+}
+.blog-style-six .blog-content .rounded-buttons .active.primary-btn-outline, .blog-style-six .blog-content .rounded-buttons .primary-btn-outline:hover, .blog-style-six .blog-content .rounded-buttons .primary-btn-outline:focus {
+  background: var(--primary-dark);
+  color: var(--white);
+}
+.blog-style-six .blog-content .rounded-buttons .deactive.primary-btn-outline {
+  color: var(--dark-3);
+  border-color: var(--gray-4);
+  pointer-events: none;
+}
+
+/*===== BLOG STYLE SIX =====*/
+.blog-style-six {
+  margin-top: 50px;
+}
+.blog-style-six .blog-image {
+  max-width: 240px;
+  width: 100%;
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .blog-style-six .blog-image {
+    max-width: 200px;
+  }
+}
+@media (max-width: 767px) {
+  .blog-style-six .blog-image {
+    max-width: 100%;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .blog-style-six .blog-image {
+    max-width: 240px;
+  }
+}
+.blog-style-six .blog-image img {
+  width: 100%;
+  border-radius: 8px;
+}
+.blog-style-six .blog-content {
+  padding-left: 25px;
+}
+@media (max-width: 767px) {
+  .blog-style-six .blog-content {
+    padding-left: 0;
+    padding-top: 20px;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .blog-style-six .blog-content {
+    padding-left: 20px;
+    padding-top: 0;
+  }
+}
+.blog-style-six .blog-content .blog-title a {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 25px;
+  color: var(--black);
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .blog-style-six .blog-content .blog-title a {
+    font-size: 18px;
+  }
+}
+.blog-style-six .blog-content .blog-title a:hover {
+  color: var(--primary);
+}
+.blog-style-six .blog-content span {
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--dark-3);
+  margin-top: 8px;
+  margin-right: 10px;
+  display: inline-block;
+}
+.blog-style-six .blog-content .text {
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--dark-3);
+  margin-top: 16px;
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .blog-style-six .blog-content .text {
+    margin-top: 8px;
+  }
+}
+.blog-style-six .blog-content .rounded-buttons {
+  margin-top: 20px;
+}
+
+/*# sourceMappingURL=blog-06.css.map */

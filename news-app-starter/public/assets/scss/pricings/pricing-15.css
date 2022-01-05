@@ -1,0 +1,151 @@
+/* ===== Buttons Css ===== */
+.pricing-style-fifteen .primary-btn {
+  background: var(--primary);
+  color: var(--white);
+  box-shadow: var(--shadow-2);
+}
+.pricing-style-fifteen .active.primary-btn, .pricing-style-fifteen .primary-btn:hover, .pricing-style-fifteen .primary-btn:focus {
+  background: var(--primary-dark);
+  color: var(--white);
+  box-shadow: var(--shadow-4);
+}
+.pricing-style-fifteen .deactive.primary-btn {
+  background: var(--gray-4);
+  color: var(--dark-3);
+  pointer-events: none;
+}
+
+/*===== PRICING THIRTEEN =====*/
+.pricing-fifteen {
+  padding: 65px 50px 70px;
+  /* Section Title Five */
+}
+@media (max-width: 767px) {
+  .pricing-fifteen {
+    padding: 45px 30px 50px;
+  }
+}
+.pricing-fifteen .section-title-three {
+  text-align: center;
+  max-width: 550px;
+  margin: auto;
+  margin-bottom: 50px;
+  position: relative;
+  z-index: 5;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .pricing-fifteen .section-title-three {
+    margin-bottom: 45px;
+  }
+}
+@media (max-width: 767px) {
+  .pricing-fifteen .section-title-three {
+    margin-bottom: 35px;
+  }
+}
+.pricing-fifteen .section-title-three h5 {
+  font-weight: 600;
+  margin-bottom: 7px;
+  color: var(--primary);
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+@media (max-width: 767px) {
+  .pricing-fifteen .section-title-three h5 {
+    font-size: 0.8rem;
+  }
+}
+.pricing-fifteen .section-title-three h2 {
+  margin-bottom: 15px;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .pricing-fifteen .section-title-three h2 {
+    font-size: 2rem;
+    line-height: 2.8rem;
+  }
+}
+@media (max-width: 767px) {
+  .pricing-fifteen .section-title-three h2 {
+    font-size: 1.5rem;
+    line-height: 1.9rem;
+  }
+}
+.pricing-fifteen .section-title-three p {
+  color: var(--dark-3);
+}
+
+.pricing-style-fifteen {
+  border: 1px solid var(--gray-4);
+  border-radius: 10px;
+  margin-top: 30px;
+  background-color: var(--white);
+  transition: all 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55) 0s;
+}
+.pricing-style-fifteen:hover {
+  box-shadow: var(--shadow-4);
+}
+.pricing-style-fifteen .table-head {
+  padding: 25px;
+  border-bottom: 1px solid var(--gray-4);
+}
+.pricing-style-fifteen .title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.pricing-style-fifteen p {
+  font-weight: 400;
+  line-height: 22px;
+  color: var(--dark-3);
+}
+.pricing-style-fifteen .price {
+  padding: 30px 0;
+}
+.pricing-style-fifteen .amount {
+  font-size: 40px;
+  font-weight: 700;
+  display: inline-block;
+}
+.pricing-style-fifteen .duration {
+  display: inline-block;
+  font-size: 16px;
+  color: var(--dark-3);
+  font-weight: 400;
+  margin-left: 5px;
+  display: inline-block;
+}
+.pricing-style-fifteen .primary-btn {
+  font-size: 15px;
+  text-transform: none;
+  width: 100%;
+  text-transform: uppercase;
+  font-weight: 600;
+  padding: 10px 20px;
+}
+.pricing-style-fifteen .table-content {
+  padding: 25px;
+}
+.pricing-style-fifteen .middle-title {
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+}
+.pricing-style-fifteen .table-list li {
+  position: relative;
+  padding-left: 25px;
+  margin-bottom: 13px;
+  color: var(--dark-3);
+}
+.pricing-style-fifteen .table-list li:last-child {
+  margin: 0;
+}
+.pricing-style-fifteen .table-list li i {
+  color: var(--primary);
+  font-size: 14px;
+  position: absolute;
+  left: 0;
+  top: 4px;
+}
+
+/*# sourceMappingURL=pricing-15.css.map */

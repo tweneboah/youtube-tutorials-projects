@@ -1,0 +1,117 @@
+@import "../variables";
+@import "../mixin";
+@import "../buttons/buttons";
+
+/*===== call action four =====*/
+.newsletter-area {
+  background-color: var(--primary);
+  text-align: center;
+  padding: 100px 0;
+
+  .section-title {
+    max-width: 560px;
+    margin: auto;
+    margin-bottom: 50px;
+    position: relative;
+    z-index: 2;
+
+    @media #{$xs} {
+      margin-bottom: 30px;
+    }
+
+    span {
+      color: var(--white);
+      display: block;
+      margin-bottom: 15px;
+
+      @media #{$xs} {
+        margin-bottom: 10px;
+      }
+    }
+
+    h2 {
+      color: var(--white);
+
+      @media #{$xs} {
+        font-size: 25px;
+      }
+    }
+
+    h3 {
+      font-size: 62px;
+      font-weight: 800;
+      text-transform: uppercase;
+      position: absolute;
+      top: -27px;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+      transform: translateX(-50%);
+      color: var(--light-1);
+      z-index: -1;
+      -webkit-text-stroke-width: 1px;
+      -webkit-text-fill-color: transparent;
+      -webkit-text-stroke-color: var(--white) !important;
+      opacity: 0.2 !important;
+
+      @media #{$xs} {
+        font-size: 35px;
+        top: -10px;
+      }
+    }
+  }
+
+  .subscribe-text {
+    text-align: center;
+    background: var(--white);
+    display: inline-block;
+    padding: 30px 30px;
+    border-radius: 10px;
+    @include box-shadow(var(--shadow-6));
+
+    @media #{$xs} {
+      padding: 20px;
+    }
+
+    form {
+      display: flex;
+      text-align: center;
+
+      @media #{$xs} {
+        display: block;
+      }
+    }
+
+    input {
+      height: 46px;
+      width: 100%;
+      border: none;
+      background-color: var(--white);
+      border-radius: 5px;
+      padding: 0px 30px;
+      display: block;
+      text-align: center;
+      display: inline-block;
+      border: 1px solid var(--light-1);
+      background: transparent;
+      color: var(--dark);
+      font-weight: 500;
+      text-align: left;
+      margin-right: 10px;
+    }
+
+    .light-rounded-buttons {
+
+      @media #{$xs} {
+        margin-top: 16px;
+      }
+
+      .primary-btn {
+        @extend %primary-btn;
+
+        @media #{$xs} {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

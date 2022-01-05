@@ -1,0 +1,115 @@
+@import "../variables";
+@import "../mixin";
+@import "../buttons/buttons";
+
+/*===== PRICING THIRTEEN =====*/
+
+.pricing-thirteen {
+  padding: 100px 0;
+}
+
+.pricing-style-thirteen {
+  padding: 50px;
+  margin-top: 50px;
+  border-radius: 12px;
+
+  @media #{$xs} {
+    padding: 45px 30px 50px;
+  }
+
+  & .price {
+    font-size: 45px;
+    color: var(--black);
+    font-weight: 700;
+
+    @media #{$md} {
+      font-size: 42px;
+    }
+
+    @media #{$xs} {
+      font-size: 40px;
+    }
+
+    span {
+      font-size: 16px;
+      font-weight: 400;
+      display: inline-block;
+      margin-left: 2px;
+      position: relative;
+      top: -2px;
+    }
+  }
+
+  & .pricing-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 30px;
+    margin-top: 20px;
+
+    & .badge {
+      display: inline-block;
+      padding: 8px 15px;
+      border-radius: 50px;
+      background-color: var(--primary);
+      color: var(--white);
+      font-size: 14px;
+      font-weight: 500;
+    }
+
+    & .title {
+      font-weight: 600;
+      font-size: 22px;
+      padding-left: 10px;
+    }
+  }
+
+  & .pricing-list {
+    padding-bottom: 10px;
+  }
+
+  & li {
+    color: var(--dark-3);
+    margin-top: 20px;
+  }
+
+  & .pricing-btn {
+    padding-top: 40px;
+  }
+
+  & .primary-btn {
+    @extend %primary-btn;
+  }
+
+  & .primary-btn-outline {
+    @extend %primary-btn-outline;
+  }
+
+  &.pricing-color-1 {
+    & .pricing-title {
+      & .badge {
+        background-color: var(--primary);
+      }
+    }
+  }
+
+  &.pricing-color-2 {
+    & .pricing-title {
+      & .badge {
+        background-color: var(--error);
+      }
+    }
+  }
+
+  &.pricing-color-3 {
+    & .pricing-title {
+      & .badge {
+        background-color: var(--success);
+      }
+    }
+  }
+
+  &.pricing-active {
+    box-shadow: var(--shadow-4);
+  }
+}

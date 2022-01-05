@@ -1,0 +1,171 @@
+@import "../variables";
+@import "../mixin";
+@import "../buttons/buttons";
+
+/*======================================
+	Contact CSS
+========================================*/
+.contact-us {
+  position: relative;
+  background-color: var(--light-1);
+  padding: 100px 0;
+
+  .inner-title {
+    font-weight: 600;
+    border-bottom: 1px dashed var(--primary);
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+  }
+
+  .inner-content {
+    padding: 50px;
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: var(--white);
+
+    @media #{$md,$xs} {
+      padding: 30px;
+    }
+  }
+
+  .single-head {
+    position: relative;
+    z-index: 5;
+  }
+
+  .contact-info {
+    @media #{$md,$xs} {
+      margin-top: 40px;
+    }
+  }
+
+  .single-info {
+    text-align: left;
+    margin-bottom: 30px;
+    padding-left: 70px;
+    position: relative;
+
+    &:last-child {
+      margin: 0;
+    }
+
+    i {
+      font-size: 22px;
+      display: inline-block;
+      margin-right: 20px;
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 50px;
+      width: 50px;
+      display: block;
+      text-align: center;
+      background: var(--primary);
+      color: var(--white);
+      line-height: 50px;
+      border-radius: 5px;
+    }
+
+    ul {
+      display: inline-block;
+
+      span {
+        display: block;
+        margin-bottom: 7px;
+        font-size: 17px;
+        font-weight: 700;
+        text-transform: capitalize;
+        color: var(--black);
+      }
+
+      li {
+        font-weight: 500;
+        display: inline-block;
+        font-size: 15px;
+        color: var(--dark-3);
+        display: block;
+        margin-bottom: 4px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+
+        a {
+          font-weight: 500;
+          display: inline-block;
+          font-size: 15px;
+          color: var(--black);
+          @include transition(0.3s);
+
+          &:hover {
+            color: var(--primary);
+          }
+        }
+      }
+    }
+
+    .title {
+      margin-bottom: 10px;
+      font-weight: 500;
+      color: var(--white);
+      font-size: 18px;
+
+      span {
+        display: block;
+        font-size: 14px;
+        margin-top: 8px;
+        font-weight: 500;
+      }
+    }
+  }
+
+  .form-main {
+    margin-right: 50px;
+
+    @media #{$md,$xs} {
+      margin: 0;
+    }
+
+    .form {
+      .form-group {
+        margin-bottom: 15px;
+        display: block;
+
+        textarea,
+        input {
+          height: 55px;
+          line-height: 55px;
+          width: 100%;
+          border: 1px solid var(--gray-4);
+          padding: 0px 20px;
+          color: var(--black);
+          border-radius: 0px;
+          font-weight: 400;
+          border-radius: 5px;
+
+          &:focus {
+            border-color: var(--primary);
+          }
+        }
+
+        textarea {
+          height: 180px;
+        }
+      }
+
+      .primary-btn {
+        @extend %primary-btn;
+      }
+    }
+  }
+}
+
+.map-section {
+  background-color: var(--white);
+
+  .map-container {
+    @include box-shadow(--shadow-2);
+    padding: 20px;
+    border-radius: 7px;
+  }
+}

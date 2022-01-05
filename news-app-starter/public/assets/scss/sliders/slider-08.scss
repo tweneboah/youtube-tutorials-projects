@@ -1,0 +1,149 @@
+@import "../variables";
+@import "../mixin";
+@import "../buttons/buttons";
+
+/* ======== slider 8 css =========== */
+.carousel-section-wrapper {
+  position: relative;
+  z-index: 3;
+
+  .carousel-section {
+    position: relative;
+    z-index: 3;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 150px;
+    padding-bottom: 150px;
+
+    &.clip-bg {
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        background: linear-gradient(to right,
+            rgba(111, 88, 232, 0.8) 0%,
+            #3763eb 100%);
+      }
+    }
+
+    &.carousel-item {
+      .carousel-content {
+        .section-title {
+          h2 {
+            margin-bottom: 25px;
+            font-size: 45px;
+            font-weight: 700;
+
+            @media #{$md} {
+              font-size: 40px;
+            }
+
+            @media #{$xs} {
+              font-size: 30px;
+            }
+          }
+
+          p {
+            margin-bottom: 40px;
+            font-size: 17px;
+
+            @media #{$md} {
+              font-size: 15px;
+            }
+
+            @media #{$xs} {
+              font-size: 14px;
+            }
+
+          }
+        }
+
+        .rounded-buttons {
+          .primary-btn-outline {
+            @extend %primary-btn-outline;
+            border-color: var(--white);
+            color: var(--white);
+
+            &:hover {
+              background: var(--white);
+              color: var(--primary);
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .carousel-control {
+    background: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid var(--white);
+    color: var(--white);
+    top: 50%;
+    left: 30px;
+    @include transform(translateY(-50%));
+    font-size: 25px;
+    z-index: 99;
+    @include transition(0.4s);
+
+    &:hover {
+      background: var(--white);
+      color: var(--primary);
+    }
+
+    &.carousel-control-next {
+      left: auto;
+      right: 30px;
+    }
+
+    @media #{$md} {
+      top: auto;
+      @include transform(translateY(0));
+      bottom: 80px;
+      margin: auto;
+
+      &.carousel-control-prev {
+        left: 42%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      &.carousel-control-next {
+        left: 10%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+
+    @media #{$xs} {
+      top: auto;
+      @include transform(translateY(0));
+      bottom: 80px;
+      margin: auto;
+
+      &.carousel-control-prev {
+        left: 37%;
+      }
+
+      &.carousel-control-next {
+        left: 23%;
+      }
+    }
+
+    span {
+      background: none;
+      width: auto;
+      height: auto;
+    }
+  }
+}

@@ -1,0 +1,92 @@
+/* ===== Buttons Css ===== */
+.blog-style-four .blog-content .rounded-buttons .primary-btn-outline {
+  border-color: var(--primary);
+  color: var(--primary);
+}
+.blog-style-four .blog-content .rounded-buttons .active.primary-btn-outline, .blog-style-four .blog-content .rounded-buttons .primary-btn-outline:hover, .blog-style-four .blog-content .rounded-buttons .primary-btn-outline:focus {
+  background: var(--primary-dark);
+  color: var(--white);
+}
+.blog-style-four .blog-content .rounded-buttons .deactive.primary-btn-outline {
+  color: var(--dark-3);
+  border-color: var(--gray-4);
+  pointer-events: none;
+}
+
+/*===== BLOG STYLE FOUR =====*/
+.blog-style-four {
+  margin-top: 50px;
+  padding: 30px;
+  background-color: var(--white);
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .blog-style-four {
+    padding: 20px;
+  }
+}
+@media (max-width: 767px) {
+  .blog-style-four {
+    padding: 15px;
+  }
+}
+.blog-style-four .blog-image {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+}
+.blog-style-four .blog-image::before {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 0;
+  height: 50%;
+  width: 100%;
+  background: linear-gradient(transparent, var(--dark-1));
+}
+.blog-style-four .blog-image img {
+  width: 100%;
+}
+.blog-style-four .blog-image .meta-info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 20px;
+}
+.blog-style-four .blog-image .meta-info span {
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--white);
+  margin-top: 8px;
+  margin-right: 8px;
+  display: inline-block;
+}
+.blog-style-four .blog-content {
+  padding-top: 25px;
+}
+.blog-style-four .blog-content .blog-title {
+  margin-bottom: 12px;
+}
+.blog-style-four .blog-content .blog-title a {
+  font-weight: 600;
+  line-height: 30px;
+  color: var(--black);
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+}
+.blog-style-four .blog-content .blog-title a:hover {
+  color: var(--primary);
+}
+.blog-style-four .blog-content .text {
+  color: var(--dark-3);
+  margin-top: 16px;
+}
+.blog-style-four .blog-content .rounded-buttons {
+  margin-top: 30px;
+}
+
+/*# sourceMappingURL=blog-04.css.map */

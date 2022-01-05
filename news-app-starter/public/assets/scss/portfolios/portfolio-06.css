@@ -1,0 +1,185 @@
+/*===== portfolio  =====*/
+.portfolio-six {
+  padding: 100px 0px;
+}
+.portfolio-six .section-title {
+  text-align: center;
+  max-width: 550px;
+  margin: auto;
+  margin-bottom: 40px;
+  position: relative;
+  z-index: 5;
+}
+.portfolio-six .section-title h6 {
+  margin-bottom: 8px;
+  color: var(--primary);
+  text-transform: uppercase;
+}
+.portfolio-six .section-title h2 {
+  margin-bottom: 25px;
+  position: relative;
+  font-weight: 700;
+}
+.portfolio-six .section-title p {
+  color: var(--dark-3);
+}
+.portfolio-six .hide {
+  display: none;
+}
+.portfolio-six .show {
+  display: block;
+}
+.portfolio-six .portfolio-menu {
+  margin-bottom: 0;
+  text-align: center;
+}
+.portfolio-six .portfolio-menu button {
+  padding: 7px 20px;
+  font-weight: 500;
+  border: none;
+  color: var(--black);
+  border-radius: 30px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  -webkit-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+  background: transparent;
+  border: 1px solid #eee;
+}
+.portfolio-six .portfolio-menu button:hover {
+  background-color: var(--primary);
+  border-color: transparent;
+  color: var(--white);
+}
+.portfolio-six .portfolio-menu button.active {
+  background: var(--primary);
+  color: var(--white);
+  border-color: transparent;
+}
+.portfolio-six .portfolio-menu button:last-child {
+  margin-right: 0;
+}
+.portfolio-six .grid {
+  margin-top: 70px;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
+  .portfolio-six .grid {
+    margin-top: 50px;
+  }
+}
+
+.portfolio-style-six {
+  position: relative;
+  border-radius: 0;
+  overflow: hidden;
+}
+.portfolio-style-six:hover .portfolio-img img {
+  transform: scale(1);
+}
+.portfolio-style-six:hover .portfolio-img::before {
+  opacity: 0.9;
+  visibility: visible;
+  transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+}
+.portfolio-style-six:hover .portfolio-content {
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.4s ease-in-out;
+}
+.portfolio-style-six:hover .portfolio-content .category {
+  transform: none;
+  transition: all 0.3s ease;
+}
+.portfolio-style-six:hover .portfolio-content h4 a {
+  transform: none;
+  transition: all 0.3s ease;
+}
+.portfolio-style-six .portfolio-img {
+  overflow: hidden;
+  position: relative;
+  z-index: 5;
+}
+.portfolio-style-six .portfolio-img::before {
+  position: absolute;
+  content: "";
+  right: 0;
+  top: 0;
+  background-color: var(--primary);
+  height: 100%;
+  width: 100%;
+  z-index: 5;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1;
+}
+.portfolio-style-six .portfolio-img img {
+  width: 100%;
+  transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  transform: scale(1.1);
+}
+.portfolio-style-six .portfolio-content {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  text-align: left;
+  padding: 30px;
+  z-index: 9;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 9;
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .portfolio-style-six .portfolio-content {
+    padding: 30px 20px;
+  }
+}
+.portfolio-style-six .portfolio-content h4 a {
+  color: var(--white);
+  font-size: 20px;
+  font-weight: 600;
+  transform: translateY(-50px);
+}
+.portfolio-style-six .portfolio-content h4 a:hover {
+  opacity: 0.7;
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .portfolio-style-six .portfolio-content h4 a {
+    font-size: 18px;
+  }
+}
+.portfolio-style-six .more-icon {
+  height: 40px;
+  width: 40px;
+  line-height: 40px;
+  text-align: center;
+  background-color: var(--white);
+  border-radius: 50%;
+  font-size: 15px;
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+  color: var(--primary);
+}
+.portfolio-style-six .more-icon:hover {
+  background-color: var(--white);
+  color: var(--primary);
+  border-color: transparent;
+}
+.portfolio-style-six .category {
+  font-size: 15px;
+  padding: 4px 15px;
+  background-color: var(--white);
+  border-radius: 30px;
+  color: var(--black);
+  font-weight: 500;
+  transform: translateY(-30px);
+  display: inline-block;
+  margin-bottom: 12px;
+}
+
+/*# sourceMappingURL=portfolio-06.css.map */

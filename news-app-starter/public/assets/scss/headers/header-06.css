@@ -1,0 +1,107 @@
+/* ===== Buttons Css ===== */
+.header-six .primary-btn {
+  background: var(--primary);
+  color: var(--white);
+  box-shadow: var(--shadow-2);
+}
+.header-six .active.primary-btn, .header-six .primary-btn:hover, .header-six .primary-btn:focus {
+  background: var(--primary-dark);
+  color: var(--white);
+  box-shadow: var(--shadow-4);
+}
+.header-six .deactive.primary-btn {
+  background: var(--gray-4);
+  color: var(--dark-3);
+  pointer-events: none;
+}
+
+.header-six .primary-btn-outline {
+  border-color: var(--primary);
+  color: var(--primary);
+}
+.header-six .active.primary-btn-outline, .header-six .primary-btn-outline:hover, .header-six .primary-btn-outline:focus {
+  background: var(--primary-dark);
+  color: var(--white);
+}
+.header-six .deactive.primary-btn-outline {
+  color: var(--dark-3);
+  border-color: var(--gray-4);
+  pointer-events: none;
+}
+
+/*===== HEADER SIX =====*/
+.header-six .header-content-area {
+  background-color: var(--white);
+  padding: 120px 0;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .header-six .header-content-area {
+    padding: 100px 0;
+  }
+}
+@media (max-width: 767px) {
+  .header-six .header-content-area {
+    padding: 60px 0;
+  }
+}
+.header-six .header-content {
+  position: relative;
+  z-index: 9;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
+  .header-six .header-content {
+    margin-top: 0;
+  }
+}
+.header-six .header-title {
+  font-size: 55px;
+  line-height: 65px;
+  color: var(--black);
+  font-weight: 700;
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px) {
+  .header-six .header-title {
+    font-size: 45px;
+    line-height: 52px;
+  }
+}
+@media (max-width: 767px) {
+  .header-six .header-title {
+    font-size: 30px;
+    line-height: 40px;
+  }
+}
+.header-six .text {
+  margin-top: 20px;
+}
+.header-six .header-btn {
+  margin-top: 22px;
+}
+.header-six .header-btn li {
+  display: inline-block;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+.header-six .header-btn li:last-child {
+  margin-right: 0;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .header-six .header-image {
+    margin-top: 40px;
+  }
+}
+@media (max-width: 767px) {
+  .header-six .header-image {
+    margin-top: 30px;
+  }
+}
+.header-six .header-image img {
+  width: 100%;
+}
+@media only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 1400px) {
+  .header-six .header-image {
+    padding: 60px;
+  }
+}
+
+/*# sourceMappingURL=header-06.css.map */

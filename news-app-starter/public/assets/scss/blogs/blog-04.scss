@@ -1,0 +1,91 @@
+@import "../variables";
+@import "../mixin";
+@import "../buttons/buttons";
+
+/*===== BLOG STYLE FOUR =====*/
+
+.blog-style-four {
+  margin-top: 50px;
+  padding: 30px;
+  background-color: var(--white);
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+
+  @media #{$md} {
+    padding: 20px;
+  }
+
+  @media #{$xs} {
+    padding: 15px;
+  }
+
+  & .blog-image {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+
+    &::before {
+      position: absolute;
+      content: "";
+      left: 0;
+      bottom: 0;
+      height: 50%;
+      width: 100%;
+      background: linear-gradient(transparent, var(--dark-1));
+    }
+
+    & img {
+      width: 100%;
+    }
+
+    .meta-info {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      padding: 20px;
+
+      & span {
+        font-size: 14px;
+        line-height: 20px;
+        color: var(--white);
+        margin-top: 8px;
+        margin-right: 8px;
+        display: inline-block;
+      }
+    }
+  }
+
+  & .blog-content {
+    padding-top: 25px;
+
+    & .blog-title {
+      margin-bottom: 12px;
+
+      & a {
+        font-weight: 600;
+        line-height: 30px;
+        color: var(--black);
+        @include transition(0.3s);
+
+        &:hover {
+          color: var(--primary);
+        }
+      }
+    }
+
+
+
+    & .text {
+      color: var(--dark-3);
+      margin-top: 16px;
+    }
+
+    & .rounded-buttons {
+      margin-top: 30px;
+
+      .primary-btn-outline {
+        @extend %primary-btn-outline;
+      }
+    }
+  }
+}

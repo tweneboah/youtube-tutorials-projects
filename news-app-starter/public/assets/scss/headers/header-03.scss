@@ -1,0 +1,79 @@
+@import "../variables";
+@import "../mixin";
+@import "../buttons/buttons";
+
+/*===== HEADER THREE =====*/
+
+.header-three {
+  position: relative;
+
+  & .header-content-area {
+    background: var(--primary);
+
+    & .header-content {
+      padding: 150px 0;
+
+      @media #{$lg, $md} {
+        padding: 150px 0;
+      }
+
+      @media #{$xs} {
+        padding-top: 120px;
+      }
+    }
+
+    & .header-title {
+      font-size: 44px;
+      line-height: 55px;
+      color: var(--white);
+      font-weight: 600;
+
+      @media #{$xs} {
+        font-size: 30px;
+        line-height: 35px;
+      }
+
+      @media #{$sm} {
+        font-size: 36px;
+        line-height: 45px;
+      }
+    }
+
+    & .text {
+      color: var(--white);
+      margin-top: 8px;
+    }
+
+    & .header-btn {
+      margin-top: 40px;
+    }
+  }
+
+  .primary-btn {
+    @extend %primary-btn;
+    background: var(--white);
+    color: var(--primary);
+  }
+
+  & .header-image {
+    padding-top: 80px;
+
+    @media #{$xs} {
+      padding-top: 30px;
+    }
+
+    & img {
+      width: 100%;
+
+      @media #{$xs} {
+        height: 160px;
+        object-fit: cover;
+        object-position: center;
+      }
+
+      @media #{$sm} {
+        height: 200px;
+      }
+    }
+  }
+}

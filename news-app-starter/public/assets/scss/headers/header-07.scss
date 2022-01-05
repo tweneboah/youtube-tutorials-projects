@@ -1,0 +1,101 @@
+@import "../variables";
+@import "../mixin";
+@import "../buttons/buttons";
+
+/*===== HEADER SEVEN =====*/
+
+.header-seven {
+  & .header-content-area {
+    background-color: var(--light-2);
+  }
+
+  & .header-content {
+    position: relative;
+    padding-top: 180px;
+    padding-bottom: 180px;
+
+    @media #{$xs} {
+      padding-top: 130px;
+      padding-bottom: 130px;
+    }
+  }
+
+  .image-one {
+    width: 150px;
+    left: -60px;
+    top: 50%;
+    @include transform(translateY(-50%));
+    position: absolute;
+
+    @media #{$md} {
+      width: 120px;
+      top: 50%;
+      @include transform(translateY(-50%));
+      left: 0;
+    }
+  }
+
+  .image-tow {
+    width: 340px;
+    right: -150px;
+    top: 30%;
+    position: absolute;
+
+    @media #{$md} {
+      width: 200px;
+      top: 50%;
+      right: -40px;
+      @include transform(translateY(-50%));
+    }
+  }
+
+  & .header-content-wrapper {
+    max-width: 730px;
+    margin: 0 auto;
+    border: 1px solid var(--light-3);
+    border-radius: 16px;
+    background-color: var(--white);
+    padding: 85px 140px;
+
+    @media #{$xs} {
+      padding: 50px 30px;
+    }
+  }
+
+  & .header-title {
+    font-size: 44px;
+    line-height: 55px;
+    color: var(--black);
+    position: relative;
+    z-index: 2;
+
+    @media #{$xs} {
+      font-size: 30px;
+      line-height: 35px;
+    }
+
+    @media #{$sm} {
+      font-size: 36px;
+      line-height: 45px;
+    }
+  }
+
+  & .text {
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--dark-3);
+    margin-top: 8px;
+    position: relative;
+    z-index: 2;
+  }
+
+  & .header-btn {
+    margin-top: 40px;
+    position: relative;
+    z-index: 2;
+  }
+
+  .primary-btn {
+    @extend %primary-btn;
+  }
+}

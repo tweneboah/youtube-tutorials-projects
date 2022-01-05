@@ -1,0 +1,103 @@
+/*===========================
+  Features Ten CSS 
+===========================*/
+.features-ten {
+  background-color: var(--light-3);
+  padding-top: 100px;
+  padding-bottom: 100px;
+  position: relative;
+  /* Section Title Three */
+}
+@media only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
+  .features-ten {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+.features-ten .section-title-three {
+  text-align: center;
+  max-width: 550px;
+  margin: auto;
+  margin-bottom: 50px;
+  position: relative;
+  z-index: 5;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .features-ten .section-title-three {
+    margin-bottom: 45px;
+  }
+}
+@media (max-width: 767px) {
+  .features-ten .section-title-three {
+    margin-bottom: 35px;
+  }
+}
+.features-ten .section-title-three h5 {
+  font-weight: 600;
+  margin-bottom: 7px;
+  color: var(--primary);
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+@media (max-width: 767px) {
+  .features-ten .section-title-three h5 {
+    font-size: 0.8rem;
+  }
+}
+.features-ten .section-title-three h2 {
+  margin-bottom: 15px;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .features-ten .section-title-three h2 {
+    font-size: 2rem;
+    line-height: 2.8rem;
+  }
+}
+@media (max-width: 767px) {
+  .features-ten .section-title-three h2 {
+    font-size: 1.5rem;
+    line-height: 1.9rem;
+  }
+}
+.features-ten .section-title-three p {
+  color: var(--dark-3);
+}
+.features-ten .section-title {
+  margin-bottom: 30px;
+}
+
+.features-style-ten {
+  text-align: left;
+  padding: 35px;
+  background-color: var(--white);
+  border-radius: 6px;
+  position: relative;
+  margin-top: 30px;
+  border: 1px solid var(--gray-4);
+  transition: all 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55) 0s;
+}
+.features-style-ten:hover {
+  box-shadow: var(--shadow-4);
+}
+.features-style-ten i {
+  height: 60px;
+  width: 60px;
+  line-height: 60px;
+  text-align: center;
+  display: inline-block;
+  background-color: var(--primary);
+  color: var(--white);
+  font-size: 30px;
+  border-radius: 7px;
+  box-shadow: var(--shadow-2);
+  margin-bottom: 30px;
+}
+.features-style-ten h4 {
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.features-style-ten p {
+  color: var(--dark-3);
+}
+
+/*# sourceMappingURL=feature-10.css.map */

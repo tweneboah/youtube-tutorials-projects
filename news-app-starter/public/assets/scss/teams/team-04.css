@@ -1,0 +1,74 @@
+/*===========================
+  teams css 
+===========================*/
+.team-area {
+  margin-bottom: 70px;
+}
+
+.team-style-four {
+  position: relative;
+  margin-top: 30px;
+  box-shadow: var(--shadow-2);
+  border-radius: 8px;
+  overflow: hidden;
+}
+.team-style-four .team-image img {
+  width: 100%;
+}
+.team-style-four .team-content {
+  padding: 25px 30px;
+  border-radius: 8px;
+  position: relative;
+  background-color: var(--white);
+}
+.team-style-four .team-content .name {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 30px;
+  color: var(--black);
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .team-style-four .team-content .name {
+    font-size: 20px;
+  }
+}
+.team-style-four .team-content p {
+  font-size: 15px;
+  margin: 18px 0 12px 0;
+}
+.team-style-four .team-content .sub-title {
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--dark-3);
+  margin-top: 2px;
+  display: block;
+}
+.team-style-four .team-content .social {
+  margin-top: 20px;
+}
+.team-style-four .team-content .social li {
+  display: inline-block;
+  margin-right: 12px;
+}
+.team-style-four .team-content .social li:last-child {
+  margin: 0;
+}
+.team-style-four .team-content .social li a {
+  font-size: 18px;
+  color: var(--primary);
+  -webkit-transition: all 0.2s ease-out 0s;
+  -moz-transition: all 0.2s ease-out 0s;
+  -ms-transition: all 0.2s ease-out 0s;
+  -o-transition: all 0.2s ease-out 0s;
+  transition: all 0.2s ease-out 0s;
+}
+.team-style-four .team-content .social li a:hover {
+  color: var(--primary-dark);
+}
+
+/*# sourceMappingURL=team-04.css.map */

@@ -1,0 +1,124 @@
+@import "../variables";
+@import "../mixin";
+@import "../buttons/buttons";
+
+/*===== PRICING STYLE NINE =====*/
+
+.pricing-nine {
+  padding: 100px 0;
+}
+
+.pricing-style-nine {
+  box-shadow: var(--shadow-2);
+  padding: 50px 40px;
+  border-radius: 8px;
+  position: relative;
+  overflow: hidden;
+  background: var(--primary);
+  margin-top: 50px;
+  @include transition(0.3s);
+  text-align: center;
+
+  @media #{$md,$xs} {
+    padding: 35px 30px;
+  }
+
+  &:hover {
+    box-shadow: var(--shadow-4);
+  }
+
+  & .pricing-icon {
+    height: 100px;
+    width: 100px;
+    line-height: 100px;
+    text-align: center;
+    font-size: 40px;
+    background-color: var(--primary);
+    color: var(--white);
+    display: inline-block;
+    border-radius: 50%;
+    border: 2px solid var(--white);
+    @include transition(0.3s);
+
+    @media #{$md} {
+      height: 80px;
+      width: 80px;
+      line-height: 75px;
+      font-size: 35px;
+    }
+
+    @media #{$xs} {
+      height: 70px;
+      width: 70px;
+      line-height: 65px;
+      font-size: 30px;
+    }
+  }
+
+  &:hover {
+    .pricing-icon {
+      border-color: var transparent;
+      background-color: var(--white);
+      color: var(--primary);
+    }
+  }
+
+  & .pricing-header {
+    & .sub-title {
+      color: var(--white);
+      position: relative;
+      margin-top: 30px;
+    }
+
+
+    & .price {
+      font-size: 45px;
+      font-weight: 600;
+      line-height: 45px;
+      color: var(--white);
+      margin-top: 15px;
+      display: inline-block;
+
+      & .month {
+        color: var(--white);
+        font-weight: 400;
+        font-size: 16px;
+        display: inline-block;
+        margin-left: 2px;
+        position: relative;
+        top: -3px;
+      }
+    }
+  }
+
+  & .pricing-list {
+    margin-top: 35px;
+    text-align: left;
+
+    & li {
+      color: var(--white);
+      margin-top: 16px;
+
+      & i {
+        color: var(--white);
+        margin-right: 8px;
+      }
+    }
+  }
+
+  & .pricing-btn {
+    margin-top: 35px;
+  }
+
+  & .primary-btn {
+    @extend %primary-btn;
+    background-color: var(--white);
+    color: var(--primary);
+
+    &:hover {
+      background: var(--light-1);
+      color: var(--primary);
+      box-shadow: var(--shadow-4);
+    }
+  }
+}

@@ -1,0 +1,74 @@
+@import "../variables";
+@import "../mixin";
+@import "../buttons/buttons";
+
+/*===========================
+  features css 
+===========================*/
+
+.features-nine {
+  margin-bottom: 100px;
+
+  .features-items {
+    padding-top: 70px;
+
+    @media #{$md} {
+      padding-top: 40px;
+    }
+
+    @media #{$xs} {
+      padding-top: 20px;
+    }
+  }
+
+  & .features-title {
+    margin-top: 50px;
+
+    @media #{$md} {
+      margin-top: 30px;
+    }
+
+    @media #{$xs} {
+      margin-top: 20px;
+    }
+  }
+
+  & .sub-title {
+    color: var(--primary);
+  }
+
+  & .main-title {
+    font-weight: 700;
+    margin-top: 10px;
+
+    @media #{$xs} {
+      font-size: 28px;
+      line-height: 36px;
+    }
+  }
+
+  & .text-lg {
+    margin-top: 19px;
+  }
+
+  & .features-image {
+    margin-top: 50px;
+
+    & img {
+      width: 100%;
+      border-radius: 8px;
+    }
+  }
+
+  .feature-btn {
+    margin-top: 32px;
+  }
+
+  .primary-btn {
+    @extend %primary-btn;
+  }
+
+  .primary-btn-outline {
+    @extend %primary-btn-outline;
+  }
+}

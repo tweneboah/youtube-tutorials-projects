@@ -1,0 +1,127 @@
+/* ===== Buttons Css ===== */
+.blog-style-eight .blog-content .rounded-buttons .primary-btn-outline {
+  border-color: var(--primary);
+  color: var(--primary);
+}
+.blog-style-eight .blog-content .rounded-buttons .active.primary-btn-outline, .blog-style-eight .blog-content .rounded-buttons .primary-btn-outline:hover, .blog-style-eight .blog-content .rounded-buttons .primary-btn-outline:focus {
+  background: var(--primary-dark);
+  color: var(--white);
+}
+.blog-style-eight .blog-content .rounded-buttons .deactive.primary-btn-outline {
+  color: var(--dark-3);
+  border-color: var(--gray-4);
+  pointer-events: none;
+}
+
+/*===== BLOG STYLE EIGHT =====*/
+.blog-style-eight {
+  margin-top: 50px;
+}
+.blog-style-eight .blog-image img {
+  width: 100%;
+  border-radius: 8px;
+}
+.blog-style-eight .blog-content {
+  padding-top: 16px;
+}
+.blog-style-eight .blog-content .blog-title a {
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 40px;
+  color: var(--black);
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .blog-style-eight .blog-content .blog-title a {
+    font-size: 30px;
+    line-height: 40px;
+  }
+}
+@media (max-width: 767px) {
+  .blog-style-eight .blog-content .blog-title a {
+    font-size: 24px;
+    line-height: 35px;
+  }
+}
+.blog-style-eight .blog-content .blog-title a:hover {
+  color: var(--primary);
+}
+.blog-style-eight .blog-content span {
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--dark-3);
+  margin-top: 8px;
+  margin-right: 10px;
+  display: inline-block;
+}
+.blog-style-eight .blog-content .text {
+  color: var(--dark-3);
+  margin-top: 16px;
+}
+.blog-style-eight .blog-content .rounded-buttons {
+  margin-top: 25px;
+}
+/*===== BLOG STYLE NINE =====*/
+.blog-author-one {
+  margin-top: 50px;
+  background-color: var(--light-2);
+  padding: 40px;
+  border-radius: 8px;
+}
+@media (max-width: 767px) {
+  .blog-author-one {
+    padding: 20px;
+  }
+}
+.blog-author-one .blog-image img {
+  width: 100%;
+  border-radius: 50%;
+  border: 8px solid var(--white);
+}
+.blog-author-one .blog-content {
+  padding-top: 20px;
+}
+.blog-author-one .blog-content .sub-title {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+.blog-author-one .blog-content .blog-title a {
+  font-size: 30px;
+  font-weight: 300;
+  line-height: 40px;
+  color: var(--black);
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+}
+@media (max-width: 767px) {
+  .blog-author-one .blog-content .blog-title a {
+    font-size: 24px;
+    line-height: 35px;
+  }
+}
+.blog-author-one .blog-content .blog-title a:hover {
+  color: var(--primary);
+}
+.blog-author-one .blog-content .text {
+  color: var(--dark-3);
+  margin-top: 16px;
+}
+.blog-author-one .blog-content .more {
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--primary);
+  margin-top: 30px;
+  display: inline-block;
+}
+
+/*# sourceMappingURL=blog-08.css.map */

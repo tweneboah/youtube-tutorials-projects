@@ -1,0 +1,130 @@
+@import "../variables";
+@import "../mixin";
+@import "../buttons/buttons";
+
+/*===== BLOG STYLE TEN =====*/
+
+.blog-author-two {
+  margin-top: 50px;
+
+  & .blog-image {
+    & img {
+      width: 100%;
+      border-radius: 8px;
+    }
+  }
+
+  & .blog-content {
+    padding-top: 20px;
+
+    & .sub-title {
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 24px;
+      text-transform: uppercase;
+    }
+
+    & .blog-title {
+      & a {
+        font-size: 30px;
+        font-weight: 300;
+        line-height: 45px;
+        color: var(--black);
+        @include transition(0.3s);
+
+        @media #{$xs} {
+          font-size: 24px;
+          line-height: 35px;
+        }
+
+        &:hover {
+          color: var(--primary);
+        }
+      }
+    }
+
+    & .text {
+      color: var(--dark-3);
+      margin-top: 16px;
+    }
+
+    & .more {
+      text-transform: uppercase;
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--primary);
+      margin-top: 30px;
+      display: inline-block;
+    }
+  }
+}
+
+/*===== BLOG STYLE ELEVEN =====*/
+
+.blog-style-nine {
+  margin-top: 50px;
+
+  & .blog-image {
+    & img {
+      width: 100%;
+      border-top-left-radius: 8px;
+      border-top-right-radius: 8px;
+    }
+  }
+
+  & .blog-content {
+    border: 1px solid var(--gray-3);
+    border-top: 0;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    padding: 16px 16px 28px;
+
+    & .blog-title {
+      & a {
+        font-size: 30px;
+        font-weight: 600;
+        line-height: 40px;
+        color: var(--black);
+        @include transition(0.3s);
+
+        @media #{$lg} {
+          font-size: 30px;
+          line-height: 40px;
+        }
+
+        @media #{$xs} {
+          font-size: 24px;
+          line-height: 35px;
+        }
+
+        &:hover {
+          color: var(--primary);
+        }
+      }
+    }
+
+    & .text {
+      color: var(--dark-3);
+      margin-top: 16px;
+    }
+
+    & span {
+      font-size: 14px;
+      line-height: 20px;
+      color: var(--dark-3);
+      margin-right: 10px;
+    }
+
+    .blog-date {
+      margin-top: 15px;
+    }
+
+    & .rounded-buttons {
+      margin-top: 15px;
+
+      .primary-btn-outline {
+        @extend %primary-btn-outline;
+      }
+    }
+  }
+}

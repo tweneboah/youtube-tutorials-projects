@@ -1,0 +1,167 @@
+@import "../variables";
+@import "../mixin";
+@import "../buttons/buttons";
+
+/*===========================
+    SING IN SING UP css 
+===========================*/
+.account-login {
+  background-color: var(--light-2);
+  padding: 100px 0;
+
+  .inner-content {
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: var(--shadow-2);
+  }
+
+  .login-form {
+    padding: 70px 50px;
+    background-color: var(--white);
+    border: none;
+
+    @media #{$md} {
+      padding: 50px;
+    }
+
+    @media #{$xs} {
+      padding: 35px;
+    }
+
+    .card-body {
+      padding: 0;
+    }
+
+    .title {
+      margin-bottom: 45px;
+
+      @media #{$xs} {
+        margin-bottom: 30px;
+      }
+
+      h3 {
+        font-size: 25px;
+        font-weight: 700;
+        color: var(--black);
+        margin-bottom: 10px;
+
+        @media #{$xs} {
+          font-size: 22px;
+        }
+      }
+    }
+  }
+
+  .bottom-content {
+    margin-top: 25px;
+  }
+
+  .form-group {
+    margin-bottom: 15px;
+    position: relative;
+
+    label {
+      position: absolute;
+      left: 20px;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 9;
+    }
+
+    .form-control {
+      padding: 0 18px;
+      transition: all 0.4s ease;
+      border: 1px solid var(--gray-4);
+      background-color: var(--white);
+      color: var(--dark-3);
+      font-size: 15px;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      height: 52px;
+      border-radius: 6px !important;
+      overflow: hidden;
+      width: 100%;
+      padding-left: 55px;
+
+      &:focus {
+        border-color: var(--primary);
+        box-shadow: var(--shadow-2);
+      }
+    }
+  }
+
+  .lost-pass {
+    color: var(--dark-3);
+
+    &:hover {
+      color: var(--primary);
+    }
+  }
+
+  .alt-option {
+    margin-top: 60px;
+
+    @media #{$xs} {
+      margin-top: 35px;
+    }
+
+    li {
+      font-weight: 600;
+
+      @media #{$xs} {
+        margin-top: 5px;
+      }
+
+      span {
+        color: var(--dark-3);
+        display: inline-block;
+      }
+
+      display: inline-block;
+      margin-right: 15px;
+
+      &:last-child {
+        margin: 0;
+      }
+
+      a {
+        color: var(--primary);
+        @include transition(0.4s);
+        font-weight: 600;
+
+        &:hover {
+          color: var(--primary-3);
+        }
+      }
+    }
+  }
+
+  .light-rounded-buttons {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: -8px;
+    margin-right: -8px;
+
+    .btn {
+      width: 100%;
+      margin: 8px;
+    }
+
+    .primary-btn {
+      @extend %primary-btn;
+      font-weight: 600;
+      letter-spacing: 0;
+      text-transform: capitalize;
+    }
+
+    .primary-btn-outline {
+      @extend %primary-btn-outline;
+      font-weight: 600;
+      letter-spacing: 0;
+      text-transform: capitalize;
+    }
+  }
+}

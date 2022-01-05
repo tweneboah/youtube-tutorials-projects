@@ -1,0 +1,90 @@
+/*======================================
+    Brand CSS
+========================================*/
+.brand-area {
+  padding: 120px 0;
+  background: var(--light-2);
+}
+.brand-area .section-title {
+  text-align: center;
+  margin: 0px auto;
+  max-width: 550px;
+  position: relative;
+  z-index: 5;
+  margin-bottom: 30px;
+}
+.brand-area .section-title span {
+  text-transform: uppercase;
+  color: var(--primary);
+  display: inline-block;
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-weight: 600;
+}
+.brand-area .section-title h2 {
+  font-size: 35px;
+  margin-bottom: 18px;
+  line-height: 40px;
+  text-transform: capitalize;
+  position: relative;
+  font-weight: 700;
+}
+@media (max-width: 767px) {
+  .brand-area .section-title h2 {
+    font-size: 30px;
+  }
+}
+.brand-area .section-title h3 {
+  font-size: 62px;
+  font-weight: 800;
+  text-transform: uppercase;
+  position: absolute;
+  top: -27px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  color: var(--gray-4);
+  z-index: -1;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-color: var(--gray-4);
+  opacity: 0.7;
+}
+.brand-area .section-title p {
+  font-size: 14px;
+  line-height: 24px;
+  color: var(--dark-3);
+}
+.brand-area .clients-logos {
+  text-align: center;
+  display: inline-block;
+  margin-top: 20px;
+}
+.brand-area .clients-logos .single-image {
+  display: inline-block;
+  margin: 13px 10px;
+  background-color: var(--white);
+  line-height: 100px;
+  padding: 10px 20px;
+  border-radius: 8px;
+  -webkit-transition: all 0.4s ease-out 0s;
+  -moz-transition: all 0.4s ease-out 0s;
+  -ms-transition: all 0.4s ease-out 0s;
+  -o-transition: all 0.4s ease-out 0s;
+  transition: all 0.4s ease-out 0s;
+}
+.brand-area .clients-logos .single-image:hover {
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.096);
+  -webkit-transform: translateY(-5px);
+  -moz-transform: translateY(-5px);
+  -ms-transform: translateY(-5px);
+  -o-transform: translateY(-5px);
+  transform: translateY(-5px);
+}
+.brand-area .clients-logos img {
+  max-width: 170px;
+  transition: all 0.4s ease-in-out;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=clients-04.css.map */

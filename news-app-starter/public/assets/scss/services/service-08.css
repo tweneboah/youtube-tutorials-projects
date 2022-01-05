@@ -1,0 +1,127 @@
+/*===========================
+  services css 
+===========================*/
+.services-eight {
+  padding-top: 100px;
+  padding-bottom: 70px;
+  /* Section Title Three */
+}
+.services-eight .section-title-three {
+  text-align: center;
+  max-width: 550px;
+  margin: auto;
+  margin-bottom: 50px;
+  position: relative;
+  z-index: 5;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .services-eight .section-title-three {
+    margin-bottom: 45px;
+  }
+}
+@media (max-width: 767px) {
+  .services-eight .section-title-three {
+    margin-bottom: 35px;
+  }
+}
+.services-eight .section-title-three h5 {
+  font-weight: 600;
+  margin-bottom: 7px;
+  color: var(--primary);
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+@media (max-width: 767px) {
+  .services-eight .section-title-three h5 {
+    font-size: 0.8rem;
+  }
+}
+.services-eight .section-title-three h2 {
+  margin-bottom: 15px;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .services-eight .section-title-three h2 {
+    font-size: 2rem;
+    line-height: 2.8rem;
+  }
+}
+@media (max-width: 767px) {
+  .services-eight .section-title-three h2 {
+    font-size: 1.5rem;
+    line-height: 1.9rem;
+  }
+}
+.services-eight .section-title-three p {
+  color: var(--dark-3);
+}
+.services-eight .single-services {
+  padding: 40px 30px;
+  border: 1px solid var(--light-1);
+  border-radius: 10px;
+  margin-bottom: 30px;
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+}
+.services-eight .single-services:hover {
+  box-shadow: var(--shadow-4);
+}
+.services-eight .single-services:hover .service-icon {
+  color: var(--white);
+  border-color: transparent;
+  background: var(--primary);
+}
+.services-eight .single-services:hover .service-icon::after {
+  opacity: 1;
+  visibility: visible;
+}
+.services-eight .single-services .service-icon {
+  width: 78px;
+  height: 78px;
+  border-radius: 50%;
+  margin-bottom: 25px;
+  background: var(--white);
+  border: 2px solid var(--primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--primary);
+  font-size: 40px;
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+  position: relative;
+}
+.services-eight .single-services .service-icon::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
+  background: var(--primary);
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+  z-index: -1;
+  border-radius: 50%;
+  border: 1px solid transparent;
+}
+.services-eight .single-services .service-content h4 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.services-eight .single-services .service-content p {
+  color: var(--dark-3);
+}
+
+/*# sourceMappingURL=service-08.css.map */

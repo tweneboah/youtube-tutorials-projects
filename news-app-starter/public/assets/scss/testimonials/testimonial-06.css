@@ -1,0 +1,114 @@
+/*===== TESTIMONIAL STYLE FOUR =====*/
+.testimonial-6 {
+  background-color: var(--light-2);
+  position: relative;
+  padding-bottom: 100px;
+  padding-top: 100px;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
+  .testimonial-6 {
+    padding-bottom: 120px;
+  }
+}
+.testimonial-6 .tns-nav {
+  text-align: center;
+  position: absolute;
+  bottom: 80px;
+  transform: translateX(-50%);
+  width: 100%;
+  left: 50%;
+  z-index: 9;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .testimonial-6 .tns-nav {
+    bottom: 50px;
+  }
+}
+@media (max-width: 767px) {
+  .testimonial-6 .tns-nav {
+    bottom: 40px;
+  }
+}
+.testimonial-6 .tns-nav button {
+  height: 6px;
+  width: 14px;
+  background-color: var(--primary);
+  opacity: 0.3;
+  border-radius: 5px;
+  display: inline-block;
+  border: none;
+  margin: 0px 5px;
+  transition: all 0.4s ease;
+}
+.testimonial-6 .tns-nav button:hover {
+  opacity: 1;
+}
+.testimonial-6 .tns-nav button.tns-nav-active {
+  opacity: 1;
+  width: 25px;
+}
+.testimonial-6 .testimonial-patern1 {
+  width: 300px;
+  position: absolute;
+  left: -200px;
+  bottom: -90px;
+}
+@media (max-width: 767px) {
+  .testimonial-6 .testimonial-patern1 {
+    display: none;
+  }
+}
+.testimonial-6 .testimonial-patern2 {
+  width: 300px;
+  position: absolute;
+  right: -200px;
+  top: -90px;
+}
+@media (max-width: 767px) {
+  .testimonial-6 .testimonial-patern2 {
+    display: none;
+  }
+}
+.testimonial-6 .single-testimonial {
+  text-align: center;
+  padding: 0px 80px 40px 80px;
+}
+@media (max-width: 767px) {
+  .testimonial-6 .single-testimonial {
+    padding: 0px 10px 20px 20px;
+  }
+}
+.testimonial-6 .single-testimonial .text .brand-icon {
+  margin-bottom: 30px;
+}
+.testimonial-6 .single-testimonial .text .brand-icon img {
+  width: 140px;
+}
+.testimonial-6 .single-testimonial .text p {
+  color: var(--dark-3);
+}
+.testimonial-6 .single-testimonial .author {
+  margin-top: 30px;
+  display: inline-block;
+  position: relative;
+}
+.testimonial-6 .single-testimonial .author img {
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  display: inline-block;
+}
+.testimonial-6 .single-testimonial .author .name {
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--black);
+  display: block;
+  margin-top: 15px;
+}
+.testimonial-6 .single-testimonial .author .name span {
+  color: var(--dark-3);
+  display: block;
+  margin-top: 4px;
+}
+
+/*# sourceMappingURL=testimonial-06.css.map */

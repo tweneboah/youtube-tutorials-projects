@@ -1,0 +1,122 @@
+/* ===== Buttons Css ===== */
+.header-four .primary-btn {
+  background: var(--primary);
+  color: var(--white);
+  box-shadow: var(--shadow-2);
+}
+.header-four .active.primary-btn, .header-four .primary-btn:hover, .header-four .primary-btn:focus {
+  background: var(--primary-dark);
+  color: var(--white);
+  box-shadow: var(--shadow-4);
+}
+.header-four .deactive.primary-btn {
+  background: var(--gray-4);
+  color: var(--dark-3);
+  pointer-events: none;
+}
+
+/*===== HEADER FOUR =====*/
+.header-four {
+  position: relative;
+}
+.header-four .header-content-area {
+  background: -webkit-linear-gradient(#deebfd 0%, rgba(255, 255, 255, 0) 100%);
+  background: -o-linear-gradient(#deebfd 0%, rgba(255, 255, 255, 0) 100%);
+  background: linear-gradient(#deebfd 0%, rgba(255, 255, 255, 0) 100%);
+}
+.header-four .header-content {
+  padding-top: 220px;
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px) {
+  .header-four .header-content {
+    padding-top: 150px;
+  }
+}
+@media (max-width: 767px) {
+  .header-four .header-content {
+    padding-top: 120px;
+  }
+}
+.header-four .header-title {
+  font-size: 44px;
+  line-height: 55px;
+  color: var(--black);
+  font-weight: 600;
+}
+@media (max-width: 767px) {
+  .header-four .header-title {
+    font-size: 30px;
+    line-height: 35px;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .header-four .header-title {
+    font-size: 36px;
+    line-height: 45px;
+  }
+}
+.header-four .text {
+  color: var(--dark-3);
+  margin-top: 8px;
+}
+.header-four .header-newsletter {
+  max-width: 410px;
+  position: relative;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+.header-four .header-newsletter i {
+  position: absolute;
+  top: 12px;
+  left: 20px;
+  font-size: 24px;
+  color: var(--primary);
+}
+.header-four .header-newsletter input {
+  width: 100%;
+  height: 48px;
+  padding-left: 60px;
+  padding-right: 30px;
+  border-radius: 50px;
+  border: 2px solid var(--light-3);
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--dark-3);
+  padding-right: 170px;
+}
+.header-four .header-newsletter input:focus {
+  border-color: var(--primary);
+}
+.header-four .header-newsletter .header-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.header-four .header-image {
+  text-align: center;
+  padding-top: 80px;
+}
+.header-four .header-image img {
+  max-width: 700px;
+}
+@media (max-width: 767px) {
+  .header-four .header-image {
+    padding-top: 30px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .header-four .header-image {
+    padding-top: 50px;
+  }
+}
+.header-four .header-image img {
+  width: 100%;
+}
+@media (max-width: 767px) {
+  .header-four .header-image img {
+    object-fit: cover;
+    object-position: center;
+  }
+}
+
+/*# sourceMappingURL=header-04.css.map */

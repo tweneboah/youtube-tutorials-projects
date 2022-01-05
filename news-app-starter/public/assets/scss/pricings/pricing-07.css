@@ -1,0 +1,108 @@
+/* ===== Buttons Css ===== */
+.pricing-style-seven .primary-btn {
+  background: var(--primary);
+  color: var(--white);
+  box-shadow: var(--shadow-2);
+}
+.pricing-style-seven .active.primary-btn, .pricing-style-seven .primary-btn:hover, .pricing-style-seven .primary-btn:focus {
+  background: var(--primary-dark);
+  color: var(--white);
+  box-shadow: var(--shadow-4);
+}
+.pricing-style-seven .deactive.primary-btn {
+  background: var(--gray-4);
+  color: var(--dark-3);
+  pointer-events: none;
+}
+
+/*===== PRICING STYLE SEVEN =====*/
+.pricing-seven {
+  padding: 100px 0;
+}
+
+.pricing-style-seven {
+  box-shadow: var(--shadow-2);
+  padding: 112px 40px 40px 40px;
+  border-radius: 8px;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  background-color: var(--white);
+  margin-top: 50px;
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
+  .pricing-style-seven {
+    padding: 90px 30px 30px 30px;
+  }
+}
+.pricing-style-seven:hover {
+  box-shadow: var(--shadow-4);
+}
+.pricing-style-seven .top-shape {
+  position: absolute;
+  top: -20px;
+  left: 0;
+  width: 101%;
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+  z-index: -1;
+}
+.pricing-style-seven .pricing-header .sub-title {
+  color: var(--black);
+  position: relative;
+  margin-bottom: 20px;
+}
+.pricing-style-seven .pricing-header .price {
+  display: block;
+  font-size: 55px;
+  font-weight: 600;
+  line-height: 60px;
+  color: var(--black);
+}
+@media (max-width: 767px) {
+  .pricing-style-seven .pricing-header .price {
+    font-size: 45px;
+    margin-top: 16px;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .pricing-style-seven .pricing-header .price {
+    font-size: 50px;
+    margin-top: 20px;
+  }
+}
+.pricing-style-seven .pricing-header .year {
+  color: var(--dark-3);
+  margin-top: 8px;
+  font-weight: 500;
+  font-size: 18px;
+}
+.pricing-style-seven .pricing-list {
+  text-align: center;
+  margin-top: 32px;
+}
+.pricing-style-seven .pricing-list li {
+  color: var(--dark-3);
+  margin-top: 16px;
+}
+.pricing-style-seven .pricing-list li i {
+  color: var(--primary);
+  margin-right: 8px;
+}
+.pricing-style-seven .pricing-btn {
+  margin-top: 35px;
+}
+.pricing-style-seven .primary-btn:hover {
+  background-color: var(--info);
+  color: var(--white);
+}
+
+/*# sourceMappingURL=pricing-07.css.map */

@@ -1,0 +1,107 @@
+/* ===== Buttons Css ===== */
+.header-twelve .header-text .light-rounded-buttons .primary-btn {
+  background: var(--primary);
+  color: var(--white);
+  box-shadow: var(--shadow-2);
+}
+.header-twelve .header-text .light-rounded-buttons .active.primary-btn, .header-twelve .header-text .light-rounded-buttons .primary-btn:hover, .header-twelve .header-text .light-rounded-buttons .primary-btn:focus {
+  background: var(--primary-dark);
+  color: var(--white);
+  box-shadow: var(--shadow-4);
+}
+.header-twelve .header-text .light-rounded-buttons .deactive.primary-btn {
+  background: var(--gray-4);
+  color: var(--dark-3);
+  pointer-events: none;
+}
+
+/*======================================
+    header Area CSS
+========================================*/
+.header-twelve {
+  background-color: var(--primary);
+}
+.header-twelve .header-inner {
+  height: 700px;
+  overflow: hidden;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
+  .header-twelve .header-inner {
+    height: auto;
+  }
+}
+.header-twelve .header-text {
+  margin-top: 200px;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
+  .header-twelve .header-text {
+    margin: 0;
+    padding: 60px 0;
+  }
+}
+.header-twelve .header-text .small {
+  color: var(--white);
+  display: block;
+  margin-bottom: 20px;
+  font-size: 15px;
+  font-weight: 400;
+}
+.header-twelve .header-text h1 {
+  font-weight: 700;
+  color: var(--white);
+  margin-bottom: 25px;
+}
+.header-twelve .header-text h1 span {
+  font-weight: 700;
+  display: block;
+  margin-bottom: 12px;
+}
+.header-twelve .header-text p {
+  opacity: 0.7;
+  color: var(--white);
+}
+.header-twelve .header-text ul {
+  display: block;
+  margin-bottom: 20px;
+}
+.header-twelve .header-text ul li {
+  display: inline-block;
+  color: var(--white);
+  margin-right: 10px;
+  font-size: 13px;
+  position: relative;
+  padding-left: 15px;
+  line-height: 26px;
+}
+.header-twelve .header-text ul li:last-child {
+  margin-right: 0;
+}
+.header-twelve .header-text ul li::before {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 50%;
+  height: 6px;
+  width: 6px;
+  background-color: var(--white);
+  border-radius: 50%;
+  margin-top: -4px;
+}
+.header-twelve .header-text .light-rounded-buttons {
+  margin-top: 30px;
+}
+.header-twelve .header-text .light-rounded-buttons .primary-btn {
+  background-color: var(--white);
+  color: var(--primary);
+}
+.header-twelve .personal-image {
+  margin-top: 110px;
+  text-align: center;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
+  .header-twelve .personal-image {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=header-12.css.map */

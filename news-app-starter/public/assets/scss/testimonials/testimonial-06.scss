@@ -1,0 +1,125 @@
+@import "../variables";
+@import "../mixin";
+
+/*===== TESTIMONIAL STYLE FOUR =====*/
+.testimonial-6 {
+  background-color: var(--light-2);
+  position: relative;
+  padding-bottom: 100px;
+  padding-top: 100px;
+
+  @media #{$md, $xs} {
+    padding-bottom: 120px;
+  }
+
+  .tns-nav {
+    text-align: center;
+    position: absolute;
+    bottom: 80px;
+    transform: translateX(-50%);
+    width: 100%;
+    left: 50%;
+    z-index: 9;
+
+    @media #{$md} {
+      bottom: 50px;
+    }
+
+    @media #{$xs} {
+      bottom: 40px;
+    }
+
+    button {
+      height: 6px;
+      width: 14px;
+      background-color: var(--primary);
+      opacity: 0.3;
+      border-radius: 5px;
+      display: inline-block;
+      border: none;
+      margin: 0px 5px;
+      transition: all 0.4s ease;
+
+      &:hover {
+        opacity: 1;
+      }
+
+      &.tns-nav-active {
+        opacity: 1;
+        width: 25px;
+      }
+    }
+  }
+
+  .testimonial-patern1 {
+    width: 300px;
+    position: absolute;
+    left: -200px;
+    bottom: -90px;
+
+    @media #{$xs} {
+      display: none;
+    }
+  }
+
+  .testimonial-patern2 {
+    width: 300px;
+    position: absolute;
+    right: -200px;
+    top: -90px;
+
+    @media #{$xs} {
+      display: none;
+    }
+  }
+
+  .single-testimonial {
+    text-align: center;
+    padding: 0px 80px 40px 80px;
+
+    @media #{$xs} {
+      padding: 0px 10px 20px 20px;
+    }
+
+    .text {
+      .brand-icon {
+        margin-bottom: 30px;
+
+        img {
+          width: 140px;
+        }
+      }
+
+      p {
+        color: var(--dark-3);
+      }
+    }
+
+    .author {
+      margin-top: 30px;
+      display: inline-block;
+      position: relative;
+
+      img {
+        height: 70px;
+        width: 70px;
+        border-radius: 50%;
+        display: inline-block;
+      }
+
+      .name {
+        font-size: 15px;
+        font-weight: 500;
+        color: var(--black);
+        display: block;
+        margin-top: 15px;
+
+        span {
+          color: var(--dark-3);
+          display: block;
+          margin-top: 4px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,113 @@
+/* ===== Buttons Css ===== */
+.pricing-style-eight .primary-btn {
+  background: var(--primary);
+  color: var(--white);
+  box-shadow: var(--shadow-2);
+}
+.pricing-style-eight .active.primary-btn, .pricing-style-eight .primary-btn:hover, .pricing-style-eight .primary-btn:focus {
+  background: var(--primary-dark);
+  color: var(--white);
+  box-shadow: var(--shadow-4);
+}
+.pricing-style-eight .deactive.primary-btn {
+  background: var(--gray-4);
+  color: var(--dark-3);
+  pointer-events: none;
+}
+
+/*===== PRICING STYLE EIGHT =====*/
+.pricing-eight {
+  padding: 100px 0;
+}
+
+.pricing-style-eight {
+  box-shadow: var(--shadow-2);
+  padding: 50px 40px;
+  border-radius: 8px;
+  position: relative;
+  overflow: hidden;
+  background-color: var(--white);
+  margin-top: 50px;
+  text-align: center;
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
+  .pricing-style-eight {
+    padding: 35px 30px;
+  }
+}
+.pricing-style-eight:hover {
+  box-shadow: var(--shadow-4);
+}
+.pricing-style-eight .pricing-icon {
+  height: 100px;
+  width: 100px;
+  line-height: 100px;
+  text-align: center;
+  font-size: 40px;
+  background-color: var(--primary);
+  color: var(--white);
+  display: inline-block;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+}
+.pricing-style-eight:hover .pricing-icon {
+  border-color: var(--primary);
+  background-color: transparent;
+  color: var(--primary);
+}
+.pricing-style-eight .pricing-header .sub-title {
+  color: var(--black);
+  position: relative;
+  margin-top: 30px;
+}
+.pricing-style-eight .pricing-header .price {
+  font-size: 45px;
+  font-weight: 600;
+  line-height: 45px;
+  color: var(--black);
+  margin-top: 15px;
+  display: inline-block;
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .pricing-style-eight .pricing-header .price {
+    font-size: 24px;
+    margin-top: 32px;
+    line-height: 30px;
+  }
+}
+.pricing-style-eight .pricing-header .price .month {
+  color: var(--dark-3);
+  font-weight: 400;
+  font-size: 16px;
+  display: inline-block;
+  margin-left: 2px;
+  position: relative;
+  top: -3px;
+}
+.pricing-style-eight .pricing-list {
+  margin-top: 35px;
+  text-align: left;
+}
+.pricing-style-eight .pricing-list li {
+  color: var(--dark-3);
+  margin-top: 16px;
+}
+.pricing-style-eight .pricing-list li i {
+  color: var(--primary);
+  margin-right: 8px;
+}
+.pricing-style-eight .pricing-btn {
+  margin-top: 35px;
+}
+
+/*# sourceMappingURL=pricing-08.css.map */

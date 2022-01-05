@@ -1,0 +1,101 @@
+/*======================================
+    Brand CSS
+========================================*/
+.brand-area {
+  padding: 120px 0;
+}
+.brand-area .section-title {
+  text-align: left;
+  margin-bottom: 0;
+  padding-right: 50px;
+  position: relative;
+  z-index: 5;
+}
+@media (max-width: 767px), only screen and (min-width: 768px) and (max-width: 991px) {
+  .brand-area .section-title {
+    margin-bottom: 40px;
+  }
+}
+.brand-area .section-title span {
+  text-transform: uppercase;
+  color: var(--primary);
+  display: inline-block;
+  margin-bottom: 10px;
+}
+.brand-area .section-title h2 {
+  margin-bottom: 18px;
+  text-transform: capitalize;
+  position: relative;
+  font-weight: 700;
+  padding-bottom: 14px;
+}
+@media (max-width: 767px), only screen and (min-width: 768px) and (max-width: 991px) {
+  .brand-area .section-title h2 {
+    font-size: 30px;
+    line-height: 38px;
+  }
+}
+.brand-area .section-title h2:before {
+  position: absolute;
+  left: 0;
+  margin-left: 0;
+  bottom: -1px;
+  height: 2px;
+  width: 50px;
+  background: var(--primary);
+  content: "";
+}
+.brand-area .section-title p {
+  color: var(--dark-3);
+}
+.brand-area .section-title.white-text h2 {
+  color: var(--white);
+}
+.brand-area .section-title.white-text h2::before {
+  background-color: var(--white);
+}
+.brand-area .section-title.white-text span {
+  color: var(--white);
+}
+.brand-area .section-title.white-text p {
+  color: var(--white);
+}
+.brand-area .brand-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  position: relative;
+}
+.brand-area .brand-list li {
+  flex-basis: 33.33%;
+}
+@media (max-width: 767px) {
+  .brand-area .brand-list li {
+    flex-basis: 50%;
+  }
+}
+.brand-area .brand-list li a {
+  display: block;
+  text-align: center;
+  height: 150px;
+  line-height: 150px;
+  border: 1px solid var(--gray-4);
+}
+.brand-area .brand-list li a:hover {
+  background-color: var(--primary-light);
+}
+.brand-area .brand-list li a:hover img {
+  transform: scale(1);
+  opacity: 1;
+}
+.brand-area .brand-list li a img {
+  transition: all 0.4s ease;
+  transform: scale(0.9);
+  opacity: 0.7;
+  max-width: 90%;
+}
+.brand-area .bg-color-white .brand-list::before {
+  background: var(--light-1);
+}
+
+/*# sourceMappingURL=clients-05.css.map */

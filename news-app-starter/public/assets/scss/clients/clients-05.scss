@@ -1,0 +1,117 @@
+@import "../variables";
+@import "../mixin";
+
+/*======================================
+    Brand CSS
+========================================*/
+.brand-area {
+  padding: 120px 0;
+
+  .section-title {
+    text-align: left;
+    margin-bottom: 0;
+    padding-right: 50px;
+    position: relative;
+    z-index: 5;
+
+    @media #{$xs,$md} {
+      margin-bottom: 40px;
+    }
+
+    span {
+      text-transform: uppercase;
+      color: var(--primary);
+      display: inline-block;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      margin-bottom: 18px;
+      text-transform: capitalize;
+      position: relative;
+      font-weight: 700;
+      padding-bottom: 14px;
+
+      @media #{$xs,$md} {
+        font-size: 30px;
+        line-height: 38px;
+      }
+
+      &:before {
+        position: absolute;
+        left: 0;
+        margin-left: 0;
+        bottom: -1px;
+        height: 2px;
+        width: 50px;
+        background: var(--primary);
+        content: "";
+      }
+    }
+
+    p {
+      color: var(--dark-3);
+    }
+
+    &.white-text {
+      h2 {
+        color: var(--white);
+
+        &::before {
+          background-color: var(--white);
+        }
+      }
+
+      span {
+        color: var(--white);
+      }
+
+      p {
+        color: var(--white);
+      }
+    }
+  }
+
+  .brand-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: relative;
+  }
+
+  .brand-list li {
+    flex-basis: 33.33%;
+
+    @media #{$xs} {
+      flex-basis: 50%;
+    }
+  }
+
+  .brand-list li a {
+    display: block;
+    text-align: center;
+    height: 150px;
+    line-height: 150px;
+    border: 1px solid var(--gray-4);
+
+    &:hover {
+      background-color: var(--primary-light);
+    }
+
+    &:hover img {
+      transform: scale(1);
+      opacity: 1;
+    }
+
+    img {
+      transition: all 0.4s ease;
+      transform: scale(0.9);
+      opacity: 0.7;
+      max-width: 90%;
+    }
+  }
+
+  .bg-color-white .brand-list::before {
+    background: var(--light-1);
+  }
+}

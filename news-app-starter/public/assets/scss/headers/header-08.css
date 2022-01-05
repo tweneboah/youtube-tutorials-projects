@@ -1,0 +1,99 @@
+/* ===== Buttons Css ===== */
+.header-eight .primary-btn {
+  background: var(--primary);
+  color: var(--white);
+  box-shadow: var(--shadow-2);
+}
+.header-eight .active.primary-btn, .header-eight .primary-btn:hover, .header-eight .primary-btn:focus {
+  background: var(--primary-dark);
+  color: var(--white);
+  box-shadow: var(--shadow-4);
+}
+.header-eight .deactive.primary-btn {
+  background: var(--gray-4);
+  color: var(--dark-3);
+  pointer-events: none;
+}
+
+/*======================================
+    header Area CSS
+========================================*/
+.header-eight {
+  position: relative;
+  padding: 100px 0;
+  background: var(--primary);
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .header-eight {
+    padding: 90px 0;
+  }
+}
+@media (max-width: 767px) {
+  .header-eight {
+    padding: 80px 0;
+  }
+}
+.header-eight .header-image img {
+  width: 100%;
+  border-radius: 8px;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
+  .header-eight .header-image {
+    margin-top: 40px;
+  }
+}
+.header-eight .header-content {
+  border-radius: 0;
+  position: relative;
+  z-index: 1;
+  text-align: left;
+}
+.header-eight .header-content h1 {
+  font-weight: 700;
+  color: var(--white);
+  text-shadow: 0px 3px 8px #00000017;
+  text-transform: capitalize;
+}
+.header-eight .header-content h1 span {
+  display: block;
+}
+.header-eight .header-content p {
+  margin-top: 30px;
+  color: var(--white);
+  opacity: 0.7;
+}
+.header-eight .button {
+  margin-top: 40px;
+}
+.header-eight .primary-btn {
+  margin-right: 12px;
+  background-color: var(--white);
+  color: var(--primary);
+  border: 1px solid transparent;
+}
+.header-eight .primary-btn:hover {
+  background-color: transparent;
+  color: var(--white);
+  border-color: var(--white);
+}
+.header-eight .video-button {
+  display: inline-flex;
+  align-items: center;
+}
+@media (max-width: 767px) {
+  .header-eight .video-button {
+    margin-top: 20px;
+  }
+}
+.header-eight .video-button .text {
+  display: inline-block;
+  margin-left: 15px;
+  color: var(--white);
+  font-weight: 600;
+}
+.header-eight .video-button .icon-btn {
+  background: var(--white);
+  color: var(--primary);
+}
+
+/*# sourceMappingURL=header-08.css.map */

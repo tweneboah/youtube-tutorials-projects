@@ -1,0 +1,85 @@
+@import "../variables";
+@import "../mixin";
+@import "../buttons/buttons";
+
+/*===== call action four =====*/
+
+.call-action-four {
+  background-color: var(--primary);
+  padding-top: 90px;
+  padding-bottom: 100px;
+
+  & .call-action-content {
+    & .action-title {
+      font-weight: 600;
+      color: var(--white);
+    }
+    & .text {
+      color: var(--white);
+      margin-top: 16px;
+    }
+  }
+  & .call-action-form {
+    position: relative;
+    max-width: 480px;
+    margin: 45px auto 0;
+
+    & input {
+      width: 100%;
+      height: 60px;
+      border: 1px solid var(--white);
+      background: none;
+      padding: 0 25px;
+      border-radius: 50px;
+      color: var(--white);
+
+      @media #{$xs} {
+        height: 50px;
+      }
+      @media #{$sm} {
+        height: 60px;
+      }
+
+      @include placeholder {
+        opacity: 1;
+        color: var(--white);
+      }
+    }
+    & .action-btn {
+      position: absolute;
+      top: 7px;
+      right: 7px;
+
+      @media #{$xs} {
+        position: relative;
+        top: 0;
+        right: 0;
+        margin-top: 10px;
+      }
+      @media #{$sm} {
+        position: absolute;
+        top: 8px;
+        right: 8px;
+        margin-top: 0;
+      }
+
+      & .primary-btn {
+        @extend %primary-btn;
+        background: var(--white);
+        color: var(--primary);
+
+        &:hover {
+          background: var(--white);
+          color: var(--primary-dark);
+        }
+
+        @media #{$xs} {
+          width: 100%;
+        }
+        @media #{$sm} {
+          width: auto;
+        }
+      }
+    }
+  }
+}

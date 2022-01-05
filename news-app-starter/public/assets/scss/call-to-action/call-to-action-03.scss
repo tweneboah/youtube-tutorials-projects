@@ -1,0 +1,42 @@
+@import "../variables";
+@import "../mixin";
+@import "../buttons/buttons";
+
+/*===== call action three =====*/
+
+.call-action-three {
+  background-color: var(--light-2);
+  padding-top: 100px;
+  padding-bottom: 50px;
+
+  & .call-action-content {
+    margin-bottom: 50px;
+
+    & .action-title {
+      font-weight: 600;
+      color: var(--black);
+      margin-bottom: 25px;
+      font-size: 35px;
+      line-height: 45px;
+      position: relative;
+
+      @media #{$md} {
+        font-size: 30px;
+        line-height: 40px;
+      }
+
+      @media #{$xs} {
+        font-size: 28px;
+        line-height: 38px;
+      }
+    }
+
+    .text {
+      margin-bottom: 40px
+    }
+
+    .primary-btn {
+      @extend %primary-btn;
+    }
+  }
+}

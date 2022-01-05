@@ -1,0 +1,51 @@
+/*===========================
+  card-03 css 
+===========================*/
+.card-style-three {
+  box-shadow: var(--shadow-1);
+  border-radius: 8px;
+  overflow: hidden;
+  margin-top: 30px;
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+}
+.card-style-three:hover {
+  box-shadow: var(--shadow-4);
+}
+.card-style-three .card-image img {
+  width: 100%;
+  height: 100%;
+}
+.card-style-three .card-content {
+  background: var(--primary);
+  padding: 16px;
+}
+.card-style-three .card-content .card-title {
+  margin-bottom: 0;
+}
+.card-style-three .card-content .card-title a {
+  color: var(--white);
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+}
+.card-style-three .card-content .card-title a:hover {
+  color: var(--white);
+}
+.card-style-three .card-content .text {
+  color: var(--white);
+  margin-top: 8px;
+}
+.card-style-three .card-content .card-btn {
+  margin-top: 24px;
+}
+.card-style-three .card-content .card-btn .main-btn {
+  line-height: 48px;
+}
+
+/*# sourceMappingURL=card-03.css.map */

@@ -1,0 +1,108 @@
+@import "../variables";
+@import "../mixin";
+@import "../buttons/buttons";
+
+/*===== ERROR TWO Style =====*/
+
+/*======================================
+	ERROR 404 THREE CSS
+========================================*/
+.error-area {
+  height: 100vh;
+  text-align: center;
+  width: auto;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #fff;
+  position: relative;
+  overflow: hidden;
+  background-color: var(--primary);
+  z-index: 2;
+
+  .shape1 {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    @media #{$xs} {
+      width: 60px;
+      top: -30px;
+    }
+  }
+  .shape2 {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    @media #{$xs} {
+      width: 60px;
+      bottom: -30px;
+    }
+  }
+}
+
+.d-table {
+  width: 100%;
+  height: 100%;
+}
+
+.d-table {
+  display: table !important;
+}
+
+.d-table-cell {
+  vertical-align: middle;
+}
+
+.d-table-cell {
+  display: table-cell !important;
+}
+
+.error-area .error-content {
+  h1 {
+    font-size: 100px;
+    color: var(--white);
+    margin-bottom: 25px;
+    font-weight: 800;
+    line-height: 100px;
+    @media #{$xs} {
+      font-size: 60px;
+      line-height: 50px;
+    }
+    @media #{$md} {
+      font-size: 45px;
+      line-height: 30px;
+    }
+  }
+  h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: var(--light-2);
+    font-weight: 600;
+    line-height: 35px;
+    @media #{$xs} {
+      font-size: 18px;
+      line-height: 22px;
+    }
+  }
+  .button {
+    margin-top: 30px;
+    .primary-btn-outline {
+      @extend %primary-btn-outline;
+      color: var(--white);
+      border-color: var(--gray-4);
+
+      &:hover {
+        color: var(--primary);
+        background-color: var(--white);
+        border-color: transparent;
+      }
+    }
+  }
+}
+
+.error-area .error-content p {
+  font-weight: 400;
+  margin-bottom: 40px;
+  color: var(--gray-2);
+}

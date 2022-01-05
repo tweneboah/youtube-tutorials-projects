@@ -1,0 +1,188 @@
+/*======================================
+	Team CSS
+========================================*/
+.team-style-eight {
+  padding: 100px 0;
+  background: var(--light-2);
+}
+.team-style-eight .title-line {
+  margin-bottom: 40px;
+}
+.team-style-eight .section-title {
+  text-align: center;
+  max-width: 550px;
+  margin: auto;
+  margin-bottom: 40px;
+  position: relative;
+  z-index: 5;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .team-style-eight .section-title {
+    margin-bottom: 35px;
+  }
+}
+@media (max-width: 767px) {
+  .team-style-eight .section-title {
+    margin-bottom: 25px;
+  }
+}
+.team-style-eight .section-title span {
+  text-transform: uppercase;
+  color: var(--primary);
+  display: inline-block;
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-weight: 600;
+}
+.team-style-eight .section-title h2 {
+  font-size: 30px;
+  margin-bottom: 18px;
+  line-height: 40px;
+  text-transform: capitalize;
+  position: relative;
+  font-weight: 700;
+}
+.team-style-eight .section-title h3 {
+  font-size: 62px;
+  font-weight: 800;
+  text-transform: uppercase;
+  position: absolute;
+  top: -27px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  color: var(--gray-4);
+  z-index: -1;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-color: var(--gray-4);
+  opacity: 0.5;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .team-style-eight .section-title h3 {
+    font-size: 40px;
+  }
+}
+@media (max-width: 767px) {
+  .team-style-eight .section-title h3 {
+    font-size: 35px;
+  }
+}
+.team-style-eight .section-title h3.gray-bg {
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-color: var(--primary) !important;
+  opacity: 0.1 !important;
+}
+.team-style-eight .section-title p {
+  color: var(--dark-3);
+}
+.team-style-eight .single-team {
+  margin-top: 30px;
+  position: relative;
+  -webkit-transition: all 500ms ease;
+  -moz-transition: all 500ms ease;
+  transition: all 500ms ease;
+  display: inline-block;
+  overflow: hidden;
+  text-align: left;
+  background: transparent;
+  background-color: var(--white);
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: var(--shadow-2);
+}
+.team-style-eight .single-team .info-head {
+  background: transparent;
+  position: relative;
+  z-index: 2;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  padding: 25px;
+}
+.team-style-eight .single-team .image {
+  position: relative;
+  text-align: center;
+}
+.team-style-eight .single-team .image::before {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 0;
+  height: 0;
+  width: 100%;
+  background: linear-gradient(transparent, var(--primary));
+  transition: all 0.4s ease-in-out;
+  opacity: 0;
+  visibility: hidden;
+}
+.team-style-eight .single-team .image img {
+  height: 100%;
+  width: 100%;
+}
+.team-style-eight .single-team .image .social {
+  position: absolute;
+  left: 0;
+  bottom: -30px;
+  padding: 25px;
+  padding-bottom: 20px;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.4s ease-in-out;
+}
+.team-style-eight .single-team .image .social li {
+  display: inline-block;
+  margin-right: 15px;
+}
+.team-style-eight .single-team .image .social li:last-child {
+  margin-right: 0px;
+}
+.team-style-eight .single-team .image .social li a {
+  color: var(--white);
+  display: block;
+  font-size: 16px;
+}
+.team-style-eight .single-team .image .social li a:hover {
+  opacity: 0.7;
+}
+.team-style-eight .single-team .info-box {
+  text-align: left;
+}
+.team-style-eight .single-team .info-box .name {
+  display: block;
+  font-size: 18px;
+  color: var(--black);
+  margin-bottom: 3px;
+  text-transform: capitalize;
+}
+.team-style-eight .single-team .info-box .designation {
+  color: var(--dark-3);
+  font-size: 14px;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+.team-style-eight .single-team:hover {
+  box-shadow: var(--shadow-4);
+}
+.team-style-eight .single-team:hover .info-head:before {
+  opacity: 1;
+  visibility: visible;
+  height: 100%;
+}
+.team-style-eight .single-team:hover .info-head {
+  border-color: transparent;
+}
+.team-style-eight .single-team:hover .image::before {
+  opacity: 1;
+  visibility: visible;
+  height: 150px;
+}
+.team-style-eight .single-team:hover .social {
+  opacity: 1;
+  visibility: visible;
+  bottom: 0;
+}
+
+/*# sourceMappingURL=team-08.css.map */

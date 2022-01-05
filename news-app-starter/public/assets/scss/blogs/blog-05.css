@@ -1,0 +1,98 @@
+/* ===== Buttons Css ===== */
+/*===== BLOG STYLE FIVE =====*/
+.blog-style-five {
+  margin-top: 50px;
+}
+.blog-style-five .blog-image {
+  max-width: 240px;
+  width: 100%;
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .blog-style-five .blog-image {
+    max-width: 200px;
+  }
+}
+@media (max-width: 767px) {
+  .blog-style-five .blog-image {
+    max-width: 100%;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .blog-style-five .blog-image {
+    max-width: 240px;
+  }
+}
+.blog-style-five .blog-image img {
+  width: 100%;
+  border-radius: 8px;
+}
+.blog-style-five .blog-content {
+  padding-left: 25px;
+}
+@media (max-width: 767px) {
+  .blog-style-five .blog-content {
+    padding-left: 0;
+    padding-top: 20px;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .blog-style-five .blog-content {
+    padding-left: 20px;
+    padding-top: 0;
+  }
+}
+.blog-style-five .blog-content .blog-title a {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 25px;
+  color: var(--black);
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .blog-style-five .blog-content .blog-title a {
+    font-size: 18px;
+  }
+}
+.blog-style-five .blog-content .blog-title a:hover {
+  color: var(--primary);
+}
+.blog-style-five .blog-content span {
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--dark-3);
+  margin-top: 8px;
+  margin-right: 10px;
+  display: inline-block;
+}
+.blog-style-five .blog-content .text {
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--dark-3);
+  margin-top: 16px;
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .blog-style-five .blog-content .text {
+    margin-top: 8px;
+  }
+}
+.blog-style-five .blog-content .more {
+  text-transform: uppercase;
+  font-weight: 600;
+  color: var(--primary);
+  margin-top: 30px;
+  display: inline-block;
+}
+.blog-style-five .blog-content .more:hover {
+  color: var(--primary-dark);
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .blog-style-five .blog-content .more {
+    margin-top: 16px;
+  }
+}
+
+/*# sourceMappingURL=blog-05.css.map */
