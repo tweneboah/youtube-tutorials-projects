@@ -14,4 +14,4 @@ This repo contains all my youtube tutorial projects and concepts ranging from
 
 🔴 - Other concepts
 
-## 🔗 [Join my youtube channel for the tutorials](https://www.youtube.com/channel/UCvu6J9q1AM6q4xysGqAvVyw)
+## 🔗 [Join my youtube channel for the tutorials](https://www.youtube.com/channel/UCqgi3TTpWwO22hIxzPOLhWw)
