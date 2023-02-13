@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Weather App</title>
+    <link rel="stylesheet" type="text/css" href="/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Weather App using NodeJS</h1>
+      <form action="/weather" method="get">
+        <input type="text" name="city" placeholder="Enter city name" />
+        <button type="submit">Get Weather</button>
+      </form>
+      <% if (error) { %>
+      <p class="error"><%= error %></p>
+      <% } else if (weather) { %>
+      <div class="card">
+        <!-- Add your weather data here -->
+      </div>
+      <% } %>
+    </div>
+  </body>
+</html>
