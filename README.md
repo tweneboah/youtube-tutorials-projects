@@ -1,17 +1,22 @@
-## 🚀 About this repo
+# 🚀 Fullstack Web Development With Projects
 
-My previous channel is been hacked so I have created new one so in case you didn't find some of the tutorials for some project, then that's the cause. But trust more projects are underway so subscribe to my new channel here [Join my youtube channel for the tutorials](https://www.youtube.com/channel/UCqgi3TTpWwO22hIxzPOLhWw)
+Welcome to the Fullstack Web Development with MERN repository! Here you'll find a series of YouTube tutorials and projects that will teach you how to build fullstack web applications using the latest technologies, including HTML, CSS, JavaScript, Node.js, Express, Mongoose, and MongoDB.
 
-This repo contains all my youtube tutorial projects and concepts ranging from
+The MERN stack is a popular choice for building scalable and efficient web applications, and this repository provides you with a hands-on approach to learning the key concepts and best practices for building fullstack web applications with the MERN stack.
 
-## 👨🏻‍💻 Technologies
+# Branches
 
-🔴 - Node Js Projects
+For each project in the series, there is a corresponding branch in this repository that represents a specific programming language or framework, including the starter code. This allows you to easily follow along with the code and start each project with the provided starter code. Simply switch to the appropriate branch to access the code for each project.
 
-🔴 - MERN Stack Projects
+Here are the branches for each project in the series:
 
-🔴 - React js Projects
+🔴 - HTML/CSS
+🔴 - JavaScript
+🔴 - Node.js
+🔴 - Express
+🔴 - Mongoose
+🔴 - MongoDB
+🔴 - MERN
+🔴 - Others
 
-🔴 - Vanilla JS Projects
-
-🔴 - Other concepts
+[Follow us to start building ](https://www.youtube.com/c/inovotek-academy)
