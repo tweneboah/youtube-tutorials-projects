@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f4f4f4;
+}
+
+.container {
+  width: 100%;
+  max-width: 600px;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.email-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.email-form input,
+.email-form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  color: #333;
+}
+
+.email-form input:focus,
+.email-form textarea:focus {
+  outline: none;
+  border-color: #777;
+}
+
+.email-form textarea {
+  resize: vertical;
+}
+
+.email-form button {
+  padding: 10px 20px;
+  background-color: #70bbd9;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #ffffff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.email-form button:hover {
+  background-color: #58a5c2;
+}
+
+/* Add the following styles at the bottom of your styles.css file */
+.status-message {
+  margin-top: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 16px;
+  text-align: center;
+}
+
+.status-message.loading {
+  background-color: #f4f4f4;
+  color: #999;
+}
+
+.status-message.success {
+  background-color: #dff0d8;
+  color: #3c763d;
+}
+
+.status-message.error {
+  background-color: #f2dede;
+  color: #a94442;
+}
+
+/* Add the following styles at the bottom of your styles.css file */
+.title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Add the following styles at the bottom of your styles.css file */
+.description {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.copyright {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #777;
+  margin-top: 20px;
+  text-align: center;
+}

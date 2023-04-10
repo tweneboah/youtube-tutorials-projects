@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NodeMailerApp - Email Form</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="title">NodeMailerApp</h1>
+      <p class="description">
+        Send emails easily using NodeMailerApp. Just fill in the form and click
+        "Send Email" to get started.
+      </p>
+      <form
+        action="/send-email"
+        method="POST"
+        class="email-form"
+        id="email-form"
+      >
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Enter recipient email"
+          required
+        />
+        <textarea
+          name="message"
+          id="message"
+          rows="5"
+          placeholder="Enter your message"
+          required
+        ></textarea>
+        <button type="submit" id="submit-button">Send Email</button>
+      </form>
+
+      <% if (typeof status !== 'undefined' && status && typeof message !==
+      'undefined' && message) { %>
+      <div class="status-message <%= status %>"><%= message %></div>
+      <% } %>
+
+      <p class="copyright">&copy; 2023 NodeMailerApp. All rights reserved.</p>
+    </div>
+  </body>
+</html>
