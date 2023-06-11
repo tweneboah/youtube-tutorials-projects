@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #1e1e2f;
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+}
+
+.form-container {
+  width: 100%;
+  max-width: 500px;
+  padding: 40px;
+  background-color: #2e2e3e;
+  border-radius: 10px;
+  box-shadow: 0px 10px 20px -10px rgba(0, 0, 0, 0.75);
+  transform: scale(0.98);
+  transition: transform 0.3s ease;
+}
+
+.form-container:hover {
+  transform: scale(1);
+}
+
+.form-heading {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.form-description {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 0.875em;
+  color: #cfcfd8;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.form-label {
+  margin-bottom: 10px;
+  font-weight: normal;
+  color: #cfcfd8;
+}
+
+.form-input {
+  padding: 15px;
+  border: 1px solid #6c63ff;
+  border-radius: 5px;
+  background-color: #40404e;
+  color: #ffffff;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-input::placeholder {
+  color: #6c63ff;
+}
+
+.form-input:focus {
+  border-color: #5a52db;
+  box-shadow: 0px 0px 5px 2px rgba(108, 99, 255, 0.1);
+  outline: none;
+}
+
+.form-error {
+  color: #ff4d4d;
+  font-size: 0.875em;
+  padding-top: 2px;
+}
+
+.form-button {
+  padding: 15px;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  background: linear-gradient(to right, #6c63ff 0%, #5a52db 100%);
+  color: #ffffff;
+  cursor: pointer;
+  box-shadow: 0px 10px 15px -3px rgba(108, 99, 255, 0.3);
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-button:hover {
+  background: linear-gradient(to right, #5a52db 0%, #6c63ff 100%);
+  box-shadow: 0px 10px 15px -3px rgba(90, 82, 219, 0.5);
+}
