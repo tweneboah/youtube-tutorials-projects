@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "express": "^4.21.1",
+    "node-js": "^1.0.0",
+    "nodemon": "^3.1.7",
+    "sever": "^0.0.2",
+    "weather-app": "^1.0.0"
+  }
+}
