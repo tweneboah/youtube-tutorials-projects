@@ -1,0 +1,216 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* mobile-first base styles */
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f8f9fa;
+  padding: 20px;
+  overflow-x: hidden;
+}
+.container {
+  width: 100%;
+  background: white;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.08);
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 30px;
+  padding: 0 15px;
+}
+
+h1 {
+  color: #2d3436;
+  margin-bottom: 12px;
+  font-size: 1.5em;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.subtitle {
+  color: #636e72;
+  font-size: 0.9em;
+  line-height: 1.5;
+}
+
+/* Skills Layout - Mobile Base  */
+.skills-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 0 10px;
+}
+.skill-container {
+  width: 100%;
+  background: #ffffff;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 15px;
+}
+.skill-container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.skill-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+.skill-header i {
+  font-size: 2.2em;
+  margin-right: 8px;
+  min-width: 20px;
+}
+
+.skill-title {
+  color: #2d3436;
+  font-size: 1.1em;
+  font-weight: 600;
+}
+
+.skill-description {
+  color: #636e72;
+  font-size: 0.85em;
+  margin-bottom: 12px;
+  line-height: 1.4;
+}
+
+.skill-bar {
+  width: 100%;
+  height: 12px;
+  background: #f0f0f0;
+  border-radius: 5px;
+  overflow: hidden;
+  position: relative;
+}
+.skill-progress {
+  width: 0%;
+  height: 100%;
+  background: linear-gradient(90deg, #0984e3, #00cec9);
+  border-radius: 5px;
+  position: relative;
+  transition: width 1.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.percent {
+  position: absolute;
+  right: 0;
+  top: -20px;
+  color: #2d3436;
+  font-weight: 600;
+  font-size: 0.85em;
+}
+/* Icon Colors */
+.fa-html5 {
+  color: #e34f26;
+}
+.fa-css3-alt {
+  color: #2965f1;
+}
+
+.fa-js {
+  color: #f7df1e;
+}
+
+.fa-react {
+  color: #61dafb;
+}
+
+.fa-node-js {
+  color: #339933;
+}
+.fa-database {
+  color: #336791;
+}
+
+/* Animation */
+.skill-progress.animate {
+  animation: fillBar 1.5s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+@keyframes fillBar {
+  from {
+    width: 0%;
+  }
+  to {
+    width: var(--percent);
+  }
+}
+
+/*  Small tablets (480px and up) */
+@media screen and (min-width: 480px) {
+  .container {
+    padding: 25px;
+  }
+  h1 {
+    font-size: 2em;
+  }
+  .subtitle {
+    font-size: 1em;
+  }
+  .skill-container {
+    padding: 25px;
+  }
+}
+
+/* Tablets (768px and up) */
+
+@media screen and (min-width: 768px) {
+  body {
+    padding: 30px;
+  }
+
+  .container {
+    width: 90%;
+    max-width: 1000px;
+    padding: 35px;
+  }
+  .header {
+    margin-bottom: 40px;
+  }
+  h1 {
+    font-size: 2.2em;
+    margin-bottom: 15px;
+  }
+  .subtitle {
+    font-size: 1.05em;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  .skill-section {
+    padding: 0;
+    gap: 25px;
+  }
+  .skill-container {
+    width: calc(50%-12.5px);
+  }
+  .skill-bar i {
+    font-size: 1.4em;
+  }
+}
+
+/*  Desktop (1024px and up)  */
+@media screen and (min-width: 1024px) {
+  body {
+    padding: 40px;
+  }
+  .container {
+    padding: 40px;
+  }
+  .skill-container {
+    width: calc(33.333% - 20px);
+  }
+}

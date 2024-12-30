@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dynamic Skill Dashboard</title>
+    <!-- FontAwesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- custom css -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Main container for the skill bars -->
+    <div class="container">
+      <div class="header">
+        <h1>Professional Skills Dashboard</h1>
+        <p class="subtitle">
+          A comprehensive overview of technical expertise and proficiency
+        </p>
+      </div>
+      <!-- Skills section with multiple skill bars -->
+      <div class="skills-section">
+        <!--  Individual skill bar container -->
+        <div class="skill-container">
+          <div class="skill-header">
+            <i class="fa-brands fa-html5"></i>
+            <h3 class="skill-title">HTML5</h3>
+          </div>
+          <p class="skill-description">
+            Advanced markup, semantic elements, and modern HTML5 features
+          </p>
+          <div class="skill-bar">
+            <div class="skill-progress" data-percent="90">
+              <span class="percent">90%</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-container">
+          <div class="skill-header">
+            <i class="fab fa-css3-alt"></i>
+            <h3 class="skill-title">CSS3</h3>
+          </div>
+          <p class="skill-description">
+            Responsive design, animations, and modern CSS frameworks
+          </p>
+          <div class="skill-bar">
+            <div class="skill-progress" data-percent="85">
+              <span class="percent">85%</span>
+            </div>
+          </div>
+        </div>
+        <div class="skill-container">
+          <div class="skill-header">
+            <i class="fab fa-js"></i>
+            <h3 class="skill-title">JavaScript</h3>
+          </div>
+          <p class="skill-description">
+            ES6+, DOM manipulation, and async programming 75
+          </p>
+          <div class="skill-bar">
+            <div class="skill-progress" data-percent="80">
+              <span class="percent">80%</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-container">
+          <div class="skill-header">
+            <i class="fab fa-react"></i>
+          </div>
+          <h3 class="skill-title">ReactJS</h3>
+          <p class="skill-description">
+            Component-based architecture, hooks, and state management
+          </p>
+          <div class="skill-bar">
+            <div class="skill-progress" data-percent="75">
+              <span class="percent">75%</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-container">
+          <div class="skill-header">
+            <i class="fab fa-node-js"></i>
+            <h3 class="skill-title">Nodejs</h3>
+          </div>
+          <p class="skill-description">
+            Server-side JavaScript, API development, and Express.js
+          </p>
+          <div class="skill-bar">
+            <div class="skill-progress" data-percent="75">
+              <span class="percent">75%</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-container">
+          <div class="skill-header">
+            <i class="fas fa-database"></i>
+            <h3 class="skill-title">SQL</h3>
+          </div>
+          <p class="skill-description">
+            Database design, queries, and performance optimization
+          </p>
+          <div class="skill-bar">
+            <div class="skill-progress" data-percent="65">
+              <span class="percent">65%</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- custom js -->
+    <script src="script.js"></script>
+  </body>
+</html>
