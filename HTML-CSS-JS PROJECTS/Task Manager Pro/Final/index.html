@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TaskMaster Pro</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <i class="fas fa-tasks task-icon"></i>
+        <h1>TaskMaster Pro</h1>
+        <p class="subtitle">
+          Your Personal Task Management Solution <i class="fas fa-star"></i>
+        </p>
+      </div>
+
+      <div class="input-section">
+        <div class="input-wrapper">
+          <i class="fas fa-pencil input-icon"></i>
+          <input type="text" id="todoInput" placeholder="Enter your task" />
+        </div>
+        <button onclick="addTodo()" class="add-btn">
+          <i class="fas fa-plus"></i>
+          <span>Add Task</span>
+        </button>
+      </div>
+
+      <div class="filters">
+        <button class="filter-btn active" data-filter="all">
+          <i class="fas fa-list"></i> All
+        </button>
+        <button class="filter-btn" data-filter="completed">
+          <i class="fas fa-check"></i> Completed
+        </button>
+        <button class="filter-btn" data-filter="pending">
+          <i class="fas fa-clock"></i> Pending
+        </button>
+      </div>
+
+      <ul id="todoList"></ul>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

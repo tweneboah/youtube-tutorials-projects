@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Percentage Calculator</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="calculator">
+        <div class="calculator-header">
+          <h2>Percentage Calculator</h2>
+          <p class="subtitle">Simple and precise calculations</p>
+        </div>
+
+        <div class="calculator-body">
+          <div class="input-section">
+            <div class="input-group">
+              <label for="number">Amount</label>
+              <div class="input-wrapper">
+                <input type="number" id="number" placeholder="0.00" />
+                <span class="input-icon">$</span>
+              </div>
+            </div>
+
+            <div class="input-group">
+              <label for="percent">Percentage</label>
+              <div class="input-wrapper">
+                <input type="number" id="percent" placeholder="0" />
+                <span class="input-icon">%</span>
+              </div>
+            </div>
+
+            <button id="calculateBtn">Calculate</button>
+          </div>
+
+          <div class="results">
+            <h3>Results</h3>
+            <div class="result-grid">
+              <div class="result-item">
+                <span class="result-label">Percentage Amount</span>
+                <span class="result-value" id="percentageResult">$0.00</span>
+              </div>
+              <div class="result-item">
+                <span class="result-label">Final Amount</span>
+                <span class="result-value" id="finalResult">$0.00</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

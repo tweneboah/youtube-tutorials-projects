@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Split & Share | Smart Bill Calculator</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <h1>Split & Share</h1>
+      <p>
+        The smart way to calculate and split bills with friends. Perfect for
+        dining out, group activities, or shared expenses. Get instant
+        calculations with fair splits and detailed breakdowns.
+      </p>
+    </header>
+
+    <div class="container">
+      <div class="calculator">
+        <div class="input-group">
+          <label for="bill"> <i class="fas fa-receipt"></i> Bill Amount </label>
+          <input
+            type="number"
+            id="bill"
+            placeholder="Enter the total bill amount"
+          />
+        </div>
+
+        <div class="input-group">
+          <label for="service">
+            <i class="fas fa-star"></i> Service Rating
+          </label>
+          <select id="service">
+            <option value="0.2">Exceptional - 20%</option>
+            <option value="0.15">Great - 15%</option>
+            <option value="0.1">Good - 10%</option>
+            <option value="0.05">Fair - 5%</option>
+          </select>
+        </div>
+
+        <div class="input-group">
+          <label for="people">
+            <i class="fas fa-users"></i> Number of People
+          </label>
+          <input
+            type="number"
+            id="people"
+            placeholder="How many people?"
+            min="1"
+            value="1"
+          />
+        </div>
+
+        <button onclick="calculateTip()">
+          <i class="fas fa-calculator"></i> Calculate Split
+        </button>
+      </div>
+
+      <div class="result" id="result">
+        <h2>Breakdown</h2>
+        <div class="result-grid">
+          <div class="result-item">
+            <p>Tip Amount</p>
+            <span id="tipAmount">$0.00</span>
+          </div>
+          <div class="result-item">
+            <p>Total Bill</p>
+            <span id="totalAmount">$0.00</span>
+          </div>
+          <div class="result-item">
+            <p>Per Person</p>
+            <span id="perPerson">$0.00</span>
+          </div>
+          <div class="result-item">
+            <p>Tip Per Person</p>
+            <span id="tipPerPerson">$0.00</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
