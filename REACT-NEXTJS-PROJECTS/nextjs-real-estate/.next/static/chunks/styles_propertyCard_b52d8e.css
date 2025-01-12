@@ -1,0 +1,151 @@
+/* [project]/styles/propertyCard.css [app-client] (css) */
+.property-slider {
+  opacity: 1;
+  transition: opacity .3s;
+}
+
+.property-slider .slick-prev, .property-slider .slick-next {
+  z-index: 10;
+  width: 32px;
+  height: 32px;
+  opacity: 0;
+  transition: all .3s;
+  background-color: #ffffffe6;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  display: flex !important;
+}
+
+.property-slider:hover .slick-prev, .property-slider:hover .slick-next {
+  opacity: 1;
+}
+
+.property-slider .slick-prev:hover, .property-slider .slick-next:hover {
+  background-color: #fff;
+  transform: scale(1.1);
+}
+
+.property-slider .slick-prev {
+  left: 16px;
+}
+
+.property-slider .slick-next {
+  right: 16px;
+}
+
+.property-slider .slick-dots {
+  bottom: 16px;
+  z-index: 10;
+}
+
+.property-slider .slick-dots li {
+  margin: 0 2px;
+}
+
+.property-slider .slick-dots li button {
+  width: 6px;
+  height: 6px;
+}
+
+.property-slider .slick-dots li button:before {
+  font-size: 8px;
+  color: #fff;
+  opacity: .7;
+  transition: all .3s;
+}
+
+.property-slider .slick-dots li.slick-active button:before {
+  color: #ffa509;
+  opacity: 1;
+  transform: scale(1.2);
+}
+
+.full-screen-slider .slick-prev, .full-screen-slider .slick-next {
+  z-index: 10;
+  width: 48px;
+  height: 48px;
+  background-color: #ffffff26;
+  border-radius: 50%;
+  transition: all .3s;
+  align-items: center;
+  justify-content: center;
+  display: flex !important;
+}
+
+.full-screen-slider .slick-prev:hover, .full-screen-slider .slick-next:hover {
+  background-color: #ffffff40;
+  transform: scale(1.1);
+}
+
+.full-screen-slider .slick-prev {
+  left: 24px;
+}
+
+.full-screen-slider .slick-next {
+  right: 24px;
+}
+
+.full-screen-slider .slick-dots {
+  bottom: 24px;
+  z-index: 10;
+}
+
+.full-screen-slider .slick-dots li {
+  margin: 0 4px;
+}
+
+.full-screen-slider .slick-dots li button {
+  width: 8px;
+  height: 8px;
+}
+
+.full-screen-slider .slick-dots li button:before {
+  font-size: 10px;
+  color: #ffffffb3;
+  opacity: .7;
+  transition: all .3s;
+}
+
+.full-screen-slider .slick-dots li.slick-active button:before {
+  color: #ffa509;
+  opacity: 1;
+  transform: scale(1.2);
+}
+
+.slick-prev:before, .slick-next:before {
+  font-family: slick;
+  font-size: 20px;
+  opacity: .9;
+  color: #050b2c;
+  -webkit-font-smoothing: antialiased;
+}
+
+.full-screen-slider .slick-prev:before, .full-screen-slider .slick-next:before {
+  color: #fff;
+}
+
+.property-card-hover:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 20px #0000001a;
+}
+
+@media (width <= 640px) {
+  .property-slider .slick-prev, .property-slider .slick-next {
+    display: none !important;
+  }
+
+  .full-screen-slider .slick-prev {
+    left: 12px;
+  }
+
+  .full-screen-slider .slick-next {
+    right: 12px;
+  }
+
+  .full-screen-slider .slick-dots {
+    bottom: 16px;
+  }
+}
+
+/*# sourceMappingURL=styles_propertyCard_b52d8e.css.map*/

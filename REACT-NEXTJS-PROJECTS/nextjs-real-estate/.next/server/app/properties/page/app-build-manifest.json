@@ -1,0 +1,28 @@
+{
+  "pages": {
+    "/properties/page": [
+      "static/chunks/_22d2ba._.js",
+      "static/chunks/app_favicon_ico_mjs_53e3fe._.js",
+      "static/chunks/[root of the server]__14868b._.css",
+      "static/chunks/node_modules_react-icons_bi_index_mjs_cba0e8._.js",
+      "static/chunks/node_modules_react-icons_fa_index_mjs_d2e2d7._.js",
+      "static/chunks/node_modules_react-icons_md_index_mjs_78df2b._.js",
+      "static/chunks/node_modules_react-icons_lib_74ccc9._.js",
+      "static/chunks/node_modules_05bfa2._.js",
+      "static/chunks/_ccd80b._.js",
+      "static/chunks/app_layout_61af54.js",
+      "static/chunks/node_modules_3c035b._.js",
+      "static/chunks/_6a8f27._.js",
+      "static/chunks/node_modules_slick-carousel_slick_2cb6f2._.css",
+      "static/chunks/app_properties_page_90d123.js",
+      "static/chunks/node_modules_next_dist_compiled_react-dom_1f56dc._.js",
+      "static/chunks/node_modules_next_dist_compiled_107ce8._.js",
+      "static/chunks/node_modules_next_dist_client_523921._.js",
+      "static/chunks/node_modules_next_dist_4bb10e._.js",
+      "static/chunks/node_modules_@swc_helpers_cjs_00636a._.js",
+      "static/chunks/[turbopack]_browser_dev_hmr-client_hmr-client_ts_d0a96d._.js",
+      "static/chunks/_e69f0d._.js",
+      "static/chunks/_d95469._.js"
+    ]
+  }
+}
