@@ -1,0 +1,185 @@
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", serif;
+  line-height: 1.6;
+  background: #050b2c;
+  color: #ffffff;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 2rem;
+}
+.sidebar {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  padding: 1.5rem;
+  backdrop-filter: blur(10px);
+  height: calc(100vh - 4rem);
+  position: sticky;
+  top: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.main-content {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 16px;
+  padding: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+.header {
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+.header h1 {
+  font-size: 1.8rem;
+  color: #ffa509;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.header h1 i {
+  color: aqua;
+}
+
+.header h2 {
+  color: #ffffff;
+  font-size: 1.5rem;
+}
+
+.btn {
+  background: #ffa509;
+  color: #050b2c;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 600;
+  transition: all 0.2s ease;
+  width: 100%;
+}
+
+.btn:hover {
+  background-color: #ffb84d;
+  transform: translateY(-2px);
+}
+.btn i {
+  margin-right: 0.5rem;
+}
+
+.input-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  color: #ffffff;
+  font-size: 0.95rem;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: #ffa509;
+  box-shadow: 0 0 0 2px solid rgba(255, 165, 9, 0.2);
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: rgb(197, 197, 164);
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  padding: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.2s ease;
+}
+.card:hover {
+  transform: translateY(-2px);
+  border-color: rgba(197, 197, 164);
+}
+
+.todo-content h3 {
+  color: #ffffff;
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.todo-content p {
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 1rem;
+  font-size: 0.85rem;
+}
+
+.status {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.status-pending {
+  background-color: rgba(255, 165, 9, 0.2);
+  color: #ffa509;
+  margin-bottom: 5px;
+}
+
+.todo-actions {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.todo-actions .btn {
+  width: auto;
+  padding: 0.5rem 1rem;
+}
+
+.edit-btn {
+  background: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+}
+.edit-btn:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+.delete-btn {
+  color: #ff3b30;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.delete-btn:hover {
+  background: rgba(255, 59, 48, 0.2);
+}
+
+/* responsive */
+@media (max-width: 768px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+  .sidebar {
+    height: auto;
+    position: static;
+  }
+}

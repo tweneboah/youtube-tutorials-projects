@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Custom css -->
+    <link rel="stylesheet" href="styles.css" />
+    <!-- FontAwesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Google fonts-inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Todo App</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Sidebar -->
+      <div class="sidebar">
+        <div class="header">
+          <h1><i class="fas fa-tasks"></i> TaskMaster Pro</h1>
+        </div>
+        <div class="input-section">
+          <input
+            type="text"
+            id="todoTitle"
+            placeholder="What's your next big task?"
+          />
+          <textarea
+            id="todoDesc"
+            placeholder="Add details about your task (optional"
+          ></textarea>
+          <button class="btn" id="addBtn">
+            <i class="fas fa-plus"></i> Create Task
+          </button>
+        </div>
+      </div>
+      <!-- Main content -->
+      <div class="main-content">
+        <div class="header">
+          <h2>Your Tasks Overview</h2>
+        </div>
+        <!-- Todo list container  -->
+        <div id="todoList">
+          <!--  Todo items will be dynamically added here  -->
+          <!-- Add todo manually -->
+        </div>
+      </div>
+    </div>
+
+    <!-- custom js -->
+    <script src="app.js"></script>
+  </body>
+</html>

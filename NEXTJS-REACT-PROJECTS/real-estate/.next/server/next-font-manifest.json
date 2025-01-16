@@ -1,0 +1,47 @@
+{
+  "app": {
+    "[project]/app/page": [
+      "static/media/gyByhwUxId8gMEwcGFWNOITd-s.p.da1ebef7.woff2",
+      "static/media/or3nQ6H_1_WfwkMZI_qYFrcdmhHkjko-s.p.be19f591.woff2"
+    ],
+    "[project]/app/dashboard/page": [
+      "static/media/gyByhwUxId8gMEwcGFWNOITd-s.p.da1ebef7.woff2",
+      "static/media/or3nQ6H_1_WfwkMZI_qYFrcdmhHkjko-s.p.be19f591.woff2"
+    ],
+    "[project]/app/_not-found/page": [
+      "static/media/gyByhwUxId8gMEwcGFWNOITd-s.p.da1ebef7.woff2",
+      "static/media/or3nQ6H_1_WfwkMZI_qYFrcdmhHkjko-s.p.be19f591.woff2"
+    ],
+    "[project]/app/properties/add/page": [
+      "static/media/gyByhwUxId8gMEwcGFWNOITd-s.p.da1ebef7.woff2",
+      "static/media/or3nQ6H_1_WfwkMZI_qYFrcdmhHkjko-s.p.be19f591.woff2"
+    ],
+    "[project]/app/login/page": [
+      "static/media/gyByhwUxId8gMEwcGFWNOITd-s.p.da1ebef7.woff2",
+      "static/media/or3nQ6H_1_WfwkMZI_qYFrcdmhHkjko-s.p.be19f591.woff2"
+    ],
+    "[project]/app/properties/[id]/page": [
+      "static/media/gyByhwUxId8gMEwcGFWNOITd-s.p.da1ebef7.woff2",
+      "static/media/or3nQ6H_1_WfwkMZI_qYFrcdmhHkjko-s.p.be19f591.woff2"
+    ],
+    "[project]/app/properties/page": [
+      "static/media/gyByhwUxId8gMEwcGFWNOITd-s.p.da1ebef7.woff2",
+      "static/media/or3nQ6H_1_WfwkMZI_qYFrcdmhHkjko-s.p.be19f591.woff2"
+    ],
+    "[project]/app/about-us/page": [
+      "static/media/gyByhwUxId8gMEwcGFWNOITd-s.p.da1ebef7.woff2",
+      "static/media/or3nQ6H_1_WfwkMZI_qYFrcdmhHkjko-s.p.be19f591.woff2"
+    ],
+    "[project]/app/register/page": [
+      "static/media/gyByhwUxId8gMEwcGFWNOITd-s.p.da1ebef7.woff2",
+      "static/media/or3nQ6H_1_WfwkMZI_qYFrcdmhHkjko-s.p.be19f591.woff2"
+    ],
+    "[project]/app/properties/[id]/edit/page": [
+      "static/media/gyByhwUxId8gMEwcGFWNOITd-s.p.da1ebef7.woff2",
+      "static/media/or3nQ6H_1_WfwkMZI_qYFrcdmhHkjko-s.p.be19f591.woff2"
+    ]
+  },
+  "appUsingSizeAdjust": true,
+  "pages": {},
+  "pagesUsingSizeAdjust": false
+}

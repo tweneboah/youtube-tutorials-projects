@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 55, "column": 0}, "map": {"version":3,"sources":["file:///Users/masynctech/Desktop/real-estate/app/api/auth/logout/route.js"],"sourcesContent":["import { NextResponse } from 'next/server';\n\nexport async function POST() {\n  const response = NextResponse.json({\n    success: true,\n    message: 'Logged out successfully'\n  });\n\n  // Clear the auth cookie\n  response.cookies.set({\n    name: 'token',\n    value: '',\n    httpOnly: true,\n    expires: new Date(0),\n    secure: process.env.NODE_ENV === 'production',\n    sameSite: 'strict'\n  });\n\n  return response;\n}\n"],"names":[],"mappings":";;;AAAA;;AAEO,eAAe;IACpB,MAAM,WAAW,gIAAA,CAAA,eAAY,CAAC,IAAI,CAAC;QACjC,SAAS;QACT,SAAS;IACX;IAEA,wBAAwB;IACxB,SAAS,OAAO,CAAC,GAAG,CAAC;QACnB,MAAM;QACN,OAAO;QACP,UAAU;QACV,SAAS,IAAI,KAAK;QAClB,QAAQ,oDAAyB;QACjC,UAAU;IACZ;IAEA,OAAO;AACT"}},
+    {"offset": {"line": 76, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}}]
+}
