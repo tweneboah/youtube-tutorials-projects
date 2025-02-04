@@ -1,0 +1,38 @@
+{
+  "name": "ai-powered-chat-application",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint .",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@google/generative-ai": "^0.2.1",
+    "@heroicons/react": "^2.2.0",
+    "@tailwindcss/forms": "^0.5.9",
+    "@types/react": "^19.0.2",
+    "@types/react-dom": "^19.0.2",
+    "@vitejs/plugin-react": "^4.3.4",
+    "firebase": "^10.14.1",
+    "formik": "^2.4.6",
+    "framer-motion": "^11.15.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-firebase-hooks": "^5.1.1",
+    "react-icons": "^5.4.0",
+    "react-markdown": "^9.0.1",
+    "react-router-dom": "^7.0.2",
+    "react-syntax-highlighter": "^15.6.1",
+    "yup": "^1.6.1"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.20",
+    "globals": "^15.12.0",
+    "postcss": "^8.4.49",
+    "tailwindcss": "^3.4.17",
+    "vite": "^6.0.3"
+  }
+}

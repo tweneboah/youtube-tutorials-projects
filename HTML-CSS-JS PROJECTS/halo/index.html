@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tech Company - Future of Innovation</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.halo.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+      }
+
+      #hero-halo {
+        position: relative;
+        height: 100vh;
+        width: 100%;
+        background-color: #000;
+        overflow: hidden;
+      }
+
+      .content-wrapper {
+        position: relative;
+        z-index: 1;
+        height: 100%;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        padding: 0 5%;
+      }
+
+      .hero-text {
+        max-width: 600px;
+      }
+
+      .hero-badge {
+        font-size: 0.9rem;
+        text-transform: uppercase;
+        background: rgba(255, 255, 255, 0.1);
+        padding: 0.5rem 1rem;
+        border-radius: 50px;
+        color: #fff;
+        display: inline-block;
+        margin-bottom: 1.5rem;
+        backdrop-filter: blur(10px);
+        animation: badgeFade 1s ease-in;
+      }
+
+      .hero-heading {
+        font-size: clamp(2.5rem, 5vw, 4rem);
+        line-height: 1.1;
+        color: #fff;
+        margin-bottom: 1.5rem;
+        animation: headingFade 1s ease-in 0.3s both;
+      }
+
+      .gradient-text {
+        background: linear-gradient(135deg, #ff6b6b, #4ecdc4);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+      }
+
+      .hero-description {
+        font-size: 1.1rem;
+        line-height: 1.6;
+        color: rgba(255, 255, 255, 0.8);
+        margin-bottom: 2rem;
+        animation: descriptionFade 1s ease-in 0.6s both;
+      }
+
+      .cta-container {
+        display: flex;
+        gap: 1rem;
+        animation: ctaFade 1s ease-in 0.9s both;
+      }
+
+      .primary-btn {
+        padding: 1rem 2rem;
+        background: linear-gradient(135deg, #ff6b6b, #4ecdc4);
+        border: none;
+        border-radius: 8px;
+        color: #fff;
+        font-weight: 600;
+        cursor: pointer;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      .secondary-btn {
+        padding: 1rem 2rem;
+        background: transparent;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        border-radius: 8px;
+        color: #fff;
+        font-weight: 600;
+        cursor: pointer;
+        transition: all 0.3s ease;
+      }
+
+      .primary-btn:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 10px 20px rgba(255, 107, 107, 0.2);
+      }
+
+      .secondary-btn:hover {
+        background: rgba(255, 255, 255, 0.1);
+        border-color: rgba(255, 255, 255, 0.3);
+      }
+
+      .hero-image {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .floating-card {
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(10px);
+        padding: 2rem;
+        border-radius: 20px;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        max-width: 400px;
+        animation: cardFloat 3s ease-in-out infinite;
+      }
+
+      @keyframes cardFloat {
+        0%,
+        100% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(-20px);
+        }
+      }
+
+      @keyframes badgeFade {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      @keyframes headingFade {
+        from {
+          opacity: 0;
+          transform: translateX(-30px);
+        }
+        to {
+          opacity: 1;
+          transform: translateX(0);
+        }
+      }
+
+      @keyframes descriptionFade {
+        from {
+          opacity: 0;
+          transform: translateX(-20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateX(0);
+        }
+      }
+
+      @keyframes ctaFade {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      @media (max-width: 768px) {
+        .content-wrapper {
+          grid-template-columns: 1fr;
+          padding: 2rem;
+          text-align: center;
+        }
+
+        .hero-text {
+          max-width: 100%;
+        }
+
+        .cta-container {
+          justify-content: center;
+        }
+
+        .hero-image {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <section id="hero-halo">
+      <div class="content-wrapper">
+        <div class="hero-text">
+          <span class="hero-badge">Welcome to the future</span>
+          <h1 class="hero-heading">
+            Transform Your Vision with
+            <span class="gradient-text">AI-Powered Innovation</span>
+          </h1>
+          <p class="hero-description">
+            Unlock the potential of cutting-edge technology solutions that drive
+            business growth and digital transformation. Join the revolution of
+            tomorrow, today.
+          </p>
+          <div class="cta-container">
+            <button class="primary-btn">Get Started</button>
+            <button class="secondary-btn">Learn More</button>
+          </div>
+        </div>
+
+        <div class="hero-image">
+          <div class="floating-card">
+            <i
+              style="font-size: 3rem; color: #4ecdc4"
+              class="fa-solid fa-cube"
+            ></i>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      VANTA.HALO({
+        el: "#hero-halo",
+        mouseControls: true,
+        touchControls: true,
+        gyroControls: false,
+        minHeight: 200.0,
+        minWidth: 200.0,
+        baseColor: 0x0,
+        backgroundColor: 0x0,
+        amplitudeFactor: 2.0,
+        size: 1.5,
+        xOffset: 0.2,
+        yOffset: 0.2,
+      });
+    </script>
+  </body>
+</html>
